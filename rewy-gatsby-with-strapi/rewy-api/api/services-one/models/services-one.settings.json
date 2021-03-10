@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "services_ones",
+  "info": {
+    "name": "servicesOne",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "simpleText": {
+      "type": "string",
+      "default": "SERVICES",
+      "required": true
+    },
+    "header": {
+      "type": "string",
+      "default": "Cloud Hosting Services",
+      "required": true
+    },
+    "helpText": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "required": true
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cloud.cloud-hosting-services"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

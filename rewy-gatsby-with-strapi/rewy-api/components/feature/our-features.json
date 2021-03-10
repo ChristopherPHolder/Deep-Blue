@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_feature_our_features",
+  "info": {
+    "name": "our features",
+    "icon": "arrow-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "Incredible Infrastructure",
+      "required": true
+    },
+    "desc": {
+      "type": "string",
+      "required": true,
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+    }
+  }
+}

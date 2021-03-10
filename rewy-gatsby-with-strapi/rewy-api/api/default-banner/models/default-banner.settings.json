@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "default_banners",
+  "info": {
+    "name": "default banner"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "header": {
+      "type": "string",
+      "default": "Secure IT Solutions Services",
+      "required": true
+    },
+    "helpText": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "required": true
+    },
+    "btnText": {
+      "type": "string",
+      "default": "Get Started",
+      "required": true
+    },
+    "btnLink": {
+      "type": "string",
+      "default": "/contact",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
