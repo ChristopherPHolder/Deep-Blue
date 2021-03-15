@@ -14,10 +14,10 @@ const ContactInfo = () => {
                                 <i className='bx bx-map'></i>
                             </div>
                             <h3>Our Address</h3>
-                            <p>175 5th Ave, New York, NY 10010, United States</p>
+                            <p>Ausstellungsstraße 71 Top 32, 1020 Wien, Austria</p>
                         </div>
                     </div>
-
+                    
                     <div className="col-lg-4 col-md-6">
                         <div className="contact-info-box">
                             <div className="back-icon">
@@ -27,8 +27,8 @@ const ContactInfo = () => {
                                 <i className='bx bx-phone-call'></i>
                             </div>
                             <h3>Contact</h3>
-                            <p>Mobile: <a href="tel:+44457895789">(+44) - 45789 - 5789</a></p>
-                            <p>E-mail: <a href="mailto:hello@rewy.com">hello@rewy.com</a></p>
+                            <p>Mobile: <a href="tel:+436601418824">(+43) - 660 141 - 8824</a></p>
+                            <p>E-mail: <a href="mailto:hello@rewy.com">hello@beyonddeepblue.com</a></p>
                         </div>
                     </div>
 
@@ -42,7 +42,7 @@ const ContactInfo = () => {
                             </div>
                             <h3>Hours of Operation</h3>
                             <p>Monday - Friday: 09:00 - 20:00</p>
-                            <p>Sunday & Saturday: 10:30 - 22:00</p>
+                            <p>Sunday & Saturday: 11:30 - 18:00</p>
                         </div>
                     </div>
                 </div>
