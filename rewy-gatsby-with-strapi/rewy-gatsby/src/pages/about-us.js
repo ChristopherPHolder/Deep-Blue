@@ -22,7 +22,7 @@ const AboutUs = () => {
                 activePageText="About Us" 
             />
             <AboutUsContent />
-            <OurHistory />
+            {/*<OurHistory /> */}
             <WhyChooseUs />
             <HowItWork />
             <TeamMembers />
