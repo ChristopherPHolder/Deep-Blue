@@ -4,7 +4,6 @@ import Navbar from "../components/App/Navbar"
 import PageBanner from '../components/Common/PageBanner'
 import Footer from "../components/App/Footer"
 import AboutUsContent from '../components/AboutUs/AboutUsContent'
-import OurHistory from '../components/AboutUs/OurHistory'
 import WhyChooseUs from '../components/AboutUs/WhyChooseUs'
 import HowItWork from '../components/AboutUs/HowItWork'
 import TeamMembers from '../components/AboutUs/TeamMembers'
@@ -22,7 +21,6 @@ const AboutUs = () => {
                 activePageText="About Us" 
             />
             <AboutUsContent />
-            {/*<OurHistory /> */}
             <WhyChooseUs />
             <HowItWork />
             <TeamMembers />
