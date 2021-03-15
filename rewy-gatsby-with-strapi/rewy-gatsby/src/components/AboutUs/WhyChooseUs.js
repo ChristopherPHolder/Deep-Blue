@@ -11,31 +11,31 @@ const WhyChooseUs = () => {
                         <div className="how-its-work-content">
                             <span className="sub-title">
                                 <img src={starIcon} alt="banner" /> 
-                                People Love Us
+                                Customer focused
                             </span>
                             <h2>Why Choose Us?</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                            <p>We focus on tranforming our customers ideas into a reality, and reducing costs while doing so. </p>
                             <div className="inner-box">
                                 <div className="single-item">
                                     <div className="count-box">
                                         1
                                     </div>
-                                    <h3>Data for All Your People</h3>
-                                    <p>Dolor sit amet consectetur elit eiusmod tempor incidi dunt labore dolore magna aliqua enim.</p>
+                                    <h3>Project Detection</h3>
+                                    <p>We identify optimazation and automation opertunities to save our customers time and money.</p>
+                                </div>
+                                <div className="single-item">
+                                    <div className="count-box">
+                                        1
+                                    </div>
+                                    <h3>Agile Development</h3>
+                                    <p>We adapt to our customers needs, and stay agile for when there needs change.</p>
                                 </div>
                                 <div className="single-item">
                                     <div className="count-box">
                                         2
                                     </div>
-                                    <h3>A New Breed of AI</h3>
-                                    <p>Dolor sit amet consectetur elit eiusmod tempor incidi dunt labore dolore magna aliqua enim.</p>
-                                </div>
-                                <div className="single-item">
-                                    <div className="count-box">
-                                        3
-                                    </div>
-                                    <h3>Analytics Business</h3>
-                                    <p>Dolor sit amet consectetur elit eiusmod tempor incidi dunt labore dolore magna aliqua enim.</p>
+                                    <h3>Elastic Teams</h3>
+                                    <p>We can expand and contract our teams to suite your needs, as well as create teams dedicated to you alone.</p>
                                 </div>
                             </div>
                         </div>
