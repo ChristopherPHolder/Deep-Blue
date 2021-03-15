@@ -26,88 +26,13 @@ const AboutUsContent = () => {
                                     <img src={starIcon} alt="banner" /> 
                                     About Us
                                 </span>
-                                <h2>Drive Digital Revolution Through Data Science</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                                
-                                <ul className="features-list">
-                                    <li>
-                                        <img src={icon4} alt="banner" />
-                                        <h3>10 Years</h3>
-                                        <p>On the market</p>
-                                    </li>
-                                    <li>
-                                        <img src={icon5} alt="banner" />
-                                        <h3>45+</h3>
-                                        <p>Team members</p>
-                                    </li>
-                                    <li>
-                                        <img src={icon6} alt="banner" />
-                                        <h3>100%</h3>
-                                        <p>Satisfaction rate</p>
-                                    </li>
-                                    <li>
-                                        <img src={icon7} alt="banner" />
-                                        <h3>80%</h3>
-                                        <p>Senior scientist</p>
-                                    </li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                                
+                                <h2>Drive Digital Revolution Through Automation</h2>
+                                <p>Our goal is too be the digital interface off our clients, develop what ever they need in the most efficient way posible and remove inefficiencies through technology.</p>
+                                <p>We believe that to compete in todays enviroment, it is necessary to embrace technology. And that the change that is upon us now it the one promised by Deep Blue, and it will only accelerate.</p>
+
                                 <Link to="/about-us" className="default-btn">
                                     <i className="flaticon-right"></i>More About Us<span></span>
                                 </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="circle-shape1">
-                <img src={shape1} alt="banner" />
-            </div>
-
-            <div className="container">
-                <div className="about-inner-area">
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6 col-sm-6">
-                            <div className="about-text">
-                                <h3>Our History</h3>
-                                <p>Real innovations and a positive customer experience are the heart of successful communication.</p>
-                                
-                                <ul className="features-list">
-                                    <li><i className="flaticon-tick"></i> Activate Listening</li>
-                                    <li><i className="flaticon-tick"></i> Brilliant minds</li>
-                                    <li><i className="flaticon-tick"></i> Better. Best. Wow!</li>
-                                    <li><i className="flaticon-tick"></i> Branding it better!</li>
-                                </ul>
-                            </div>
-                        </div>
-    
-                        <div className="col-lg-4 col-md-6 col-sm-6">
-                            <div className="about-text">
-                                <h3>Our Mission</h3>
-                                <p>Real innovations and a positive customer experience are the heart of successful communication.</p>
-                                
-                                <ul className="features-list">
-                                    <li><i className="flaticon-tick"></i> Creating. Results.</li>
-                                    <li><i className="flaticon-tick"></i> Expect more</li>
-                                    <li><i className="flaticon-tick"></i> Good thinking</li>
-                                    <li><i className="flaticon-tick"></i> In real we trust</li>
-                                </ul>
-                            </div>
-                        </div>
-    
-                        <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
-                            <div className="about-text">
-                                <h3>Who we are</h3>
-                                <p>Real innovations and a positive customer experience are the heart of successful communication.</p>
-                                
-                                <ul className="features-list">
-                                    <li><i className="flaticon-tick"></i> Stay real. Always.</li>
-                                    <li><i className="flaticon-tick"></i> We have you covered</li>
-                                    <li><i className="flaticon-tick"></i> We turn heads</li>
-                                    <li><i className="flaticon-tick"></i> Your brand, promoted</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
