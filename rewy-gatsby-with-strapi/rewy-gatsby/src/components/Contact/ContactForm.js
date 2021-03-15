@@ -12,7 +12,7 @@ const ContactForm = () => {
                         Get in Touch
                     </span>
                     <h2>Ready to Get Started?</h2>
-                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <p>Make an appointment for a free consultation.</p>
                 </div>
 
                 <div className="row">
