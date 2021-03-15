@@ -31,16 +31,16 @@ const BlogCard = () => {
                                     <li>
                                         <div className="post-author d-flex align-items-center">
                                             <img src={user1} className="rounded-circle" alt="image" />
-                                            <span>Alex Morgan</span>
+                                            <span>Christopher Holder</span>
                                         </div>
                                     </li>
                                     <li>
-                                        <i className='flaticon-calendar'></i> April 5, 2020
+                                        <i className='flaticon-calendar'></i> January 8, 2021
                                     </li>
                                 </ul>
                                 <h3>
                                     <Link to="/blog-details">
-                                        The Data Surrounding Higher Education
+                                        Tha basics of cloud computing
                                     </Link>
                                 </h3>
                             </div>
