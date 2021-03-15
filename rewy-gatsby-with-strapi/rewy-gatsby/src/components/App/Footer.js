@@ -16,7 +16,7 @@ const Footer = () => {
                             <a href="/" className="logo">
                                 <img src={logo} alt="logo" />
                             </a>
-                            <p> Here should go a slogan about us!</p>
+                            <p> In the memory of Deep Blue and Garry Kasparov.</p>
 
                             <ul className="social-link">
                                 <li>
@@ -59,11 +59,6 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/case-studies">
-                                        Case Studies
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link to="/blog">
                                         Our Blog
                                     </Link>
@@ -80,15 +75,7 @@ const Footer = () => {
                     <div className="col-lg-2 col-sm-6">
                         <div className="single-footer-widget">
                             <h3>Resources</h3>
-
                             <ul className="footer-links-list">
-                                {/*
-                                <li>
-                                    <Link to="/team">
-                                        Our Scientists
-                                    </Link>
-                                </li>
-                                */}
                                 <li>
                                     <Link to="/services">
                                         Our Services
@@ -97,11 +84,6 @@ const Footer = () => {
                                 <li>
                                     <Link to="/testimonials">
                                         Testimonials
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/services">
-                                        SaaS Solutions
                                     </Link>
                                 </li>
                                 <li>
@@ -120,19 +102,16 @@ const Footer = () => {
                             <ul className="footer-contact-info">
                                 <li>
                                     <i className='bx bx-map'></i> 
-                                    175 5th Ave, New York, NY 10010, <br /> United States
+                                    Ausstellungsstraße 71 Top 32 <br/>
+                                    1020 Wien<br /> Austria
                                 </li>
                                 <li>
                                     <i className='bx bx-phone-call'></i>
-                                    <a href="tel:+44587154756">+1 (123) 456 7890</a>
+                                    <a href="tel:+436601418824">+43 660 1418824</a>
                                 </li>
                                 <li>
                                     <i className='bx bx-envelope'></i>
-                                    <a href="mailto:hello@rewy.com">hello@rewy.com</a>
-                                </li>
-                                <li>
-                                    <i className='bx bxs-inbox'></i>
-                                    <a href="tel:+557854578964">+55 785 4578964</a>
+                                    <a href="mailto:hello@beyonddeepblue.com">hello@beyonddeepblue.com</a>
                                 </li>
                             </ul>
                         </div>
@@ -142,7 +121,7 @@ const Footer = () => {
                 <div className="footer-bottom-area">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-6">
-                            <p>Copyright @{currentYear} <strong>Rewy</strong> All rights reserved <a target="_blank" href="https://envytheme.com/" rel="noreferrer">EnvyTheme</a></p>
+                            <p>Copyright @{currentYear} <strong>Beyond Deep Blue</strong> All rights reserved.</p>
                         </div>
 
                         <div className="col-lg-6 col-md-6">
