@@ -16,7 +16,7 @@ const ComingSoon = () => {
     }, [])
 
     const commingSoonTime = () => {
-        let endTime = new Date("August 23, 2022 17:00:00 PDT");
+        let endTime = new Date("March 19, 2021 12:00:00 PDT");
         let endTimeParse = (Date.parse(endTime)) / 1000;
         let now = new Date();
         let nowParse = (Date.parse(now) / 1000);
@@ -73,7 +73,7 @@ const ComingSoon = () => {
                                     Subscribe <span></span>
                                 </button>
                       
-                                <p>If you would like to be notified when your app is live, Please subscribe to our mailing list.</p>
+                                <p>If you would like to be notified when we go live, Please subscribe to our mailing list.</p>
                             </form>
                         </div>
                     </div>
