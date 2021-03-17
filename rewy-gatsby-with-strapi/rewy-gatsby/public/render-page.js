@@ -111,6 +111,7 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-about-us-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/about-us.js */ "./src/pages/about-us.js"))),
+  "component---src-pages-blog-details-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/blog-details.js */ "./src/pages/blog-details.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")))
   }
 
@@ -38383,17 +38384,6 @@ module.exports = JSON.parse("{\"data\":{\"allStrapiBlog\":{\"nodes\":[{\"title\"
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/3555834842.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/3555834842.json ***!
-  \***********************************************/
-/*! exports provided: data, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"data\":{\"strapiOurFeatures\":{\"simpleText\":\"OUR FEATURES\",\"header\":\"We’re Here To Help\",\"helpText\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.\",\"features\":[{\"id\":1,\"title\":\"Incredible Infrastructure\",\"desc\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.\",\"icon\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEy0lEQVQ4y12UbUxTVxjHr3PZizqTZdNkbx9mplFn9mKI4cuyzLglJtMP4tsySXTJlmUKohnbPgwGyubGJmUi4qQykQmWlhZbLNhZ2lqK2HJ7+97Slhb6QgttpZiJCJz737l3ccl2kpPz3NyT3/k/z/M/hwHAlP2kUF/VDqPjum2x/bqN/0NjxZUeK2S9LDRGF9T9LnTQ/6qbDmgMLshv2KGksdrg4rVG12KjisWHX8vV05QljGVXe4ez+GcQ/G8M2EfBemNiPBrLwEK/Z+fmEU1kYeEicHqjZHQGONrCpSlrOcNsOrybnuh7BLw7c5/XDfoRS92FN5TAedUwvmkZQiabh90fh/aWB45AHJ7QBMxsmNdbPMSemEOJlB2jwKcZZuXet2R9bERUEM+Qi3ITamXDONvNIZWagsGRQIM2hGwuD3cwCYN1hJbBLR44Gs/COOQjrtQCBdrHhWyZpW+WfEpP9U5lZ/BL2y1S3mSA3pNF5aXbOHm+F6qBMCSaAHJ3Z8BRhTcsPjycXxDBtIbQ6O2EpQpLL9pjFPg48+Tmo2V9Az53Mp2DkYuRC39GoBwcx++6AFqNY5AZQ2jsDVKFM2Ite6g6MxuCjoJZXwxzD2ZJOA8ckbJhZtX2tQLwuABMTeZQ2e4kpVIWFTIfvrrswAlVWFwr2p1UYR4RmqI/koaDKqX1Q3IqL9Y9QptS0sL5ni/4fCdV+cFa2pQxQggu9XDkN5UVzddYXOi2QapmcfrKAFp7WDyYeyh2bSSaBrUWmmS30E3tNDmZIxNzwBfNbHDZ+gNbBNs8QTckhc23uTAx3AlgyDEKw5AfVlfkPxbyhidE2Fgyh/rWm6Ifv61XkRA14LFWN/fSO8e+FIArOrS2hAh0RIg3nEKv2UtTS2GQ+szui9MZw/3Zh6Kx09l70JrckOm9ELIR6t5qGkelfMS5qrDksABc/ghI/UWmcvfQR4GTdBWacGPAJzYinZnBdepBwZsnmm+isT+FunYLOgaTRKqPolIRdKwuLC0TgTQNEcj5EyQxmYfRFoJCxyE4PoXpe7NQ6p1IUWWOQAKfnZSjn4tDaYmgptONg9Vy0hdawPHLbtfqwiMHRaCib1gECtcok5mG1uBANjsNuzsixiPhxL911N/2o6HbiSZdFD+029BpiRFFFChttgnGXiECq9usCVMcaBvKkmuev/hz/Ule7b3PXx7K4pw+wcvYaZjGefRHF/k7KaCLy/PNxiR/1TnLS10gLW6gTGoVgE/RuW7lJzXK9JluF35VOeclSsdCo8a9IOly8GfVbjT1ePiGay6cVnCoU3D8z512SJROvkEt7OEWznQNz9d2ubCrQjXBMK88IyhcWtOsC9uC9CXxpjDgScHsmcCgLw29Pc7TKdZMuNP9XAJmZ5y/40/D7KaPA90rxApbBh//qAtR1mPMC9tPMc9trdq0ZlfdodeKJMXr9zcUMYXfbTtY1enqsQShMvkXu00BugagMQcWJZoRbD0mcz37XtW2dfsaitbskhRv2FN3aOOOqk2b95ximJd31C5Zta2aWbe/kdmwr54p2P19wYvvlhfvKW/1nFHS9DptRCK3QZj1chupaGPxfsklz6tby4vfLqopWL+3nnnjQCPz+s5qZstHtUv+BudqIfdKGTz6AAAAAElFTkSuQmCC\",\"aspectRatio\":1.1142857142857143,\"src\":\"/static/6032cd610c32acc3a60ea7fa943227fd/f5a60/ee08a5cae04640cd866972317902ea54.png\",\"srcSet\":\"/static/6032cd610c32acc3a60ea7fa943227fd/f5a60/ee08a5cae04640cd866972317902ea54.png 78w\",\"sizes\":\"(max-width: 78px) 100vw, 78px\"}}}},{\"id\":4,\"title\":\"Email Notifications\",\"desc\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.\",\"icon\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEX0lEQVQ4y32UX0xTVxzHz0z2vJe97Gl72N6XbQ8me122ZFnmEpfM+LCAZskQNerUofgnc2pBEv7IkMo/rYVbKi1QbbkttJSlvUBbWksLlBZKFaH8K+WPpaU9t/e70wtmWRY9uZ+c7z0593t+v9/95ZDvTzaQX9vG3jnRHiCHLnWUF1fb3MU1g7biGpv9zQzaj1XbbL/UWl0/lWsVdwBy3su4+YCQAx8XEwAHGKSGc3qTWWBtR0Ii/XaSjIUUUK7yRAvfFsah41cJ+b2qg3x+6Gzh/b0jl9XuO50u3OaGswpuRHwbldxoTsG5cPiydoq8+9kHXxSpSO1zZvzjxVZytKzlh0stf2//+XAov7QDaS5JpdiGiDeTRyyZk2a2IZ1rFsQz94eyh6+ri7/9Q0vIbCJJbtw3aTdSGVys7qaNBg+UhrH/0bjPnvag+YmXzV6ppNJIp5YzKFE6ejWLLEJWMlKlsqoTyQ1UqAapP56D50Va8s5n4J1PY6wwv0zv6z18C7sYib6S+OltlLUM0cmXmzjVJjw2bsuGeaJos3DJrVe4Vm+gvBCWrKMh8E7GcAhW9zR4gWkhjAFXBP2jEeis45hfiLN/Aem6eoQG55M41TLSZVpnhjkW4e2C4eYWrijNVGmNStc5Hxot06gzhnC1048Gfgb1fSEU1uv6ZlCh8eD4VRWCsVVU6nw08GIdp5mhOckMKTOsfDDALa4m0WEcpUsrCUnLezC3sIRgOAad2YtIbBlTs3F093sxHn4Ob3AGat6Hi21uHLvVQ0PxLZTeF7r6Esyw0EPV7XZuJ5OBhvcwwzWpx+6H1vQMFmESG6kUVL0uOLyzeD1m51dQpxFQ9fgZjpapaPxVDqfbRruGdpmhEI6T89UGrr3Pg5N39FRjCUhNejcic3EM+6PQ9z9DeG4B7kAUOqZt7hAWVzegMY9BbQni5woDrWf7iypMurv2BCGl956Sb0oaOpqtYZgC69QW2ZKarBE06R3wTsSgMY3BNR6Vo+WFCayxbnhkcKHmSRA9vlUY/au0wTyLr8+qdUeqnITkWcqK1n6ukEpepPQxPyZNx5bQ2u2EOxhFtz2AHvsEOvv9mIouyim36hxYXk68rgDdFIETSodet8ZSTokSudHEc1TMY2M7Tctre6XZhRVWTxfURg+0Fh8zHEefcwKFsjQzM6VuCDu7GWyn0tAYR6j/RRJnlILesskMN6lIbjabO7I5Kp9W6C35YaQzuxDzIgLhedaXk9jNZgt57AfGAthKSRcqNXQ4soILTaM6Z4oZSnspd0pym0q7Ul5iCWCfPW0c9InldT2yHhgJie1PBVnv780us5untNHZ01uI8JHBTs4puPqXSwk5rizNIyf+SzaXY2siqCgfCaNjkrWRIOtMbu/M6cVNFClMD67oI4R8eLCUfPrVb++XVXc13NM4+ms5O1+rsZv/y5A813CD5hbDsPmhySXrGs0g/5fWOVB+16A++N21jz758hz5B+LKVcf6UabQAAAAAElFTkSuQmCC\",\"aspectRatio\":1.1142857142857143,\"src\":\"/static/7291f3463d9b63510c376f8612073a40/f5a60/674bf7d6dd9ad215c1fd3b39a794176d.png\",\"srcSet\":\"/static/7291f3463d9b63510c376f8612073a40/f5a60/674bf7d6dd9ad215c1fd3b39a794176d.png 78w\",\"sizes\":\"(max-width: 78px) 100vw, 78px\"}}}},{\"id\":5,\"title\":\"Simple Dashboard\",\"desc\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.\",\"icon\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE20lEQVQ4y12Se0xbdRTHf4CbLro/jNEYo9k/Rv/RGJU5zdQ4lzj3cnMzJro5BttkGUOXrQw25hwKIjDe5bUWSgsMaOkTVmCloy30cQt9XVpe7S3LJuM99vLBeunXSx2R7CQnN/eee775nO85hC+1kuO/NpysUZr7JRqLXqy2GCSPUhxJs0G84n352aCxGMqaew0/Cih9UkW3bU+qKH4HT0CIbXSOpBQopNRAEBQdgM0TgGUp3QHYvUH0ecdgH2Bgdo/C6vHDxv1j5ep9NINWC4MMZRAZCj++PtvAP5CpJFw8T0jM5hfTijWM1e1Hl3X4ocXDsBY6yGoMHlZ9jWbbzV7W7mNYo2OU1fcNsd39Q6zZ5WftdHChnWKwM7VJv+GVzWvIcgAgyqtuGv8FOz49B6nWiRZdP/IlOqj1DnSafVwpjOXoH7qOeo051O2dQGotJb82BdJzG9HLmjFilWWpAz0cRUGdDoEbk1BfcyL1ohwe/3VkX9KClyvD7J07EcE8sQEnqkyh7AYK6WJKtQQVAKKWBaNlHS7v/L0HKBBfZSdn5lDRbIRC70RGZRtaDR5kC7Sg/beQW9cdERwZm+AIbaH+4DyOV5iU5kUQF/4njG410L72Hi8cg2NsjbwXgesTkHX04Xx5K7rtPiRnS9FhHUWpyo3RG1Pc0oKobrGEVNYgTgrNSoYj9KwUlHU6fKouF6w0w7YaPegw0+jqcUdojpV0QdjuRbnGAYHOD5PDD6HKjuQyYyivuQ/pEkq5yAnSKwXlHU6vgvPMzG24g1uAtscJPdfomgdO1/Si0TKOArkdRe2j0FFDmL97Hw1aKuS5eQ9JZUalceGxkduMXp/W5IHDN8bmiHQY5UY+VahCusCIco7qgmwQxW0+nGt0c3b8gS7bMPjNxlBj9zB41Vbl+OMjN3U6fXcf/InEjCa2vo3Cb1VXkFzcDol1HBfkXvAqDIjL1SFLZIjYUCq1RbZconLgjJhS/v34yCKNLXI2OpOXrWjpDbuCM2FVDxOubPOFq3RMOL97MnwsVxV2DwbDk3P3w4GbU2G5vi9kD8whqdyk6A2BOBdX3GFTR7/v0c0+HGQm2MJmK1t2ZYAt1Y6wWTLXYrWKWny48BdrdTOL0k7n4vTsPEs5/Qv9gRmcuNSr5OjIyDLh0lGmVeoHVK5pyKhbaB+YQ5t7ClWdIyhU06gzMujkvqmdM2h1z3L121A5pqGlZ3GZmsB3Oa0tP5nukRwHywk+m0PIS/lk09GKNz84LNq5MVG0NTZeuC02Qbx1W8rlHd/+ovp0/cGqxDe+4e/fcFi0ef1Bwda3D1zaEhtfveWtA4LPPkwQbt+bVLVu15Ei8nl8fhSh3TJit14mH3/PJ+8dqiEfHRWRTUli8tpXVeSduGqyiyciR86WHt2XUrH7/bgysv1QzqGE0yXvAv9Em1uK1gKZUU31lWvOZpauOZNZQsiZ32tJWrbomXMXG9dmlMieyyyWvTwZHHp6z/GyI/tSar7kHFmdJTHgVLmOWbIm7lz96wnnJS8IpKZV6cWKp9IKlKuzSppX1UvVUQ1SNSEX8mrIzznVMXn8xhh+teKJokr5k5FGnvDVuNOidZsSheQLXs223Tzhxk9+qCV7k0vJ/jQhGaa9pFCgJPxaDamsbSGCOkUk/wVbbamBbUsKTwAAAABJRU5ErkJggg==\",\"aspectRatio\":1.1142857142857143,\"src\":\"/static/4db0bed7f29c67728f8b7dbcdf0389d2/f5a60/53eafc97e2db5136be6ed35cb9d64445.png\",\"srcSet\":\"/static/4db0bed7f29c67728f8b7dbcdf0389d2/f5a60/53eafc97e2db5136be6ed35cb9d64445.png 78w\",\"sizes\":\"(max-width: 78px) 100vw, 78px\"}}}},{\"id\":6,\"title\":\"Information Retrieval\",\"desc\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.\",\"icon\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE1klEQVQ4y32Ta0xTZxzGXxONc25Ltn3asts3923Jsg8z24clLtvMZuIU2RyOyTZlKgqLTKkCchMFShVari1gC5ReKAwEKqUXeqDCESrY0hahSMtABcULgoWenvPstN1csiz7J0/ef96T88v/eZ/3JWklbSQhveZAYZ2RFtVbjEKF2VzMK7wK5WbzhXqjOUdmMB0stVgOS8yWI2KL+ajESsdlawvUAPk0RkD2JJ4nMYmF5JsjxYQE+M3zNYYW/E8tsUAJtQgJLzF1H+W2h8hQORYIIS/EpZRtiTsmej4uqZjsS75ICOWZIceFOgU95sOw27865PKF7B5/yO72h4bdM6HRm/5Qz8hM6KRqPCTQeHjdDGa3TeFQOTX5zrtfvbIjseRU/G+Vb8cmi8kPJ6vXEU2/kyTmNjW0W52g7F7GRE9wHdQYOvtcuEy50EE5YaTdoEamQF2/BTM9zha1u7CvqGuakPWb3N6+zVNe+zrATyLFOyIFdQZl2NqwZ5rx377P/dvy3L1HcEzMwjUxh+WVJ+zQQyBd7eKBZFPppebXMwqrN4gqa0mZ/FIUWKailHrrKFRdg0yh3Mq5JmcjIB4O4aUeqDuGkFnWAYmyF1K1kc3VjOKEwuHjgZurG9teOlvbvC49r5IIssqjwHJNn7K73wGh1s4cl1o439w8Fh8t4Wx1J27Nzkfg3bYb8N1ZCLesVGvFh3ElU3KlemNesey5tKzyzRl50o3pudV8ymyI5En1SpZjQTtuMV7/XMRyaaMJvj8iAJhoFzLEHRA3WNBusnPa7mvQ9rqCb32e+wE8ug1JJ8Qvp2aUbzp+WkJIiJ8wv9agfPBkGS0GOzM44uV8vNVaXX8EZqY9kGotWAuuYn5xCT/naTG/cI+ZfMRi15k2aWzVGPnlVN2rKRl1Lx4VyKKWq3Q2pVpPQ3/Vw5S22rkKlRW9QzcjwAoVhZWVwLOAKnpnuC7raGjqCfC9yNwX/h9gNkzaNOu7fm+KAi82WpTXx6aRJu1lzjcNcMb+8JVxRAAy3VWM++5Get8a8Gv9DQzemGCMfG4JIpP5XD/IruSK7buTJFu3xfMv5WEgRLIq9cpoqvNM4OlTbiWwBgl/hv7Zu8ipaINAooeocwICtROH8xs4kZYOVQ+tYG9aw6mY1CbydZJ4+54k8dbP4oXRCYsVRqXXfxdVKisja7XxoXBo7h7C7pMKPA7yT295GXp+6q4BN+g7LJfeNsVtO1KDLw8Uvf/et0Vk645k8sXPpeTNT3KiQGmLTdl4eRBdQ9NMdgPN0Q5vxGKZhkJqvR1NYwF0zwHqSaCYesztF/Wwiis04vMvT2zZkZ30RuIA4T+T17Z8FAUWyU3KuYX7yJFZmKrWQY4JroFj+fz5Sa3X3DgnpyCosSGztg/S1gFO2OrEoYIOVmMYhu7aDLYly7JSTGyERR6EWHJWZlT8FWI4TuYfcc96JrjKcKFgpL+6iOCuzHZ2eHQcbr6Pz9cjNr0+dedpDSEK5xI5UNDZonKsQOtahYa3F17/ltoZ4PdWofME0cxL41hGgzOIVPnIvY+/KyhIudCNdpsHMWeaU/dd6CFkb3YriT0h3/ljwZX6n4oMVQlF3dL/0v7CqBKEhqqDoh5FfKb6WLF5jBzOqzuYJmxKvh22y9efA8L9DrrB22sAAAAASUVORK5CYII=\",\"aspectRatio\":1.1142857142857143,\"src\":\"/static/f3b425ae782fc08a42a5fcd5317aad5c/f5a60/1cc48faff72378ad6760e588d4ca9af3.png\",\"srcSet\":\"/static/f3b425ae782fc08a42a5fcd5317aad5c/f5a60/1cc48faff72378ad6760e588d4ca9af3.png 78w\",\"sizes\":\"(max-width: 78px) 100vw, 78px\"}}}},{\"id\":2,\"title\":\"Drag and Drop\",\"desc\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.\",\"icon\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFiklEQVQ4yx1UCzTUaRS/qLbTtj12K3J2tXXKtsWSjXaLEKVGRJu3VMb8MZgRg2FomGVZ70feYsx4JY+w5JGmlJS8Qgx5tEnE2S3ESs3c/U/fOd853/m+37m/+7v3dz9gRpcCM6ZE7qJ/HhBXBOAUkL0KYCMERlcAIoKSDnXnEee4n92CEtfKbzeDuIo2sOGVA4AeWNKTlGw8MlVkODtahpwDPRvAlcuXI7h54OSTre8SlGtsRoslwfLraRw+KyL/4ZOIm8NoHlhcbzWInwlovxcnmbP4rPuvP4AbNy+A4BaImJGVcPJ8ItBDSuSAmVSjwEyuBueQgngXXhFPWc1tT0Zpy/OK/nmsfoXIqxQv6Zj7qpq5xYGNb3ro4IspHJtdQM/kprbdlMBDHL+UrxzYAmtXduF2IqAAwCOrGRjRNQqWRA4cNOb+cqOx50PzFGJ4zdgyLaEZLf3zPSg+AoAN5mTALMsk4Z2G0YkpXPiEyM7veCOv7rzPM7zkLpUtOE6w8wH0z8fIwVoKqdJEsaimbaZtBtErr2tax8zPRI0SSHsy+mnNxv0Xtilpum/71tAf6m73wsGz4XYPuwbfTn9AJJJFvWSNVn2vaQ92ftlyUHq3R6Fa1A4hiWUJ/TMryK0cWTxgzPhVxzoa9pp6qZJghdSS5tF4YdMj8rxa25SjZk5PAQ2LECvx6ATeEi+iobeQpRdQBdaR9QokZh+5FTfVtfZN1g2vIIVVHGfNrQFHlsC29kEfspNv3p35Z+6jePz1PC/rr/vlt5+imWfK8fybLRCRVlX2Yk6KjKz2ARkZyNYZj1ig0CJPdI/NYkLjhOQHQx8tZV0f8sVAtUbUvbT88SOW1rdLq0VPySZLUVjbOgvwhaK6aRBQLkVT+l7MYErzK8l3up7q3xtcBuAklgOVne3SN7mAnNJnkzKmM55X1RKEDbf7hycWSuo6pR19I9Ki5gFJaVOPtLJ17L1dRH09PThJBVad2Xa/Z/h9Yec71KVmWRx14wPwMqqACMml9k4uIed634TMawbOcScqmntweWVZmlp8TzqzsIxFnW+lCUUtkoYxiYSZ8xjPeiZok+Tr7nQ+/7ek6x0epaXZGnnkAhDcHLD3TbV6+nIOI6pG5tfvtFMB2E9iDTX41a2v3y3MYyRfJPkjv0XaMLyApJW616xR2wXKZrDvdOChx+IpzGyZxp/MeboaFuEkhfolWL3XcXdL9+hSUcccGtHS6MZEKpxyT7/0oGsEm9p6sefl3KfqnpnF4PKR/0IrxWjkHHeMxskBBk/IG5pdxODivikAlc0AB0A2TnIymWnCpvpHbxBd09tGyfTWRpUObSBCC7iww0zfO78LGTntk+uUKVqO3BvMz90ETaXG1t7pJ5MStLhSJqQKnwO39qU8WHhnK+g5RsMuY7ZmQ/solg0hWoeWi2RmtfVNhT2mEWDrm0O19+Nb7TodBTv0GHsBvtmUXtj4aI6clqDSgRUVAxdVRV1XMHKNJwP6XAPbgNwdJu4p6owwfuC9gVkU9EuRntryzIRIsD3nfnXrSXom2LCugT0728qRnTdTWNsqlpCyMkWv8CiRSr9IKvROa5fHRQS4ECYA28CsC64Rgq7ax2Jg8nIYJa3jWDlOfgzVY2hETeIqGrHJhLdsvtHQQd4izq0gJteJ8YhLGtWCFv4jESqcMGde3XKKngjg5RUL/mGC1SKSxT4gx9CJk8/Xd+CcCOW3dvtk3OvapHX4y6Hxv4EVW149OD6NtzrHProlNjVvNQo+dMS7HJwiKzc4+mfoGbrFKxjQYgAcaFGgRf0TrBmJ4OCXpu4WKgiz8UmUVV1OcedvX2ufC4PDlmGKBFcY4xyWR4D2ZQ1ZEzce44JV1B0FB951sGelgjE9AY4RsfA/DwLX7KOhjakAAAAASUVORK5CYII=\",\"aspectRatio\":1.1142857142857143,\"src\":\"/static/5576722e418436a6d14e9b009032cd77/f5a60/d7a07e5fef7a9249ab431c43d7fffd80.png\",\"srcSet\":\"/static/5576722e418436a6d14e9b009032cd77/f5a60/d7a07e5fef7a9249ab431c43d7fffd80.png 78w\",\"sizes\":\"(max-width: 78px) 100vw, 78px\"}}}},{\"id\":3,\"title\":\"Deadline Reminders\",\"desc\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.\",\"icon\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFTUlEQVQ4yz1UWVCTVxj9xC6P1qkvfehD3R467UstTqfT1um4VEbRghQVB1yKjCggEZRNUpYEAUkIQgRiEvY1JGFJQhKSkLBmJRDIwr5Xq0irtlgIuV//+NBv5sy5987c7ztz5twLCbl8CKZlwdlETgAiwneReXtPXM3bdeBYIowv/gMfBcbs2XMk5fDHR2mBHx68vNs5uwTfns+FiKQK2PtTJnCbVTuzSzp3VHUMAIMnB3COGOFmRsWOkJscoOqD3Ao5phW1x/mbFwpUvJTi9vXItBqMyqxBeqn8BbdOWXjiKuurG1n1n+w/mQXCjj7IL1dBu8Gxg9OoBygoq4eMhzUQQ68+fiH1yfcJ+a0/BobkfRPLaHLozG7UGV1od82R8allojN5sLN3HJOK2vBOUZPQOvsUklnislu5zWHJxVK4wWwKAL8SP3J4clc2X1Er6XfCo/oeldU1h2E03r8Sjd3HqtOQkkYDaVZafOfv8Tfb9WN4jSnR++8xBN1GeqniVn6dCu49Eu+Ed2VD+PJs/rFD4dyvD4VkRc6vPMe1P19tS7V2MruyRnK4nSSrXEHmV1+gRGMjK+uvfYKh53jwVPovAD98uivwwr68tuad0cxSgKiMRghPEoRLNXaUDzg3/R6uPv+LPG7SE5HKSolA0q4ZRVmfw79G1bAbRdoRIjC9wvTSLuwZWfLdqbXjqXh+8PF4AQC9UgG3HtTHziz/gb0W53atzETYNRqSWizG+6UdRKQcwVyeEpl8JUq1o8ipU5FEjhzjeRaSJ+whkqGZ7WLDSzyXVhUVRm8EuM5ohItpT6L9kzXDHm+BUE22vF4Uq22k1+wiflUD9mm0js+/Uzg0Mk0eqRZJpX0T08sUpLLv6XamyIPBiRWXghN5AFcZJWD2jL3/xZmciw0yi7emw4gGs5tsezfxYZUSdcMuzCiTIZNSKdHaMI0lwZL+dcxpnyKV7UaMLx98GxiSec6j1L/HPH8RIDQ6F6KT2Hsi7gkYQumwT9E/jrQiCRF0juC17CYcGp1Gg82N3eY5LBaP4O3CNrxcpMHYgg4i0U/gHf6wN4gmoEek1O0+9msZQAJTBFdSq2OHxmZRNTjhVQ+7ibJ/Ai/RW5AhncK7/GFkiqjsNYxhDNeI0Y8tmMTuQufUMrqmV8mg5/dthmwBzyRWRZ6i1QHcr+iGuDxR7OTSM9RQDfUWN9EYnWhyTGO5qB/p/D4MTa7GsNRapFf2oNY8STnpQ7NjDjt1o6Rc7vEW965hWErVlfD7DQARaZUQRuMGCaUD680Ks7dNbcUWlY20dluxUz+Kin4HNshN2CS3oMwwhjrTJHbpx6n4uEjXoAuzRBNeGm9g7WxC+dHgOC5ACE0YsD8ol0r3gc8F0sFtz8JTHHEvEvvkEtrci2hzLeLY1Ar691bXApon5tFCscUxS7Sji3ilWLtBfQF7PzuZDd9e5wfApSQ+hN+uPMJt1C3Uy00+UY+NtKitpFVtw1ZKrZ9bVBYUU8GX6sbeZVFMQTnoImqjm/AU477rZf0zP8dXHA6KLQdILZNBTG5znGfxGRUR51vKw61ek9urM/l5astgndyS6x1br99sbFHm/Q8ql94+s3tLZp57yzKsYejdussh6a0AtKI2uPZbbazJOY8ao5t6LZOU8R7UUF5pTTOot0yhYsCF86vr+GZjE9dfbeDL13+jY3IZB0YXkKtZRqZiCc8k86NOp9RQHsaxITSOdSC9pJNTWN3LzhOqWRTYD6pUFPuhZuVXqVnZPAUrs1zGolfI/WAX1fewGNR5TJmBHcUUc0ITOPtO3yiA/wAhZLEXiyAZ6AAAAABJRU5ErkJggg==\",\"aspectRatio\":1.1142857142857143,\"src\":\"/static/4de4c7b04b4a1a9ebd6a05a08c0dda0c/f5a60/284a75af643f2b00392868e5c215904c.png\",\"srcSet\":\"/static/4de4c7b04b4a1a9ebd6a05a08c0dda0c/f5a60/284a75af643f2b00392868e5c215904c.png 78w\",\"sizes\":\"(max-width: 78px) 100vw, 78px\"}}}}]}}}");
-
-/***/ }),
-
 /***/ "./public/page-data/sq/d/568139792.json":
 /*!**********************************************!*\
   !*** ./public/page-data/sq/d/568139792.json ***!
@@ -38416,6 +38406,72 @@ module.exports = __webpack_require__.p + "static/about-img5-a6cccb5b8dfcd5da5d99
 
 /***/ }),
 
+/***/ "./src/assets/images/blog/blog-img11.jpg":
+/*!***********************************************!*\
+  !*** ./src/assets/images/blog/blog-img11.jpg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/blog-img11-c68f0a02520e8eec719089e360659e5e.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/blog/blog-img12.jpg":
+/*!***********************************************!*\
+  !*** ./src/assets/images/blog/blog-img12.jpg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/blog-img12-82972d018de358e16e8863dccc5e7a69.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/blog/blog-img4.jpg":
+/*!**********************************************!*\
+  !*** ./src/assets/images/blog/blog-img4.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/blog-img4-f52ab14b085fdc2ffb053ab221728a10.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/blog/blog-img5.jpg":
+/*!**********************************************!*\
+  !*** ./src/assets/images/blog/blog-img5.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/blog-img5-a1121781a0417e0c2f1432ba1238655d.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/blog/blog-img6.jpg":
+/*!**********************************************!*\
+  !*** ./src/assets/images/blog/blog-img6.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/blog-img6-c4849c23f0f96fb9db3bb5a803625efa.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/blog/blog-img7.jpg":
+/*!**********************************************!*\
+  !*** ./src/assets/images/blog/blog-img7.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/blog-img7-2b7a85e7afb79548e68cc0e06f08bc85.jpg";
+
+/***/ }),
+
 /***/ "./src/assets/images/footer-map.png":
 /*!******************************************!*\
   !*** ./src/assets/images/footer-map.png ***!
@@ -38424,50 +38480,6 @@ module.exports = __webpack_require__.p + "static/about-img5-a6cccb5b8dfcd5da5d99
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/footer-map-80b0cb4fab6933f0cf7d485070e2fdd5.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/history/history1.jpg":
-/*!************************************************!*\
-  !*** ./src/assets/images/history/history1.jpg ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/history1-f52ab14b085fdc2ffb053ab221728a10.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/history/history2.jpg":
-/*!************************************************!*\
-  !*** ./src/assets/images/history/history2.jpg ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/history2-a1121781a0417e0c2f1432ba1238655d.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/history/history3.jpg":
-/*!************************************************!*\
-  !*** ./src/assets/images/history/history3.jpg ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/history3-c4849c23f0f96fb9db3bb5a803625efa.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/history/history4.jpg":
-/*!************************************************!*\
-  !*** ./src/assets/images/history/history4.jpg ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/history4-bf56eb8f04e906c338c929a98b28c2c1.jpg";
 
 /***/ }),
 
@@ -38845,39 +38857,6 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAYAAAA+
 
 /***/ }),
 
-/***/ "./src/assets/images/team/team1.jpg":
-/*!******************************************!*\
-  !*** ./src/assets/images/team/team1.jpg ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/team1-9f4b3d1c105e4219d0cb9dfa4a14e64f.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/team/team2.jpg":
-/*!******************************************!*\
-  !*** ./src/assets/images/team/team2.jpg ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/team2-310f2109ea4b6ddb7463151bf6c1b6f4.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/team/team4.jpg":
-/*!******************************************!*\
-  !*** ./src/assets/images/team/team4.jpg ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/team4-80769bbee28e23512c30bf979232f286.jpg";
-
-/***/ }),
-
 /***/ "./src/assets/images/testimonials/client1.jpg":
 /*!****************************************************!*\
   !*** ./src/assets/images/testimonials/client1.jpg ***!
@@ -38919,6 +38898,39 @@ module.exports = "data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/user1-583aae6ee13e3e467de6f0da94af921e.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/user2.jpg":
+/*!*************************************!*\
+  !*** ./src/assets/images/user2.jpg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/user2-181890da7459bae6c23454cf7121ed65.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/user3.jpg":
+/*!*************************************!*\
+  !*** ./src/assets/images/user3.jpg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/user3-d89e5759c382a5e0aae660cb3efcbd83.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/user4.jpg":
+/*!*************************************!*\
+  !*** ./src/assets/images/user4.jpg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/user4-41530a7019a90cc32b995758eabc5a9a.jpg";
 
 /***/ }),
 
@@ -39126,147 +39138,6 @@ var HowItWork = function HowItWork() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HowItWork);
-
-/***/ }),
-
-/***/ "./src/components/AboutUs/OurHistory.js":
-/*!**********************************************!*\
-  !*** ./src/components/AboutUs/OurHistory.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/star-icon.png */ "./src/assets/images/star-icon.png");
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_images_history_history1_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/history/history1.jpg */ "./src/assets/images/history/history1.jpg");
-/* harmony import */ var _assets_images_history_history1_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_history_history1_jpg__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _assets_images_history_history2_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/history/history2.jpg */ "./src/assets/images/history/history2.jpg");
-/* harmony import */ var _assets_images_history_history2_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_history_history2_jpg__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _assets_images_history_history3_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/history/history3.jpg */ "./src/assets/images/history/history3.jpg");
-/* harmony import */ var _assets_images_history_history3_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_history_history3_jpg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _assets_images_history_history4_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/history/history4.jpg */ "./src/assets/images/history/history4.jpg");
-/* harmony import */ var _assets_images_history_history4_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_history_history4_jpg__WEBPACK_IMPORTED_MODULE_5__);
-
-
-
-
-
-
-
-var OurHistory = function OurHistory() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "history-area ptb-100 bg-fafafb"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "sub-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-    alt: "banner"
-  }), "Our History"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "History Begins in 2010")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
-    className: "timeline history-timeline"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "timeline-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-date"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2010"), "February 20", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sup", null, "th")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-icon"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "dot-badge"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row align-items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-7 col-md-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Founded"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-5 col-md-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_history_history1_jpg__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "banner"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "timeline-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-date"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2013"), "January 14", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sup", null, "th")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-icon"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "dot-badge"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row align-items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-7 col-md-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Global Success"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-5 col-md-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_history_history2_jpg__WEBPACK_IMPORTED_MODULE_3___default.a,
-    alt: "banner"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "timeline-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-date"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2016"), "March 25", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sup", null, "th")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-icon"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "dot-badge"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row align-items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-7 col-md-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Founded Data Center"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-5 col-md-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_history_history3_jpg__WEBPACK_IMPORTED_MODULE_4___default.a,
-    alt: "banner"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "timeline-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-date"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2020"), "December 10", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("sup", null, "th")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-icon"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "dot-badge"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "timeline-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row align-items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-7 col-md-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "International Award"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-5 col-md-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_history_history4_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
-    alt: "banner"
-  })))))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (OurHistory);
 
 /***/ }),
 
@@ -39752,21 +39623,21 @@ var WhyChooseUs = function WhyChooseUs() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_1___default.a,
     alt: "banner"
-  }), "People Love Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Why Choose Us?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "Customer focused"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Why Choose Us?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We focus on tranforming our customers ideas into a reality, and reducing costs while doing so. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "inner-box"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "single-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "count-box"
-  }, "1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Data for All Your People"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Dolor sit amet consectetur elit eiusmod tempor incidi dunt labore dolore magna aliqua enim.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Project Detection"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We identify optimazation and automation opertunities to save our customers time and money.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "single-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "count-box"
-  }, "2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "A New Breed of AI"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Dolor sit amet consectetur elit eiusmod tempor incidi dunt labore dolore magna aliqua enim.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Agile Development"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We adapt to our customers needs, and stay agile for when there needs change.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "single-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "count-box"
-  }, "3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Analytics Business"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Dolor sit amet consectetur elit eiusmod tempor incidi dunt labore dolore magna aliqua enim."))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Elastic Teams"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We can expand and contract our teams to suite your needs, as well as create teams dedicated to you alone."))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-6 col-md-12"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "how-its-work-image"
@@ -40219,6 +40090,574 @@ var SEO = function SEO() {
 
 /***/ }),
 
+/***/ "./src/components/BlogContent/BlogDetailsContent.js":
+/*!**********************************************************!*\
+  !*** ./src/components/BlogContent/BlogDetailsContent.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _BlogSidebar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BlogSidebar */ "./src/components/BlogContent/BlogSidebar.js");
+/* harmony import */ var _assets_images_blog_blog_img6_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/blog/blog-img6.jpg */ "./src/assets/images/blog/blog-img6.jpg");
+/* harmony import */ var _assets_images_blog_blog_img6_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img6_jpg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/blog/blog-img4.jpg */ "./src/assets/images/blog/blog-img4.jpg");
+/* harmony import */ var _assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_images_blog_blog_img5_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/blog/blog-img5.jpg */ "./src/assets/images/blog/blog-img5.jpg");
+/* harmony import */ var _assets_images_blog_blog_img5_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img5_jpg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _assets_images_blog_blog_img7_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/images/blog/blog-img7.jpg */ "./src/assets/images/blog/blog-img7.jpg");
+/* harmony import */ var _assets_images_blog_blog_img7_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img7_jpg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _assets_images_blog_blog_img11_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/blog/blog-img11.jpg */ "./src/assets/images/blog/blog-img11.jpg");
+/* harmony import */ var _assets_images_blog_blog_img11_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img11_jpg__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _assets_images_blog_blog_img12_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/images/blog/blog-img12.jpg */ "./src/assets/images/blog/blog-img12.jpg");
+/* harmony import */ var _assets_images_blog_blog_img12_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img12_jpg__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/images/user1.jpg */ "./src/assets/images/user1.jpg");
+/* harmony import */ var _assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _assets_images_user2_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/images/user2.jpg */ "./src/assets/images/user2.jpg");
+/* harmony import */ var _assets_images_user2_jpg__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_assets_images_user2_jpg__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _assets_images_user3_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/images/user3.jpg */ "./src/assets/images/user3.jpg");
+/* harmony import */ var _assets_images_user3_jpg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_assets_images_user3_jpg__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _assets_images_user4_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/images/user4.jpg */ "./src/assets/images/user4.jpg");
+/* harmony import */ var _assets_images_user4_jpg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_assets_images_user4_jpg__WEBPACK_IMPORTED_MODULE_12__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var BlogDetailsContent = function BlogDetailsContent() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "blog-details-area ptb-100"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-lg-8 col-md-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "blog-details-desc"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "article-image"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_blog_blog_img6_jpg__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "bb"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "article-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "entry-meta"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-folder-open"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Category"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "IT Basics")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-calendar"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Last Updated"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "12/01/2021")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Virtualization and Cloud computing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This is an introduction to virtualization and cloud computing. Here we will talk about the basic concepts that make all of this possible and a high level overview of the topics. We will start getting a general understanding of virtualization and hypervisors as well as their purpose and requirements. Then we will talk about cloud computing and the different models that agreed upon, highlighting who carries responsibility for each part of the service."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "I don't need a hard disk in my computer if I can get to the server faster ... carring around these non-connected is byzantine by comparison "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", null, "Steve Jobs")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Virtualization "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " What is versutalization?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Generally speaking then we talk about virtualization we are referring to the process of running a virtual instance also known as a virtual machine (VM) in a layer abstracted from the the actual hardware. Moreover, we usually use virtualization to run multiple independent operating systems on one physical computer.  Essentially it it is the process of creating a simulated \u201Cvirtual\" environment inside of a computer where you can run virtual machines."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "There are some terms which are commonly used which are important to discuss such as:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, " Virtual Machine (VM), which is nothing more than the software construct that allows a user to run one or more operating systems on top of an existing operating system as well as the name we give these machines themselves."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Guest OS, which is used interchangeably for virtual machine as a machine usually requires using an Operating System (OS)."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Host OS, which refers to the computer the Virtual machine is hosted on."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Hypervisor, which is the process and software that allows the host OS to communicate with the guest OS.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Additionally we can divide the use of virtualization into two categories; client-side virtualization and server-side virtualization, however, there are others such as application visualization which will not be covered here."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Client-side Virtualization"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This refers to running one or more virtual machines on a personal or work station which can also referred to in the IT community as a thick client. Typically this is done using a type 2 hypervisor and can be on both a laptop or a desktop computer as long as the hardware can support virtualization. (We will talk about the requirements of visualization later in here). There are two cases where this can be extremely useful:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Testing software applications that should run on several divergent operating (Windows, Mac, Linux) and flavors of operating systems (Windows 7, Windows 10, and macOS Big Sur, MacOS Catelina, Ubunto, Fedora, etc.). This is particularly useful when it is important to maintain backwards compatibility while pushing new software updates."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Using software that is not available for your operating system wether it is business applications of games. However, it is important to not that Mac virtual machines can only be created on Mac hardware.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "It is important to note that even if this has many practical applications, it is not a scalable solution or at least not efficiently."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Server-side Virtualization"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This refers to running multiple virtual machines on a server which is simply a very powerful computer which provides functionality for other programs or devices which we call \"clients\". This is usually done with a type 1 hypervisor. The main use case here is to have one large computer that functions as the host for multiple virtual machines that are used by the employee of the organization in the organization. Additionally it is used when purchasing computing power from a cloud provider. Services such as storage space, web servers and computing instances. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "The pursue of a Virtual Machine"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "It allows us to use our hardware resources more efficiently and would also allow more efficient allocation of capital resulting in a reduction in monetary spending. This refers to the fact that we can allocate pieces of hour host machine to the guest machines. In particular me the following resources: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "CPU"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "RAM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Storage"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Networking adapters")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Additionally it is important to note that if we allocate hardware resources to a virtual machine, to this guest OS it will appear as if it I its one Hardware. For example if we allocate 2GB of RAM to a guest OS, it will appear to it that it has 2GR of RAM as if it was its own hardware.  The same idea applies if we allocate it 1 core of the CPU and other physical resources."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Another purpose for the use of virtualization but in this case only for cloud services, is rapid scalability. As it allows the the company to expand its resources much faster and at a much lower cost.This applies both for scaling vertically, which means to expanding the hardware capabilities of the VM\u2019s and horizontally which means to expand the number of VM's or computing instances. This will be explained in more detail in the section on on cloud computing features."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "As well as the pre-mentioned purposes of this technology we can also make use of its isolation property. What is mean by this is that even tho the guest OS is on a host OS where it is possible to host multiple other guest OS\u2019s, the VM\u2019s are isolated from each other and from the host. Meaning that to each guest Os it appears as it if it has its one hardware and is a standalone (non-virtual) machine. A benefit of this is that if VM squires a virus, it does not effect the host OS or other guest OS. Meaning this VM can be terminated with no harm done to the other OS\u2019s, and its resources can be allocated to a new VM with no harm done to the system. Nevertheless it is possible to give OS communication abilities explicitly or as part of a Local Area Network (LAN). This is also a massive benefit for testing as you can easily spin up (create), and terminal (delete) VM to test an application"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Hypervisors"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "As hinted above a hypervisor is the process or software that makes virtual machines possible. They are softwares that allow for the creation of these virtual machines as well as allow the communication between the host OS and the guest OS. However, it is important to not that not all hypervisor are the same and generally speaking there are two types."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Type 1 Hypervisor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This type of hypervisor is commonly referred to as bare metal hypervisor do to its position on the tech-stack. It runs directly on the hardware and provides the best performance, however, it is generally only used for server-side virtualization. Some examples of type 1 hypervisors are:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Microsoft hyper-V"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "VMware ESXi"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Citrix XenServer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Type 2 Hypervisor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This type of hypervisor is also known as host-based hypervisor, as it is installed on top of the existing host OS. It has lower performance and is not scalable, however, it is great for anyone wanting to learn more about hypervisors of different operating systems as it provided a very cheap way for users experiment. Some common examples of this type are:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "VMWare Fusion"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Oracle VirtualBox"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "QEMU (also an emulator)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Emulator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "While talking about hypervisors it also seems important to mention what an emulator is and to make a clear differentiation. An emulator is a piece of software that enables the host computer to behave like a different computer which we refer to as guest. This is used to run software that was was designed for a specific and different piece of hardware. It is commonly used in for printers so that they emulate and HP LasorJet and are able to use its software. However, it is also typically used by game enthusiast which want to play classic video games and emulate the consoles on their computers."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Cloud Computing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, " What is cloud computing? "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Put as simply as possible, cloud computing is the delivery of computing services over the internet. These services may include servers, storage, databases, networking, software amount other. There are 3 commonly agreed upon types or models of cloud computing."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "SaaS - Software as a Service"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "It is an application run remotely, typically over a browser and most of use make use of them every day wether we are aware of them or not and many of them are free. Some examples are:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Gmail"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Google Drive"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Microsoft Office")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This model has the most responsibility for the vendor end least for the user of the product.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " Vendor Responsibility "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " User Responsibility ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Application maintenance (code)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Payment of the service")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Application Data"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, "Operating System Environment"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "wp-block-gallery columns-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "blocks-gallery-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "bb"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "blocks-gallery-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_blog_blog_img5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    alt: "bb"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "blocks-gallery-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_blog_blog_img7_jpg__WEBPACK_IMPORTED_MODULE_6___default.a,
+    alt: "bb"
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Four major elements that we offer:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "features-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-badge-check"
+  }), " Scientific skills for getting a better result"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-badge-check"
+  }), " Communication skills to getting in touch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-badge-check"
+  }), " A career overview opportunity available"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-badge-check"
+  }), " A good work environment for work")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Setting the mood with incense"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "The rise of marketing and why you need it"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "article-footer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "article-tags"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-purchase-tag"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Fashion"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Games"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Travel")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "article-share"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "social"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Share:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#",
+    className: "facebook"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bxl-facebook"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#",
+    className: "twitter"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bxl-twitter"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#",
+    className: "linkedin"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bxl-linkedin"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#",
+    className: "instagram"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bxl-instagram"
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "article-author"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "author-profile-header"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "author-profile"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "author-profile-title"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9___default.a,
+    className: "shadow-sm",
+    alt: "uu"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Chris Orwig"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "d-block"
+  }, "Photographer, Author, Writer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Chris Orwig is a celebrated photographer, author, and writer who brings passion to everything he does. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tracer-post-navigation"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "prev-link-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info-prev-link-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "image-prev"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_blog_blog_img11_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
+    alt: "bb"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "post-nav-title"
+  }, "Prev")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "prev-link-info-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "prev-title"
+  }, "What Is The MLB Summer Slugger Program?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "meta-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "date-post"
+  }, "January 21, 2020")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "next-link-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info-next-link-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "next-link-info-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "next-title"
+  }, "28 Student-Centered Instructional Strategies"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "meta-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "date-post"
+  }, "January 19, 2020"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "image-next"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_blog_blog_img12_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
+    alt: "bb"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "post-nav-title"
+  }, "Next")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comments-area"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "comments-title"
+  }, "2 Comments:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
+    className: "comment-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "comment"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-meta"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-author vcard"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9___default.a,
+    className: "avatar",
+    alt: "uu"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    className: "fn"
+  }, "John Jones"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "says"
+  }, "says:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-metadata"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "April 24, 2019 at 10:59 am"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum has been the industry\u2019s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "reply"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#",
+    className: "comment-reply-link"
+  }, "Reply"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
+    className: "children"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "comment"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-meta"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-author vcard"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_user2_jpg__WEBPACK_IMPORTED_MODULE_10___default.a,
+    className: "avatar",
+    alt: "uu"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    className: "fn"
+  }, "Steven Smith"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "says"
+  }, "says:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-metadata"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "April 24, 2019 at 10:59 am")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum has been the industry\u2019s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "reply"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    className: "comment-reply-link"
+  }, "Reply"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
+    className: "children"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "comment"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-meta"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-author vcard"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_user3_jpg__WEBPACK_IMPORTED_MODULE_11___default.a,
+    className: "avatar",
+    alt: "uu"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    className: "fn"
+  }, "Sarah Taylor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "says"
+  }, "says:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-metadata"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "April 24, 2019 at 10:59 am")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum has been the industry\u2019s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "reply"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#",
+    className: "comment-reply-link"
+  }, "Reply")))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "comment"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-meta"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-author vcard"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_user4_jpg__WEBPACK_IMPORTED_MODULE_12___default.a,
+    className: "avatar",
+    alt: "uu"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    className: "fn"
+  }, "John Doe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "says"
+  }, "says:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-metadata"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "April 24, 2019 at 10:59 am")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum has been the industry\u2019s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "reply"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#",
+    className: "comment-reply-link"
+  }, "Reply"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
+    className: "children"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "comment"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-meta"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-author vcard"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9___default.a,
+    className: "avatar",
+    alt: "uu"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    className: "fn"
+  }, "James Anderson"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "says"
+  }, "says:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-metadata"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "April 24, 2019 at 10:59 am")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum has been the industry\u2019s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "reply"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#",
+    className: "comment-reply-link"
+  }, "Reply"))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "comment-respond"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "comment-reply-title"
+  }, "Leave a Reply"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    className: "comment-form"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "comment-notes"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    id: "email-notes"
+  }, "Your email address will not be published."), "Required fields are marked", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "required"
+  }, "*")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "comment-form-author"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Name ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "required"
+  }, "*")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    id: "author",
+    placeholder: "Your Name*",
+    name: "author",
+    required: "required"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "comment-form-email"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Email ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "required"
+  }, "*")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "email",
+    id: "email",
+    placeholder: "Your Email*",
+    name: "email",
+    required: "required"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "comment-form-url"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "url",
+    id: "url",
+    placeholder: "Website",
+    name: "url"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "comment-form-comment"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Comment"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    name: "comment",
+    id: "comment",
+    cols: "45",
+    placeholder: "Your Comment...",
+    rows: "5",
+    required: "required"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "comment-form-cookies-consent"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "checkbox",
+    value: "yes",
+    name: "comment-cookies-consent",
+    id: "comment-cookies-consent"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Save my name, email, and website in this browser for the next time I comment.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "form-submit"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "submit",
+    name: "submit",
+    id: "submit",
+    className: "submit",
+    value: "Post A Comment"
+  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-lg-4 col-md-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_BlogSidebar__WEBPACK_IMPORTED_MODULE_2__["default"], null)))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (BlogDetailsContent);
+
+/***/ }),
+
+/***/ "./src/components/BlogContent/BlogSidebar.js":
+/*!***************************************************!*\
+  !*** ./src/components/BlogContent/BlogSidebar.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+
+
+
+var BlogSidebar = function BlogSidebar() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "widget-area"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "widget widget_search"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "widget-title"
+  }, "Search"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    className: "search-form"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "screen-reader-text"
+  }, "Search for:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "search",
+    className: "search-field",
+    placeholder: "Search..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "submit"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-search-alt"
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "widget widget_tracer_posts_thumb"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "widget-title"
+  }, "Popular Posts"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#",
+    className: "thumb"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "fullimage cover bg1",
+    role: "img"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "June 10, 2020"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "title usmall"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "The Data Surrounding Higher Education"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "clear"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#",
+    className: "thumb"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "fullimage cover bg2",
+    role: "img"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "June 21, 2020"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "title usmall"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Conversion Rate the Sales Funnel Optimization"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "clear"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#",
+    className: "thumb"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "fullimage cover bg3",
+    role: "img"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "June 30, 2020"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "title usmall"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Business Data is changing the world\u2019s Energy"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "clear"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "widget widget_categories"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "widget-title"
+  }, "Categories"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Design ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "post-count"
+  }, "(03)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Lifestyle ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "post-count"
+  }, "(05)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Script ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "post-count"
+  }, "(10)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Device ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "post-count"
+  }, "(08)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Tips ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "post-count"
+  }, "(01)"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "widget widget_tag_cloud"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "widget-title"
+  }, "Popular Tags"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tagcloud"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Business ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "tag-link-count"
+  }, "(3)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Design ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "tag-link-count"
+  }, "(3)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Braike ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "tag-link-count"
+  }, "(2)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Fashion ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "tag-link-count"
+  }, "(2)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Travel ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "tag-link-count"
+  }, "(1)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Smart ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "tag-link-count"
+  }, "(1)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Marketing ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "tag-link-count"
+  }, "(1)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "#"
+  }, "Tips ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "tag-link-count"
+  }, "(2)")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (BlogSidebar);
+
+/***/ }),
+
 /***/ "./src/components/Common/PageBanner.js":
 /*!*********************************************!*\
   !*** ./src/components/Common/PageBanner.js ***!
@@ -40429,66 +40868,6 @@ var OurBlog = function OurBlog() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (OurBlog);
-
-/***/ }),
-
-/***/ "./src/components/Index/OurFeatures.js":
-/*!*********************************************!*\
-  !*** ./src/components/Index/OurFeatures.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _public_page_data_sq_d_3555834842_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/3555834842.json */ "./public/page-data/sq/d/3555834842.json");
-var _public_page_data_sq_d_3555834842_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../../public/page-data/sq/d/3555834842.json */ "./public/page-data/sq/d/3555834842.json", 1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/star-icon.png */ "./src/assets/images/star-icon.png");
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-var query = "3555834842";
-
-var OurFeatures = function OurFeatures() {
-  var data = _public_page_data_sq_d_3555834842_json__WEBPACK_IMPORTED_MODULE_0__.data;
-  var _data$strapiOurFeatur = data.strapiOurFeatures,
-      simpleText = _data$strapiOurFeatur.simpleText,
-      header = _data$strapiOurFeatur.header,
-      helpText = _data$strapiOurFeatur.helpText,
-      features = _data$strapiOurFeatur.features; // console.log(features)
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
-    className: "services-area pt-100 pb-70 bg-f1f8fb"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "section-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "sub-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "feature"
-  }), simpleText), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, header), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, helpText)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "row"
-  }, features.map(function (feature) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "col-lg-4 col-sm-6",
-      key: feature.id
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "single-services-item-box"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "icon"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-      src: feature.icon.childImageSharp.fluid.src,
-      alt: "feature"
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, feature.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, feature.desc)));
-  }))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (OurFeatures);
 
 /***/ }),
 
@@ -40772,188 +41151,6 @@ var Partner = function Partner() {
 
 /***/ }),
 
-/***/ "./src/components/Index/Pricing.js":
-/*!*****************************************!*\
-  !*** ./src/components/Index/Pricing.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/star-icon.png */ "./src/assets/images/star-icon.png");
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-var Pricing = function Pricing() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "membership-levels-area ptb-100"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "sub-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "priceing"
-  }), "Pricing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Pricing Plans"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "membership-levels-table table-responsive"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
-    className: "table table-striped"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "title"
-  }, "List Of Features")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "price"
-  }, "$15.00"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "title"
-  }, "Basic Plan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "desc"
-  }, "/Monthly")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "price"
-  }, "$35.00"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "title"
-  }, "Advanced Plan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "desc"
-  }, "/Monthly")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "price"
-  }, "$65.00"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "title"
-  }, "Expert Plan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "desc"
-  }, "/Monthly")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "Number of features"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "6"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "7"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, "8")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "5 GB Bandwidth")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Highest Speed")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "1 GB Storage")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Unlimited Website")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Unlimited Users")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "24x7 Great Support")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Data Security and Backups")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-none"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-x"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Monthly Reports and Analytics")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-none"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-x"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-none"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-x"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-    className: "item-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-check"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "select-btn"
-  }, "Get it now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "select-btn"
-  }, "Get it now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "select-btn"
-  }, "Get it now"))))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Pricing);
-
-/***/ }),
-
 /***/ "./src/components/Index/ProjectStartArea.js":
 /*!**************************************************!*\
   !*** ./src/components/Index/ProjectStartArea.js ***!
@@ -41175,319 +41372,6 @@ var RecentProjects = function RecentProjects() {
 
 /***/ }),
 
-/***/ "./src/components/Index/TeamMember.js":
-/*!********************************************!*\
-  !*** ./src/components/Index/TeamMember.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/star-icon.png */ "./src/assets/images/star-icon.png");
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _assets_images_team_team1_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/team/team1.jpg */ "./src/assets/images/team/team1.jpg");
-/* harmony import */ var _assets_images_team_team1_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_team_team1_jpg__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _assets_images_team_team2_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/team/team2.jpg */ "./src/assets/images/team/team2.jpg");
-/* harmony import */ var _assets_images_team_team2_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_team_team2_jpg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _assets_images_team_team4_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/team/team4.jpg */ "./src/assets/images/team/team4.jpg");
-/* harmony import */ var _assets_images_team_team4_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_team_team4_jpg__WEBPACK_IMPORTED_MODULE_5__);
-
-
-
-
-
-
-
-
-var TeamMember = function TeamMember() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "scientist-area pt-100 pb-70"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "sub-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "team"
-  }), "Team Members"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Our Awesome Team"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-sm-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-scientist-item-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_team_team1_jpg__WEBPACK_IMPORTED_MODULE_3___default.a,
-    alt: "team"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-facebook"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-twitter"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-instagram"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-linkedin"
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Merv Adrian"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "CEO & Founder")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-sm-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-scientist-item-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_team_team2_jpg__WEBPACK_IMPORTED_MODULE_4___default.a,
-    alt: "team"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-facebook"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-twitter"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-instagram"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-linkedin"
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Kirk Borne"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "UX/UI Designer")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-sm-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-scientist-item-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_team_team4_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
-    alt: "team"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-facebook"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-twitter"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-instagram"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-linkedin"
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Carla Gentry"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Web Developer")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-sm-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-scientist-item-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_team_team4_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
-    alt: "team"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-facebook"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-twitter"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-instagram"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-linkedin"
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Marie Curie"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Support")))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (TeamMember);
-
-/***/ }),
-
-/***/ "./src/components/Index/Testimonials.js":
-/*!**********************************************!*\
-  !*** ./src/components/Index/Testimonials.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_interopRequireWildcard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/interopRequireWildcard */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/esm/interopRequireWildcard.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/star-icon.png */ "./src/assets/images/star-icon.png");
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _assets_images_testimonials_client1_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/testimonials/client1.jpg */ "./src/assets/images/testimonials/client1.jpg");
-/* harmony import */ var _assets_images_testimonials_client1_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_testimonials_client1_jpg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _assets_images_testimonials_client2_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/testimonials/client2.jpg */ "./src/assets/images/testimonials/client2.jpg");
-/* harmony import */ var _assets_images_testimonials_client2_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_testimonials_client2_jpg__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _assets_images_testimonials_client3_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/images/testimonials/client3.jpg */ "./src/assets/images/testimonials/client3.jpg");
-/* harmony import */ var _assets_images_testimonials_client3_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_images_testimonials_client3_jpg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _assets_images_shape_shape1_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/shape/shape1.svg */ "./src/assets/images/shape/shape1.svg");
-/* harmony import */ var _assets_images_shape_shape1_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_images_shape_shape1_svg__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _loadable_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @loadable/component */ "./node_modules/@loadable/component/dist/loadable.esm.js");
-
-
-
-
-
-
-
-
-
-var OwlCarousel = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_8__["default"])(function () {
-  return Promise.resolve().then(function () {
-    return Object(_babel_runtime_helpers_esm_interopRequireWildcard__WEBPACK_IMPORTED_MODULE_0__["default"])(__webpack_require__(/*! react-owl-carousel3 */ "./node_modules/react-owl-carousel3/lib/OwlCarousel.js"));
-  });
-});
-var options = {
-  loop: true,
-  nav: true,
-  dots: false,
-  autoplayHoverPause: true,
-  autoplay: true,
-  margin: 30,
-  navText: ["<i class='flaticon-left-1'></i>", "<i class='flaticon-right-1'></i>"],
-  responsive: {
-    0: {
-      items: 1
-    },
-    768: {
-      items: 2
-    },
-    992: {
-      items: 2
-    }
-  }
-};
-
-var Testimonials = function Testimonials() {
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(false),
-      display = _React$useState[0],
-      setDisplay = _React$useState[1];
-
-  react__WEBPACK_IMPORTED_MODULE_1___default.a.useEffect(function () {
-    setDisplay(true);
-  }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "testimonials-area pt-100 bg-f1f8fb"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "section-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "sub-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_3___default.a,
-    alt: "testimonial"
-  }), "Testimonials"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "What Our Clients are Saying?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.")), display ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(OwlCarousel, Object.assign({
-    className: "testimonials-slides owl-carousel owl-theme"
-  }, options), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "single-testimonials-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "client-info"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "d-flex justify-content-center align-items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: _assets_images_testimonials_client1_jpg__WEBPACK_IMPORTED_MODULE_4___default.a,
-    alt: "testimonial"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Alex Maxwell"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "CEO at EnvyTheme"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "single-testimonials-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "client-info"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "d-flex justify-content-center align-items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: _assets_images_testimonials_client2_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
-    alt: "testimonial"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "David Warner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "CEO at Envato"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "single-testimonials-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "client-info"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "d-flex justify-content-center align-items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: _assets_images_testimonials_client3_jpg__WEBPACK_IMPORTED_MODULE_6___default.a,
-    alt: "testimonial"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Sarah Taylor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "CEO at ThemeForest")))))) : '', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "testimonials-view-btn text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/testimonials",
-    className: "default-btn"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-    className: "flaticon-view"
-  }), "Check Out All Reviews ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "shape-img1"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: _assets_images_shape_shape1_svg__WEBPACK_IMPORTED_MODULE_7___default.a,
-    alt: "testimonial"
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Testimonials);
-
-/***/ }),
-
 /***/ "./src/pages/about-us.js":
 /*!*******************************!*\
   !*** ./src/pages/about-us.js ***!
@@ -41504,13 +41388,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Common_PageBanner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Common/PageBanner */ "./src/components/Common/PageBanner.js");
 /* harmony import */ var _components_App_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/App/Footer */ "./src/components/App/Footer.js");
 /* harmony import */ var _components_AboutUs_AboutUsContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/AboutUs/AboutUsContent */ "./src/components/AboutUs/AboutUsContent.js");
-/* harmony import */ var _components_AboutUs_OurHistory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/AboutUs/OurHistory */ "./src/components/AboutUs/OurHistory.js");
-/* harmony import */ var _components_AboutUs_WhyChooseUs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/AboutUs/WhyChooseUs */ "./src/components/AboutUs/WhyChooseUs.js");
-/* harmony import */ var _components_AboutUs_HowItWork__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/AboutUs/HowItWork */ "./src/components/AboutUs/HowItWork.js");
-/* harmony import */ var _components_AboutUs_TeamMembers__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/AboutUs/TeamMembers */ "./src/components/AboutUs/TeamMembers.js");
-/* harmony import */ var _components_AboutUs_Testimonials__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/AboutUs/Testimonials */ "./src/components/AboutUs/Testimonials.js");
-/* harmony import */ var _components_AboutUs_Partner__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/AboutUs/Partner */ "./src/components/AboutUs/Partner.js");
-
+/* harmony import */ var _components_AboutUs_WhyChooseUs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/AboutUs/WhyChooseUs */ "./src/components/AboutUs/WhyChooseUs.js");
+/* harmony import */ var _components_AboutUs_HowItWork__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/AboutUs/HowItWork */ "./src/components/AboutUs/HowItWork.js");
+/* harmony import */ var _components_AboutUs_TeamMembers__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/AboutUs/TeamMembers */ "./src/components/AboutUs/TeamMembers.js");
+/* harmony import */ var _components_AboutUs_Testimonials__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/AboutUs/Testimonials */ "./src/components/AboutUs/Testimonials.js");
+/* harmony import */ var _components_AboutUs_Partner__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/AboutUs/Partner */ "./src/components/AboutUs/Partner.js");
 
 
 
@@ -41529,10 +41411,46 @@ var AboutUs = function AboutUs() {
     homePageText: "Home",
     homePageUrl: "/",
     activePageText: "About Us"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_AboutUsContent__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_WhyChooseUs__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_HowItWork__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_TeamMembers__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_Testimonials__WEBPACK_IMPORTED_MODULE_10__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_Partner__WEBPACK_IMPORTED_MODULE_11__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_AboutUsContent__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_WhyChooseUs__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_HowItWork__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_TeamMembers__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_Testimonials__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_Partner__WEBPACK_IMPORTED_MODULE_10__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AboutUs);
+
+/***/ }),
+
+/***/ "./src/pages/blog-details.js":
+/*!***********************************!*\
+  !*** ./src/pages/blog-details.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_App_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/App/Layout */ "./src/components/App/Layout.js");
+/* harmony import */ var _components_App_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/App/Navbar */ "./src/components/App/Navbar.js");
+/* harmony import */ var _components_Common_PageBanner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Common/PageBanner */ "./src/components/Common/PageBanner.js");
+/* harmony import */ var _components_App_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/App/Footer */ "./src/components/App/Footer.js");
+/* harmony import */ var _components_BlogContent_BlogDetailsContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/BlogContent/BlogDetailsContent */ "./src/components/BlogContent/BlogDetailsContent.js");
+
+
+
+
+
+
+
+var BlogDetails = function BlogDetails() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_PageBanner__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    pageTitle: "Blog Details",
+    homePageText: "Home",
+    homePageUrl: "/",
+    activePageText: "Blog Details"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BlogContent_BlogDetailsContent__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (BlogDetails);
 
 /***/ }),
 
@@ -41553,18 +41471,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Index_Banner__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Index/Banner */ "./src/components/Index/Banner.js");
 /* harmony import */ var _components_Index_OurSolutions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Index/OurSolutions */ "./src/components/Index/OurSolutions.js");
 /* harmony import */ var _components_Index_OurServices__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Index/OurServices */ "./src/components/Index/OurServices.js");
-/* harmony import */ var _components_Index_OurFeatures__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Index/OurFeatures */ "./src/components/Index/OurFeatures.js");
-/* harmony import */ var _components_Index_TeamMember__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Index/TeamMember */ "./src/components/Index/TeamMember.js");
-/* harmony import */ var _components_Index_RecentProjects__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Index/RecentProjects */ "./src/components/Index/RecentProjects.js");
-/* harmony import */ var _components_Index_Pricing__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Index/Pricing */ "./src/components/Index/Pricing.js");
-/* harmony import */ var _components_Index_Testimonials__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Index/Testimonials */ "./src/components/Index/Testimonials.js");
-/* harmony import */ var _components_Index_Partner__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Index/Partner */ "./src/components/Index/Partner.js");
-/* harmony import */ var _components_Index_ProjectStartArea__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Index/ProjectStartArea */ "./src/components/Index/ProjectStartArea.js");
-/* harmony import */ var _components_Index_OurBlog__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Index/OurBlog */ "./src/components/Index/OurBlog.js");
-
-
-
-
+/* harmony import */ var _components_Index_RecentProjects__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Index/RecentProjects */ "./src/components/Index/RecentProjects.js");
+/* harmony import */ var _components_Index_Partner__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Index/Partner */ "./src/components/Index/Partner.js");
+/* harmony import */ var _components_Index_ProjectStartArea__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Index/ProjectStartArea */ "./src/components/Index/ProjectStartArea.js");
+/* harmony import */ var _components_Index_OurBlog__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Index/OurBlog */ "./src/components/Index/OurBlog.js");
 
 
 
@@ -41578,7 +41488,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_OurSolutions__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_OurServices__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_RecentProjects__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_Partner__WEBPACK_IMPORTED_MODULE_12__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_OurBlog__WEBPACK_IMPORTED_MODULE_14__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_ProjectStartArea__WEBPACK_IMPORTED_MODULE_13__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_OurSolutions__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_OurServices__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_RecentProjects__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_Partner__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_OurBlog__WEBPACK_IMPORTED_MODULE_10__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_ProjectStartArea__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
