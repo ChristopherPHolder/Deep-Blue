@@ -111,8 +111,10 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-about-us-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/about-us.js */ "./src/pages/about-us.js"))),
-  "component---src-pages-blog-details-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/blog-details.js */ "./src/pages/blog-details.js"))),
-  "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")))
+  "component---src-pages-blog-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/blog.js */ "./src/pages/blog.js"))),
+  "component---src-pages-case-studies-details-serum-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/case-studies-details/serum.js */ "./src/pages/case-studies-details/serum.js"))),
+  "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))),
+  "component---src-pages-services-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/services.js */ "./src/pages/services.js")))
   }
 
 
@@ -38380,7 +38382,7 @@ module.exports = JSON.parse("{\"data\":{\"strapiSolution\":{\"simpleText\":\"OUR
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"data\":{\"allStrapiBlog\":{\"nodes\":[{\"title\":\"Basics of visualization and cloud computing\",\"slug\":\"basics-of-visualization-cloud-computing\",\"content\":\"This is an introduction to virtualization and cloud computing. Here we will talk about the basic concepts that make all of this possible and a high level overview of the topics. We will start getting a general understanding of virtualization and hypervisors as well as their purpose and requirements. Then we will talk about cloud computing and the different models that agreed upon, highlighting who carries responsibility for each part of the service.\\nVirtualization\\nWhat is Virtualization? \\nGenerally speaking then we talk about virtualization we are referring to the process of running a virtual instance also known as a virtual machine (VM) in a layer abstracted from the the actual hardware. Moreover, we usually use virtualization to run multiple independent operating systems on one physical computer.  Essentially it it is the process of creating a simulated “virtual\\\" environment inside of a computer where you can run virtual machines. \\nThere are some terms which are commonly used which are important to discuss such as: \\nVirtual Machine (VM), which is nothing more than the software construct that allows a user to run one or more operating systems on top of an existing operating system as well as the name we give these machines themselves. \\nGuest OS, which is used interchangeably for virtual machine as a machine usually requires using an Operating System (OS).\\nHost OS, which refers to the computer the Virtual machine is hosted on.\\nHypervisor, which is the process and software that allows the host OS to communicate with the guest OS.\\nAdditionally we can divide the use of virtualization into two categories; client-side virtualization and server-side virtualization, however, there are others such as application visualization which will not be covered here.\\nClient-side Virtualization\\nThis refers to running one or more virtual machines on a personal or work station which can also referred to in the IT community as a thick client. Typically this is done using a type 2 hypervisor and can be on both a laptop or a desktop computer as long as the hardware can support virtualization. (We will talk about the requirements of visualization later in here). There are two cases where this can be extremely useful:\\nTesting software applications that should run on several divergent operating (Windows, Mac, Linux) and flavors of operating systems (Windows 7, Windows 10,  and macOS Big Sur, MacOS Catelina, Ubunto, Fedora, etc.). This is particularly useful when it is important to maintain backwards compatibility while pushing new software updates. \\nUsing software that is not available for your operating system wether it is business applications of games. However, it is important to not that Mac virtual machines can only be created on Mac hardware. \\nIt is important to note that even if this has many practical applications, it is not a scalable solution or at least not efficiently.\\nServer-side Virtualization\\nThis refers to running multiple virtual machines on a server which is simply a very powerful computer which provides functionality for other programs or devices which we call \\\"clients\\\". This is usually done with a type 1 hypervisor. The main use case here is to have one large computer that functions as the host for multiple virtual machines that are used by the employee of the organization in the organization. Additionally it is used when purchasing computing power from a cloud provider. Services such as storage space, web servers and computing instances. \\nThe pursue of a Virtual Machine\\nIt allows us to use our hardware resources more efficiently and would also allow more efficient allocation of capital resulting in a reduction in monetary spending. This refers to the fact that we can allocate pieces of hour host machine to the guest machines. In particular me the following resources: \\nCPU\\nRAM\\nStorage\\nNetworking adapters\\nAdditionally it is important to note that if we allocate hardware resources to a virtual machine, to this guest OS it will appear as if it I its one Hardware. For example if we allocate 2GB of RAM to a guest OS, it will appear to it that it has 2GR of RAM as if it was its own hardware.  The same idea applies if we allocate it 1 core of the CPU and other physical resources. \\nAnother purpose for the use of virtualization but in this case only for cloud services, is rapid scalability. As it allows the the company to expand its resources much faster and at a much lower cost.This applies both for scaling vertically, which means to expanding the hardware capabilities of the VM’s and horizontally which means to expand the number of VM's or computing instances. This will be explained in more detail in the section on on cloud computing features.\\nAs well as the pre-mentioned purposes of this technology we can also make use of its isolation property. What is mean by this is that even tho the guest OS is on a host OS where it is possible to host multiple other guest OS’s, the VM’s are isolated from each other and from the host. Meaning that to each guest Os it appears as it if it has its one hardware and is a standalone (non-virtual) machine. A benefit of this is that if VM squires a virus, it does not effect the host OS or other guest OS. Meaning this VM can be terminated with no harm done to the other OS’s, and its resources can be allocated to a new VM with no harm done to the system. Nevertheless it is possible to give OS communication abilities explicitly or as part of a Local Area Network (LAN). This is also a massive benefit for testing as you can easily spin up (create), and terminal (delete) VM to test an application\\nHypervisors\\nAs hinted above a hypervisor is the process or software that makes virtual machines possible. They are softwares that allow for the creation of these virtual machines as well as allow the communication between the host OS and the guest OS. However, it is important to not that not all hypervisor are the same and generally speaking there are two types. \\nType 1 Hypervisor\\nThis type of hypervisor is commonly referred to as bare metal hypervisor do to its position on the tech-stack. It runs directly on the hardware and provides the best performance, however, it is generally only used for server-side virtualization. Some examples of type 1 hypervisors are: \\nMicrosoft hyper-V\\nVMware ESXi\\nCitrix XenServer\\nType 2 Hypervisor\\nThis type of hypervisor is also known as host-based hypervisor, as it is installed on top of the existing host OS. It has lower performance and is not scalable, however, it is great for anyone wanting to learn more about hypervisors of different operating systems as it provided a very cheap way for users experiment. Some common examples of this type are: \\nVMWare Fusion\\nOracle VirtualBox\\nQEMU (also an emulator)\\nEmulator\\nWhile talking about hypervisors it also seems important to mention what an emulator is and to make a clear differentiation. An emulator is a piece of software that enables the host computer to behave like a different computer which we refer to as guest. This is used to run software that was was designed for a specific and different piece of hardware. It is commonly used in for printers so that they emulate and HP LasorJet and are able to use its software. However, it is also typically used by game enthusiast which want to play classic video games and emulate the consoles on their computers. \\nCloud Computing\\nWhat is cloud computing? \\nPut as simply as possible, cloud computing is the delivery of computing services over the internet. These services may include servers, storage, databases, networking, software amount other. There are 3 commonly agreed upon types or models of cloud computing.\\nSaaS - Software as a Service\\nIt is an application run remotely, typically over a browser and most of use make use of them every day wether we are aware of them or not and many of them are free. Some examples are:\\nGmail\\nGoogle Drive\\nMicrosoft Office\\nThis model has the most responsibility for the vendor end least for the user of the product.\\n\\nPaaS - Platform as a Service\\nThis model provides the user with an environment for the development of application. Some common examples are: \\nHeroku\\nGithub\\nGoogle app engine \\nThis model balances the responsibility between the user and the vendor. \\n\\nIaaS - Infrastructure as a Service\\nIn this model the user has much more flexibility as how he uses the services, as what it does mainly is to provide the user with a computing infrastructure. Some common examples are: \\nAWS - Amazon Web Services\\nMicrosoft Azure\\nCisco Metacloud\\nThis model shift more of the responsibility away from the vendor and to the user.\\n\\nAdditionally when talking about the cloud it is also important to consider the common architectures. Out of which the 4 most common are: \\nPublic\\nIt is by fare the most common and it is as the name suggest cloud vendor that offers it services publicly and therefore every one has access to them. Some common examples are:\\nAWS\\nGoogle Cloud\\nMicrosoft Azure\\nPrivate\\nFor this architecture the company owns and maintains everything, however, can provide additional security as it you have you have more control over how you data is handled and backed up. It is often called on-premises (on-prem) however it is possible to have the servers running in a server farm and still maintain complete ownership and responsibility. \\nHybrid\\nAs the name suggest it is a bit of both, you can keep your private information on-prem and move the rest of you computing requirements to a public cloud.\\nCommunity\\nA community cloud is a multi-tenant platform where several people and/or organizations can share computing resources. \\nCloud computing features and issues\\nThere are a couple defining features of cloud computing which can have a massive advantage to your organization. We will about a few here and describe them: \\nShared resources\\nThis refers to the fact that when using cloud computing you are often sharing resources with other users. These resources can be; Internal - which is also known as on-prem, or external, which is also known as cloud storage.\\nRapid elasticity\\nThis refers to the fact that many cloud computing services such as elastic-beam-stock, allow your computing resources to rapidly grow just as rapidly decrease matching the needs. This is quite useful when handling peak traffic on web applications, as you will require having more resources but only for a small period of time. \\nOn demand\\nThis refers to the fact that the resources are available when ever you need them and can be obtained extremely fast. \\nResource pooling\\nThis refers to the fact that to make this possible providers create large clusters of servers aggregating the computing power together. \\nMeasured service\\nCloud computing services are measured and you only pay for what you use, this often uses a system similar to meters to measure the services and then charges you at the end of the month. \\n\",\"image\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAARABQDASIAAhEBAxEB/8QAGAABAQADAAAAAAAAAAAAAAAAAAIBAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQP/2gAMAwEAAhADEAAAAY2VnWcgAAP/xAAaEAEAAgMBAAAAAAAAAAAAAAABAAIDEyAi/9oACAEBAAEFAqAvgJhsVm3n/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRAAAQIHAAAAAAAAAAAAAAAAAQAhAhAREiCRwf/aAAgBAQAGPwJ0Xu5I1REQ1j//xAAdEAEAAQMFAAAAAAAAAAAAAAABIQAxQRARIFFx/9oACAEBAAE/IUQtoj2kJBC5lp2+kUpAjFvH/9oADAMBAAIAAwAAABAQ0EH/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAfEAACAgIBBQAAAAAAAAAAAAABIRExAEEQIFFhkaH/2gAIAQEAAT8QLGYu9Ml6gRc1JRxHQoHX31gNgQxwPc1ZwxKrz0f/2Q==\",\"aspectRatio\":1.1695906432748537,\"src\":\"/static/3164c5ccb9b7af4e5e1d15e9e29629a4/9a128/1b8bac3d64533b52c457c05a71578a51.jpg\",\"srcSet\":\"/static/3164c5ccb9b7af4e5e1d15e9e29629a4/f836f/1b8bac3d64533b52c457c05a71578a51.jpg 200w,\\n/static/3164c5ccb9b7af4e5e1d15e9e29629a4/2244e/1b8bac3d64533b52c457c05a71578a51.jpg 400w,\\n/static/3164c5ccb9b7af4e5e1d15e9e29629a4/9a128/1b8bac3d64533b52c457c05a71578a51.jpg 700w\",\"sizes\":\"(max-width: 700px) 100vw, 700px\"}}},\"author\":\"Christopher Holder\",\"date\":\"2020-10-24\"},{\"title\":\"Six Ways to Train Your Brain to Literally Get Smarter\",\"slug\":\"six-ways-to-train-your-brain-to-literally-get-smarter\",\"content\":\"In today's world, brain is worth more than brawn, and even ancient tricks can help. We live in a digital age surrounded by smart devices and connectivity, where everyone is trying to get smarter, faster. Plus, we're not just competing with humans anymore, thank you AI.\\n\\nWe have easy access to all kinds of information. The only way to stay ahead and be successful in life is to continue to get smarter and keep learning.\\n\\nTo some, this comes naturally and the ability to grasp complex concepts does not take much effort. Just because you're not naturally a \\\"genius\\\" doesn't mean you can't develop your intelligence through effort and dedication, though.\\n\\nStudies repeatedly show that you can make yourself smarter. High intelligence is nothing more than a great ability for pattern recognition and problem solving, all which is trainable.\\n\\nThe brain needs to work out similarly to how you exercise your physical muscles. Rigorous training, rest, and consistency will help you to improve your intelligence.\\n\\nBefore we begin, I want to discuss determined mentality. Sometimes you can be your worst enemy, and that can be the hardest obstacle to overcome. If you believe that your mind's ability won't change and its capacity is static, you might never be able to improve.\\n\\nIt's critical to think that you can learn, develop, and evolve with time and effort because that belief will motivate your mind.\\n\\n1. **Keep an intelligent company**\\n2. **Read**\\n3. **Rest**\\n4. **Eat brain food**\\n5. **Play brain games**\\n6. **Keep a journal**\",\"image\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAB6W2FxIiZBUH/xAAbEAEAAgIDAAAAAAAAAAAAAAABAAIDERASMf/aAAgBAQABBQJHVbVvGe48VO5B1BTj/8QAFREBAQAAAAAAAAAAAAAAAAAAESD/2gAIAQMBAT8BI//EABYRAQEBAAAAAAAAAAAAAAAAABEBIP/aAAgBAgEBPwGBj//EABsQAAICAwEAAAAAAAAAAAAAAAERAhAAEiFR/9oACAEBAAY/AniiJUkTnVHU+Xyv/8QAHBAAAgMAAwEAAAAAAAAAAAAAAREAITEQQXGx/9oACAEBAAE/IQFgobXULNj8gIqV7AjMMQYqxUNHXCYKjXDLPH//2gAMAwEAAgADAAAAEAPHfP/EABcRAQADAAAAAAAAAAAAAAAAABABETH/2gAIAQMBAT8QjBZ//8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAQEf/aAAgBAgEBPxAJLN1z/8QAHRABAAIBBQEAAAAAAAAAAAAAAQARITFBUWFxEP/aAAgBAQABPxAmw1ks+Ivq0zRXZzEejjmUwKSg4yoEgagN24RC3dbmrfiO2myNXn5//9k=\",\"aspectRatio\":1,\"src\":\"/static/cab1485baba8309d043c59e2df51cd7d/9a128/878fb92587593c675478c7c67c61a9e5.jpg\",\"srcSet\":\"/static/cab1485baba8309d043c59e2df51cd7d/f836f/878fb92587593c675478c7c67c61a9e5.jpg 200w,\\n/static/cab1485baba8309d043c59e2df51cd7d/2244e/878fb92587593c675478c7c67c61a9e5.jpg 400w,\\n/static/cab1485baba8309d043c59e2df51cd7d/9a128/878fb92587593c675478c7c67c61a9e5.jpg 700w\",\"sizes\":\"(max-width: 700px) 100vw, 700px\"}}},\"author\":\"William Austin\",\"date\":\"2020-10-18\"},{\"title\":\"The Next Six Months Are Critical: Use Them to Turbocharge Your Business\",\"slug\":\"the-next-six-months-are-critical-use-them-to-turbocharge-your-business\",\"content\":\"Most companies have adjusted to pandemic life--they've refitted their existing organization to the new environment. But rather than simply adjust, think about the giant opportunity you now have to completely reboot--to take all the promise and unfulfilled potential of your team on a six-month journey toward 10x transformation.\\n\\nBefore the pandemic, you were hopeful, but hungry for fast and focused collaboration and constructive and candid discussion. You were eager, but impatient to see signs of agility from your senior team in the face of change--or to initiate disruptive change. The potential for exponential growth and unrealized innovation maybe felt just out of reach. Look back on the past six months and your team likely did some extraordinary things.\\n\\nBut what about the next six months? There will be great fortunes lost and great fortunes gained in this time of disruption. The world is still waiting for you to fundamentally transform. In the next six months, you and your team can take a 10-year leap forward. We are going to show you how to land it.\\n\\n1. The Future of High-Performance Teams: Co-Elevation\\nImagine if the ownership of your organization's success switched from you, the leader, to your team--if your management overload were a shared load. The highest-performance teams we have coached at Ferrazzi Greenlight have delivered billions of dollars of value, ignited innovation, and accelerated growth. Why? They have a team-first approach. They practice safe candor, are committed to peer-to-peer co-creation and collaboration, offer a service mindset that cuts across silos, and have a relentless focus on results and winning--but winning together. Our research institute has spent 20 years defining the behaviors and practices behind these optimal teams--what I call co-elevation in my book Leading Without Authority.\\n\\nCo-elevation happens when a team is committed to organizational growth and team members are committed to one another: They climb higher together. They will challenge one another, give one another feedback, and coach one another. Accountability and productivity no longer need be the leader's burden, but will become a peer-to-peer attribute of how the team operates. Pivoting the business will emerge in the fabric of the team rather than waiting for the leader to call the play.\\n\\nThe move to new behavioral norms is called recontracting--the collective negotiation of a new team social contract. For example, failing to say what needs to be said in meetings is a low-integrity behavior that erodes value. To learn how to lead your team to commit to co-elevating behaviors, you can watch our recontracting video and get our recontracting white paper at keithferrazzi.com/recontract.\\n\\n2. Innovation Through Inclusivity\",\"image\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAARABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECBQT/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAwEC/9oADAMBAAIQAxAAAAHStz0vLTEe5gJDf//EABsQAAIBBQAAAAAAAAAAAAAAAAIDAQAQERIg/9oACAEBAAEFAibImLM2YstxFs1HH//EABYRAQEBAAAAAAAAAAAAAAAAABEBIP/aAAgBAwEBPwFrj//EABYRAQEBAAAAAAAAAAAAAAAAABECIP/aAAgBAgEBPwEkx//EAB0QAAECBwAAAAAAAAAAAAAAAAABMQIQERIgkaH/2gAIAQEABj8CpaN2SxoNvH//xAAdEAACAgEFAAAAAAAAAAAAAAABIQAxECBBUXGx/9oACAEBAAE/IXkI9h7iO8F8PAgDZFGtH//aAAwDAQACAAMAAAAQIzfC/8QAFhEBAQEAAAAAAAAAAAAAAAAAASAx/9oACAEDAQE/EAUOR//EABcRAQADAAAAAAAAAAAAAAAAABEBIJH/2gAIAQIBAT8QZwbT/8QAHRABAQACAgMBAAAAAAAAAAAAAREAITFREEFhkf/aAAgBAQABPxBkQYGw4c1wZo3Ui/DuYNBxkEZGrPzvKqd4lCHzWJSipxnrz//Z\",\"aspectRatio\":1.1560693641618498,\"src\":\"/static/c20b6bc5165f076bb16832c8e6954e22/f9913/84018c49b84d14760a5608e7e50de266.jpg\",\"srcSet\":\"/static/c20b6bc5165f076bb16832c8e6954e22/f836f/84018c49b84d14760a5608e7e50de266.jpg 200w,\\n/static/c20b6bc5165f076bb16832c8e6954e22/2244e/84018c49b84d14760a5608e7e50de266.jpg 400w,\\n/static/c20b6bc5165f076bb16832c8e6954e22/f9913/84018c49b84d14760a5608e7e50de266.jpg 750w\",\"sizes\":\"(max-width: 750px) 100vw, 750px\"}}},\"author\":\"Domal Trade\",\"date\":\"2020-10-07\"}]}}}");
+module.exports = JSON.parse("{\"data\":{\"allStrapiBlog\":{\"nodes\":[{\"title\":\"Basics of visualization and cloud computing\",\"slug\":\"basics-of-visualization-cloud-computing\",\"content\":\"This is an introduction to virtualization and cloud computing. Here we will talk about the basic concepts that make all of this possible and a high level overview of the topics. We will start getting a general understanding of virtualization and hypervisors as well as their purpose and requirements. Then we will talk about cloud computing and the different models that agreed upon, highlighting who carries responsibility for each part of the service.\\nVirtualization\\nWhat is Virtualization? \\nGenerally speaking then we talk about virtualization we are referring to the process of running a virtual instance also known as a virtual machine (VM) in a layer abstracted from the the actual hardware. Moreover, we usually use virtualization to run multiple independent operating systems on one physical computer.  Essentially it it is the process of creating a simulated “virtual\\\" environment inside of a computer where you can run virtual machines. \\nThere are some terms which are commonly used which are important to discuss such as: \\nVirtual Machine (VM), which is nothing more than the software construct that allows a user to run one or more operating systems on top of an existing operating system as well as the name we give these machines themselves. \\nGuest OS, which is used interchangeably for virtual machine as a machine usually requires using an Operating System (OS).\\nHost OS, which refers to the computer the Virtual machine is hosted on.\\nHypervisor, which is the process and software that allows the host OS to communicate with the guest OS.\\nAdditionally we can divide the use of virtualization into two categories; client-side virtualization and server-side virtualization, however, there are others such as application visualization which will not be covered here.\\nClient-side Virtualization\\nThis refers to running one or more virtual machines on a personal or work station which can also referred to in the IT community as a thick client. Typically this is done using a type 2 hypervisor and can be on both a laptop or a desktop computer as long as the hardware can support virtualization. (We will talk about the requirements of visualization later in here). There are two cases where this can be extremely useful:\\nTesting software applications that should run on several divergent operating (Windows, Mac, Linux) and flavors of operating systems (Windows 7, Windows 10,  and macOS Big Sur, MacOS Catelina, Ubunto, Fedora, etc.). This is particularly useful when it is important to maintain backwards compatibility while pushing new software updates. \\nUsing software that is not available for your operating system wether it is business applications of games. However, it is important to not that Mac virtual machines can only be created on Mac hardware. \\nIt is important to note that even if this has many practical applications, it is not a scalable solution or at least not efficiently.\\nServer-side Virtualization\\nThis refers to running multiple virtual machines on a server which is simply a very powerful computer which provides functionality for other programs or devices which we call \\\"clients\\\". This is usually done with a type 1 hypervisor. The main use case here is to have one large computer that functions as the host for multiple virtual machines that are used by the employee of the organization in the organization. Additionally it is used when purchasing computing power from a cloud provider. Services such as storage space, web servers and computing instances. \\nThe pursue of a Virtual Machine\\nIt allows us to use our hardware resources more efficiently and would also allow more efficient allocation of capital resulting in a reduction in monetary spending. This refers to the fact that we can allocate pieces of hour host machine to the guest machines. In particular me the following resources: \\nCPU\\nRAM\\nStorage\\nNetworking adapters\\nAdditionally it is important to note that if we allocate hardware resources to a virtual machine, to this guest OS it will appear as if it I its one Hardware. For example if we allocate 2GB of RAM to a guest OS, it will appear to it that it has 2GR of RAM as if it was its own hardware.  The same idea applies if we allocate it 1 core of the CPU and other physical resources. \\nAnother purpose for the use of virtualization but in this case only for cloud services, is rapid scalability. As it allows the the company to expand its resources much faster and at a much lower cost.This applies both for scaling vertically, which means to expanding the hardware capabilities of the VM’s and horizontally which means to expand the number of VM's or computing instances. This will be explained in more detail in the section on on cloud computing features.\\nAs well as the pre-mentioned purposes of this technology we can also make use of its isolation property. What is mean by this is that even tho the guest OS is on a host OS where it is possible to host multiple other guest OS’s, the VM’s are isolated from each other and from the host. Meaning that to each guest Os it appears as it if it has its one hardware and is a standalone (non-virtual) machine. A benefit of this is that if VM squires a virus, it does not effect the host OS or other guest OS. Meaning this VM can be terminated with no harm done to the other OS’s, and its resources can be allocated to a new VM with no harm done to the system. Nevertheless it is possible to give OS communication abilities explicitly or as part of a Local Area Network (LAN). This is also a massive benefit for testing as you can easily spin up (create), and terminal (delete) VM to test an application\\nHypervisors\\nAs hinted above a hypervisor is the process or software that makes virtual machines possible. They are softwares that allow for the creation of these virtual machines as well as allow the communication between the host OS and the guest OS. However, it is important to not that not all hypervisor are the same and generally speaking there are two types. \\nType 1 Hypervisor\\nThis type of hypervisor is commonly referred to as bare metal hypervisor do to its position on the tech-stack. It runs directly on the hardware and provides the best performance, however, it is generally only used for server-side virtualization. Some examples of type 1 hypervisors are: \\nMicrosoft hyper-V\\nVMware ESXi\\nCitrix XenServer\\nType 2 Hypervisor\\nThis type of hypervisor is also known as host-based hypervisor, as it is installed on top of the existing host OS. It has lower performance and is not scalable, however, it is great for anyone wanting to learn more about hypervisors of different operating systems as it provided a very cheap way for users experiment. Some common examples of this type are: \\nVMWare Fusion\\nOracle VirtualBox\\nQEMU (also an emulator)\\nEmulator\\nWhile talking about hypervisors it also seems important to mention what an emulator is and to make a clear differentiation. An emulator is a piece of software that enables the host computer to behave like a different computer which we refer to as guest. This is used to run software that was was designed for a specific and different piece of hardware. It is commonly used in for printers so that they emulate and HP LasorJet and are able to use its software. However, it is also typically used by game enthusiast which want to play classic video games and emulate the consoles on their computers. \\nCloud Computing\\nWhat is cloud computing? \\nPut as simply as possible, cloud computing is the delivery of computing services over the internet. These services may include servers, storage, databases, networking, software amount other. There are 3 commonly agreed upon types or models of cloud computing.\\nSaaS - Software as a Service\\nIt is an application run remotely, typically over a browser and most of use make use of them every day wether we are aware of them or not and many of them are free. Some examples are:\\nGmail\\nGoogle Drive\\nMicrosoft Office\\nThis model has the most responsibility for the vendor end least for the user of the product.\\n\\nPaaS - Platform as a Service\\nThis model provides the user with an environment for the development of application. Some common examples are: \\nHeroku\\nGithub\\nGoogle app engine \\nThis model balances the responsibility between the user and the vendor. \\n\\nIaaS - Infrastructure as a Service\\nIn this model the user has much more flexibility as how he uses the services, as what it does mainly is to provide the user with a computing infrastructure. Some common examples are: \\nAWS - Amazon Web Services\\nMicrosoft Azure\\nCisco Metacloud\\nThis model shift more of the responsibility away from the vendor and to the user.\\n\\nAdditionally when talking about the cloud it is also important to consider the common architectures. Out of which the 4 most common are: \\nPublic\\nIt is by fare the most common and it is as the name suggest cloud vendor that offers it services publicly and therefore every one has access to them. Some common examples are:\\nAWS\\nGoogle Cloud\\nMicrosoft Azure\\nPrivate\\nFor this architecture the company owns and maintains everything, however, can provide additional security as it you have you have more control over how you data is handled and backed up. It is often called on-premises (on-prem) however it is possible to have the servers running in a server farm and still maintain complete ownership and responsibility. \\nHybrid\\nAs the name suggest it is a bit of both, you can keep your private information on-prem and move the rest of you computing requirements to a public cloud.\\nCommunity\\nA community cloud is a multi-tenant platform where several people and/or organizations can share computing resources. \\nCloud computing features and issues\\nThere are a couple defining features of cloud computing which can have a massive advantage to your organization. We will about a few here and describe them: \\nShared resources\\nThis refers to the fact that when using cloud computing you are often sharing resources with other users. These resources can be; Internal - which is also known as on-prem, or external, which is also known as cloud storage.\\nRapid elasticity\\nThis refers to the fact that many cloud computing services such as elastic-beam-stock, allow your computing resources to rapidly grow just as rapidly decrease matching the needs. This is quite useful when handling peak traffic on web applications, as you will require having more resources but only for a small period of time. \\nOn demand\\nThis refers to the fact that the resources are available when ever you need them and can be obtained extremely fast. \\nResource pooling\\nThis refers to the fact that to make this possible providers create large clusters of servers aggregating the computing power together. \\nMeasured service\\nCloud computing services are measured and you only pay for what you use, this often uses a system similar to meters to measure the services and then charges you at the end of the month. \\n\",\"image\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAARABQDASIAAhEBAxEB/8QAGAABAQADAAAAAAAAAAAAAAAAAAIBAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQP/2gAMAwEAAhADEAAAAY2VnWcgAAP/xAAaEAEAAgMBAAAAAAAAAAAAAAABAAIDEyAi/9oACAEBAAEFAqAvgJhsVm3n/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRAAAQIHAAAAAAAAAAAAAAAAAQAhAhAREiCRwf/aAAgBAQAGPwJ0Xu5I1REQ1j//xAAdEAEAAQMFAAAAAAAAAAAAAAABIQAxQRARIFFx/9oACAEBAAE/IUQtoj2kJBC5lp2+kUpAjFvH/9oADAMBAAIAAwAAABAQ0EH/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAfEAACAgIBBQAAAAAAAAAAAAABIRExAEEQIFFhkaH/2gAIAQEAAT8QLGYu9Ml6gRc1JRxHQoHX31gNgQxwPc1ZwxKrz0f/2Q==\",\"aspectRatio\":1.1695906432748537,\"src\":\"/static/3164c5ccb9b7af4e5e1d15e9e29629a4/9a128/1b8bac3d64533b52c457c05a71578a51.jpg\",\"srcSet\":\"/static/3164c5ccb9b7af4e5e1d15e9e29629a4/f836f/1b8bac3d64533b52c457c05a71578a51.jpg 200w,\\n/static/3164c5ccb9b7af4e5e1d15e9e29629a4/2244e/1b8bac3d64533b52c457c05a71578a51.jpg 400w,\\n/static/3164c5ccb9b7af4e5e1d15e9e29629a4/9a128/1b8bac3d64533b52c457c05a71578a51.jpg 700w\",\"sizes\":\"(max-width: 700px) 100vw, 700px\"}}},\"author\":\"Christopher Holder\",\"date\":\"2020-10-25\"},{\"title\":\"Six Ways to Train Your Brain to Literally Get Smarter\",\"slug\":\"six-ways-to-train-your-brain-to-literally-get-smarter\",\"content\":\"In today's world, brain is worth more than brawn, and even ancient tricks can help. We live in a digital age surrounded by smart devices and connectivity, where everyone is trying to get smarter, faster. Plus, we're not just competing with humans anymore, thank you AI.\\n\\nWe have easy access to all kinds of information. The only way to stay ahead and be successful in life is to continue to get smarter and keep learning.\\n\\nTo some, this comes naturally and the ability to grasp complex concepts does not take much effort. Just because you're not naturally a \\\"genius\\\" doesn't mean you can't develop your intelligence through effort and dedication, though.\\n\\nStudies repeatedly show that you can make yourself smarter. High intelligence is nothing more than a great ability for pattern recognition and problem solving, all which is trainable.\\n\\nThe brain needs to work out similarly to how you exercise your physical muscles. Rigorous training, rest, and consistency will help you to improve your intelligence.\\n\\nBefore we begin, I want to discuss determined mentality. Sometimes you can be your worst enemy, and that can be the hardest obstacle to overcome. If you believe that your mind's ability won't change and its capacity is static, you might never be able to improve.\\n\\nIt's critical to think that you can learn, develop, and evolve with time and effort because that belief will motivate your mind.\\n\\n1. **Keep an intelligent company**\\n2. **Read**\\n3. **Rest**\\n4. **Eat brain food**\\n5. **Play brain games**\\n6. **Keep a journal**\",\"image\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAB6W2FxIiZBUH/xAAbEAEAAgIDAAAAAAAAAAAAAAABAAIDERASMf/aAAgBAQABBQJHVbVvGe48VO5B1BTj/8QAFREBAQAAAAAAAAAAAAAAAAAAESD/2gAIAQMBAT8BI//EABYRAQEBAAAAAAAAAAAAAAAAABEBIP/aAAgBAgEBPwGBj//EABsQAAICAwEAAAAAAAAAAAAAAAERAhAAEiFR/9oACAEBAAY/AniiJUkTnVHU+Xyv/8QAHBAAAgMAAwEAAAAAAAAAAAAAAREAITEQQXGx/9oACAEBAAE/IQFgobXULNj8gIqV7AjMMQYqxUNHXCYKjXDLPH//2gAMAwEAAgADAAAAEAPHfP/EABcRAQADAAAAAAAAAAAAAAAAABABETH/2gAIAQMBAT8QjBZ//8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAQEf/aAAgBAgEBPxAJLN1z/8QAHRABAAIBBQEAAAAAAAAAAAAAAQARITFBUWFxEP/aAAgBAQABPxAmw1ks+Ivq0zRXZzEejjmUwKSg4yoEgagN24RC3dbmrfiO2myNXn5//9k=\",\"aspectRatio\":1,\"src\":\"/static/cab1485baba8309d043c59e2df51cd7d/9a128/878fb92587593c675478c7c67c61a9e5.jpg\",\"srcSet\":\"/static/cab1485baba8309d043c59e2df51cd7d/f836f/878fb92587593c675478c7c67c61a9e5.jpg 200w,\\n/static/cab1485baba8309d043c59e2df51cd7d/2244e/878fb92587593c675478c7c67c61a9e5.jpg 400w,\\n/static/cab1485baba8309d043c59e2df51cd7d/9a128/878fb92587593c675478c7c67c61a9e5.jpg 700w\",\"sizes\":\"(max-width: 700px) 100vw, 700px\"}}},\"author\":\"William Austin\",\"date\":\"2020-10-19\"},{\"title\":\"The Next Six Months Are Critical: Use Them to Turbocharge Your Business\",\"slug\":\"the-next-six-months-are-critical-use-them-to-turbocharge-your-business\",\"content\":\"Most companies have adjusted to pandemic life--they've refitted their existing organization to the new environment. But rather than simply adjust, think about the giant opportunity you now have to completely reboot--to take all the promise and unfulfilled potential of your team on a six-month journey toward 10x transformation.\\n\\nBefore the pandemic, you were hopeful, but hungry for fast and focused collaboration and constructive and candid discussion. You were eager, but impatient to see signs of agility from your senior team in the face of change--or to initiate disruptive change. The potential for exponential growth and unrealized innovation maybe felt just out of reach. Look back on the past six months and your team likely did some extraordinary things.\\n\\nBut what about the next six months? There will be great fortunes lost and great fortunes gained in this time of disruption. The world is still waiting for you to fundamentally transform. In the next six months, you and your team can take a 10-year leap forward. We are going to show you how to land it.\\n\\n1. The Future of High-Performance Teams: Co-Elevation\\nImagine if the ownership of your organization's success switched from you, the leader, to your team--if your management overload were a shared load. The highest-performance teams we have coached at Ferrazzi Greenlight have delivered billions of dollars of value, ignited innovation, and accelerated growth. Why? They have a team-first approach. They practice safe candor, are committed to peer-to-peer co-creation and collaboration, offer a service mindset that cuts across silos, and have a relentless focus on results and winning--but winning together. Our research institute has spent 20 years defining the behaviors and practices behind these optimal teams--what I call co-elevation in my book Leading Without Authority.\\n\\nCo-elevation happens when a team is committed to organizational growth and team members are committed to one another: They climb higher together. They will challenge one another, give one another feedback, and coach one another. Accountability and productivity no longer need be the leader's burden, but will become a peer-to-peer attribute of how the team operates. Pivoting the business will emerge in the fabric of the team rather than waiting for the leader to call the play.\\n\\nThe move to new behavioral norms is called recontracting--the collective negotiation of a new team social contract. For example, failing to say what needs to be said in meetings is a low-integrity behavior that erodes value. To learn how to lead your team to commit to co-elevating behaviors, you can watch our recontracting video and get our recontracting white paper at keithferrazzi.com/recontract.\\n\\n2. Innovation Through Inclusivity\",\"image\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAARABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECBQT/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAwEC/9oADAMBAAIQAxAAAAHStz0vLTEe5gJDf//EABsQAAIBBQAAAAAAAAAAAAAAAAIDAQAQERIg/9oACAEBAAEFAibImLM2YstxFs1HH//EABYRAQEBAAAAAAAAAAAAAAAAABEBIP/aAAgBAwEBPwFrj//EABYRAQEBAAAAAAAAAAAAAAAAABECIP/aAAgBAgEBPwEkx//EAB0QAAECBwAAAAAAAAAAAAAAAAABMQIQERIgkaH/2gAIAQEABj8CpaN2SxoNvH//xAAdEAACAgEFAAAAAAAAAAAAAAABIQAxECBBUXGx/9oACAEBAAE/IXkI9h7iO8F8PAgDZFGtH//aAAwDAQACAAMAAAAQIzfC/8QAFhEBAQEAAAAAAAAAAAAAAAAAASAx/9oACAEDAQE/EAUOR//EABcRAQADAAAAAAAAAAAAAAAAABEBIJH/2gAIAQIBAT8QZwbT/8QAHRABAQACAgMBAAAAAAAAAAAAAREAITFREEFhkf/aAAgBAQABPxBkQYGw4c1wZo3Ui/DuYNBxkEZGrPzvKqd4lCHzWJSipxnrz//Z\",\"aspectRatio\":1.1560693641618498,\"src\":\"/static/c20b6bc5165f076bb16832c8e6954e22/f9913/84018c49b84d14760a5608e7e50de266.jpg\",\"srcSet\":\"/static/c20b6bc5165f076bb16832c8e6954e22/f836f/84018c49b84d14760a5608e7e50de266.jpg 200w,\\n/static/c20b6bc5165f076bb16832c8e6954e22/2244e/84018c49b84d14760a5608e7e50de266.jpg 400w,\\n/static/c20b6bc5165f076bb16832c8e6954e22/f9913/84018c49b84d14760a5608e7e50de266.jpg 750w\",\"sizes\":\"(max-width: 750px) 100vw, 750px\"}}},\"author\":\"Domal Trade\",\"date\":\"2020-10-08\"}]}}}");
 
 /***/ }),
 
@@ -38406,28 +38408,6 @@ module.exports = __webpack_require__.p + "static/about-img5-a6cccb5b8dfcd5da5d99
 
 /***/ }),
 
-/***/ "./src/assets/images/blog/blog-img11.jpg":
-/*!***********************************************!*\
-  !*** ./src/assets/images/blog/blog-img11.jpg ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/blog-img11-c68f0a02520e8eec719089e360659e5e.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/blog/blog-img12.jpg":
-/*!***********************************************!*\
-  !*** ./src/assets/images/blog/blog-img12.jpg ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/blog-img12-82972d018de358e16e8863dccc5e7a69.jpg";
-
-/***/ }),
-
 /***/ "./src/assets/images/blog/blog-img4.jpg":
 /*!**********************************************!*\
   !*** ./src/assets/images/blog/blog-img4.jpg ***!
@@ -38436,39 +38416,6 @@ module.exports = __webpack_require__.p + "static/blog-img12-82972d018de358e16e88
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/blog-img4-f52ab14b085fdc2ffb053ab221728a10.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/blog/blog-img5.jpg":
-/*!**********************************************!*\
-  !*** ./src/assets/images/blog/blog-img5.jpg ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/blog-img5-a1121781a0417e0c2f1432ba1238655d.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/blog/blog-img6.jpg":
-/*!**********************************************!*\
-  !*** ./src/assets/images/blog/blog-img6.jpg ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/blog-img6-c4849c23f0f96fb9db3bb5a803625efa.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/blog/blog-img7.jpg":
-/*!**********************************************!*\
-  !*** ./src/assets/images/blog/blog-img7.jpg ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/blog-img7-2b7a85e7afb79548e68cc0e06f08bc85.jpg";
 
 /***/ }),
 
@@ -38494,50 +38441,6 @@ module.exports = __webpack_require__.p + "static/how-its-work-8d04d82e5306574879
 
 /***/ }),
 
-/***/ "./src/assets/images/icons/icon4.png":
-/*!*******************************************!*\
-  !*** ./src/assets/images/icons/icon4.png ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA0CAYAAAGsthvOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDozNzVlYjdmYy0wZWY0LWJhNDQtOWJhMC0yYWVhNWZjZjA3ZTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUJERUU5OUQ4OTMwMTFFQUJGODRDRjJBRDIxRDg5MzQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUJERUU5OUM4OTMwMTFFQUJGODRDRjJBRDIxRDg5MzQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NWM1Yjg2YzMtMTA2ZC1kZDQ4LTg5OWQtMjE0Y2E5Yzc5OTE3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjM3NWViN2ZjLTBlZjQtYmE0NC05YmEwLTJhZWE1ZmNmMDdlNCIv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"
-
-/***/ }),
-
-/***/ "./src/assets/images/icons/icon5.png":
-/*!*******************************************!*\
-  !*** ./src/assets/images/icons/icon5.png ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA0CAYAAAGsthvOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJCRjJBNDhGOEZENDExRUFCOTcwOTc1NUJCOTZGMzE1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJCRjJBNDkwOEZENDExRUFCOTcwOTc1NUJCOTZGMzE1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkJGMkE0OEQ4RkQ0MTFFQUI5NzA5NzU1QkI5NkYzMTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkJGMkE0OEU4RkQ0MTFFQUI5NzA5NzU1QkI5NkYzMTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7OXDR2AAAcY0lEQVR42jSP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"
-
-/***/ }),
-
-/***/ "./src/assets/images/icons/icon6.png":
-/*!*******************************************!*\
-  !*** ./src/assets/images/icons/icon6.png ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA0CAYAAAGsthvOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ5QUVDMzI3OEZENTExRUFCRkFEQjE0RjI0N0M4RUIzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQ5QUVDMzI4OEZENTExRUFCRkFEQjE0RjI0N0M4RUIzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDlBRUMzMjU4RkQ1MTFFQUJGQURCMTRGMjQ3QzhFQjMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDlBRUMzMjY4RkQ1MTFFQUJGQURCMTRGMjQ3QzhFQjMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7PpnkcAAAf90lEQVR42gDn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"
-
-/***/ }),
-
-/***/ "./src/assets/images/icons/icon7.png":
-/*!*******************************************!*\
-  !*** ./src/assets/images/icons/icon7.png ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/icon7-b1fe17981114e3920870e8c72a864876.png";
-
-/***/ }),
-
 /***/ "./src/assets/images/logo.png":
 /*!************************************!*\
   !*** ./src/assets/images/logo.png ***!
@@ -38549,6 +38452,17 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAAA1CAYAAACn
 
 /***/ }),
 
+/***/ "./src/assets/images/logo2.jpg":
+/*!*************************************!*\
+  !*** ./src/assets/images/logo2.jpg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/logo2-e65449b6e925e59740a41b00b368cdff.jpg";
+
+/***/ }),
+
 /***/ "./src/assets/images/partner/partner1.png":
 /*!************************************************!*\
   !*** ./src/assets/images/partner/partner1.png ***!
@@ -38556,7 +38470,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAAA1CAYAAACn
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/partner1-fa266e078aa942775eddd51dd5ca32d2.png";
+module.exports = __webpack_require__.p + "static/partner1-e812ad4799732a7cd02ccab9dacd785a.png";
 
 /***/ }),
 
@@ -38578,7 +38492,7 @@ module.exports = __webpack_require__.p + "static/partner2-123a2721269a3dc661591a
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/partner3-e40dcf67db3ed30abc76a7f58ed3baa5.png";
+module.exports = __webpack_require__.p + "static/partner3-f402fd56eb611e528c477b263cb16fb2.png";
 
 /***/ }),
 
@@ -38615,72 +38529,6 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAArCAMAAABi
 
 /***/ }),
 
-/***/ "./src/assets/images/process/process1.png":
-/*!************************************************!*\
-  !*** ./src/assets/images/process/process1.png ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/process1-7f25a33490ca0ebc23609e825fd33507.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/process/process2.png":
-/*!************************************************!*\
-  !*** ./src/assets/images/process/process2.png ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/process2-9adab122ce0eccc9c3e3d2ad22f9015e.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/process/process3.png":
-/*!************************************************!*\
-  !*** ./src/assets/images/process/process3.png ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/process3-81858983ccf9b9ded4382dd6f3eee7aa.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/process/process4.png":
-/*!************************************************!*\
-  !*** ./src/assets/images/process/process4.png ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/process4-211da2b612a76897504b20ab238a72e5.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/process/process5.png":
-/*!************************************************!*\
-  !*** ./src/assets/images/process/process5.png ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/process5-1f1343e4ecad083af4b747b4f039bb94.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/process/process6.png":
-/*!************************************************!*\
-  !*** ./src/assets/images/process/process6.png ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/process6-a073e33a6f0e54b8ff9111a9a4b6abe4.png";
-
-/***/ }),
-
 /***/ "./src/assets/images/project-start1.png":
 /*!**********************************************!*\
   !*** ./src/assets/images/project-start1.png ***!
@@ -38692,14 +38540,14 @@ module.exports = __webpack_require__.p + "static/project-start1-f0146a349ec9af6e
 
 /***/ }),
 
-/***/ "./src/assets/images/projects/project1.jpg":
+/***/ "./src/assets/images/projects/project1.png":
 /*!*************************************************!*\
-  !*** ./src/assets/images/projects/project1.jpg ***!
+  !*** ./src/assets/images/projects/project1.png ***!
   \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/project1-134611850b85bce10566364386e74756.jpg";
+module.exports = __webpack_require__.p + "static/project1-04c363e289caaaa2217ee59d6d8a2350.png";
 
 /***/ }),
 
@@ -38714,91 +38562,14 @@ module.exports = __webpack_require__.p + "static/project2-72d0d71900dee6c1c3b754
 
 /***/ }),
 
-/***/ "./src/assets/images/projects/project3.jpg":
+/***/ "./src/assets/images/projects/project3.png":
 /*!*************************************************!*\
-  !*** ./src/assets/images/projects/project3.jpg ***!
+  !*** ./src/assets/images/projects/project3.png ***!
   \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/project3-31ce152f2ab26663d4541f878cb95892.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/projects/project4.jpg":
-/*!*************************************************!*\
-  !*** ./src/assets/images/projects/project4.jpg ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/project4-3ecace795aba3cfa96d182e04fc1ca04.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/projects/project5.jpg":
-/*!*************************************************!*\
-  !*** ./src/assets/images/projects/project5.jpg ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/project5-95cc3df92fe29e6bcb473e0b2596b855.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/projects/project6.jpg":
-/*!*************************************************!*\
-  !*** ./src/assets/images/projects/project6.jpg ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/project6-a413d5b3e3f34bd8d9c0ce815d471490.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/scientist/scientist1.png":
-/*!****************************************************!*\
-  !*** ./src/assets/images/scientist/scientist1.png ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/scientist1-d1e385891929a3c8d7558a70111dc862.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/scientist/scientist2.png":
-/*!****************************************************!*\
-  !*** ./src/assets/images/scientist/scientist2.png ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/scientist2-dfcbe9d700ea0a79f97616d392dcb28f.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/scientist/scientist3.png":
-/*!****************************************************!*\
-  !*** ./src/assets/images/scientist/scientist3.png ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/scientist3-dc8d6afe3d3f1a2d6e628e612b6191d6.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/scientist/scientist4.png":
-/*!****************************************************!*\
-  !*** ./src/assets/images/scientist/scientist4.png ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/scientist4-3bcaebd6931804da31ec171622af8b1d.png";
+module.exports = __webpack_require__.p + "static/project3-76307efb550409c5f3650a92486e8df5.png";
 
 /***/ }),
 
@@ -38843,6 +38614,28 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMoAAADKCAMAAADT
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAACSCAYAAADozTAkAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA39pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDozOTRmMGRjMy1mNjc2LTkwNDctOTIzNi1hMWI2ZWQ3NGY0ZmEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTc1MUE5OUFCMTA0MTFFODlGMjdFOEIxOTJFNEM5NjgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTc1MUE5OTlCMTA0MTFFODlGMjdFOEIxOTJFNEM5NjgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOmI5NzhmYzY3LThlYTktYWE0YS04MDA0LTZhOWMyNzY2ZGZkMyIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmRmNDBmNWRjLTM2NTYtNTI0Ny04ZTk3LTlmMjg3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"
+
+/***/ }),
+
+/***/ "./src/assets/images/shape/vector-shape10.png":
+/*!****************************************************!*\
+  !*** ./src/assets/images/shape/vector-shape10.png ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
+/***/ "./src/assets/images/shape/vector-shape9.png":
+/*!***************************************************!*\
+  !*** ./src/assets/images/shape/vector-shape9.png ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
 
 /***/ }),
 
@@ -38901,39 +38694,6 @@ module.exports = __webpack_require__.p + "static/user1-583aae6ee13e3e467de6f0da9
 
 /***/ }),
 
-/***/ "./src/assets/images/user2.jpg":
-/*!*************************************!*\
-  !*** ./src/assets/images/user2.jpg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/user2-181890da7459bae6c23454cf7121ed65.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/user3.jpg":
-/*!*************************************!*\
-  !*** ./src/assets/images/user3.jpg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/user3-d89e5759c382a5e0aae660cb3efcbd83.jpg";
-
-/***/ }),
-
-/***/ "./src/assets/images/user4.jpg":
-/*!*************************************!*\
-  !*** ./src/assets/images/user4.jpg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/user4-41530a7019a90cc32b995758eabc5a9a.jpg";
-
-/***/ }),
-
 /***/ "./src/components/AboutUs/AboutUsContent.js":
 /*!**************************************************!*\
   !*** ./src/components/AboutUs/AboutUsContent.js ***!
@@ -38950,20 +38710,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_images_about_about_img5_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_about_about_img5_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/star-icon.png */ "./src/assets/images/star-icon.png");
 /* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _assets_images_icons_icon4_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/icons/icon4.png */ "./src/assets/images/icons/icon4.png");
-/* harmony import */ var _assets_images_icons_icon4_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_icons_icon4_png__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _assets_images_icons_icon5_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/icons/icon5.png */ "./src/assets/images/icons/icon5.png");
-/* harmony import */ var _assets_images_icons_icon5_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_icons_icon5_png__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _assets_images_icons_icon6_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/images/icons/icon6.png */ "./src/assets/images/icons/icon6.png");
-/* harmony import */ var _assets_images_icons_icon6_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_images_icons_icon6_png__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _assets_images_icons_icon7_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/icons/icon7.png */ "./src/assets/images/icons/icon7.png");
-/* harmony import */ var _assets_images_icons_icon7_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_images_icons_icon7_png__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/images/shape/circle-shape1.png */ "./src/assets/images/shape/circle-shape1.png");
-/* harmony import */ var _assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_8__);
-
-
-
-
+/* harmony import */ var _assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/shape/circle-shape1.png */ "./src/assets/images/shape/circle-shape1.png");
+/* harmony import */ var _assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
@@ -39003,141 +38751,12 @@ var AboutUsContent = function AboutUsContent() {
   }), "More About Us", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "circle-shape1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_8___default.a,
+    src: _assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_4___default.a,
     alt: "banner"
   })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AboutUsContent);
-
-/***/ }),
-
-/***/ "./src/components/AboutUs/HowItWork.js":
-/*!*********************************************!*\
-  !*** ./src/components/AboutUs/HowItWork.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/star-icon.png */ "./src/assets/images/star-icon.png");
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_images_process_process1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/process/process1.png */ "./src/assets/images/process/process1.png");
-/* harmony import */ var _assets_images_process_process1_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_process_process1_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _assets_images_process_process2_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/process/process2.png */ "./src/assets/images/process/process2.png");
-/* harmony import */ var _assets_images_process_process2_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_process_process2_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _assets_images_process_process3_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/process/process3.png */ "./src/assets/images/process/process3.png");
-/* harmony import */ var _assets_images_process_process3_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_process_process3_png__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _assets_images_process_process4_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/process/process4.png */ "./src/assets/images/process/process4.png");
-/* harmony import */ var _assets_images_process_process4_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_process_process4_png__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _assets_images_process_process5_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/images/process/process5.png */ "./src/assets/images/process/process5.png");
-/* harmony import */ var _assets_images_process_process5_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_images_process_process5_png__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _assets_images_process_process6_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/process/process6.png */ "./src/assets/images/process/process6.png");
-/* harmony import */ var _assets_images_process_process6_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_images_process_process6_png__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/images/shape/circle-shape1.png */ "./src/assets/images/shape/circle-shape1.png");
-/* harmony import */ var _assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_8__);
-
-
-
-
-
-
-
-
-
-
-var HowItWork = function HowItWork() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "process-area pb-70"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "sub-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-    alt: "about"
-  }), "How It's Work"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "The Data Science Process"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-4 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-process-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "number"
-  }, "1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_process_process1_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "about"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Frame the Problem"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-4 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-process-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "number"
-  }, "2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_process_process2_png__WEBPACK_IMPORTED_MODULE_3___default.a,
-    alt: "about"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Collect the Raw Data"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-4 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-process-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "number"
-  }, "3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_process_process3_png__WEBPACK_IMPORTED_MODULE_4___default.a,
-    alt: "about"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Process the Data"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-4 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-process-box "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "number"
-  }, "4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_process_process4_png__WEBPACK_IMPORTED_MODULE_5___default.a,
-    alt: "about"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Explore the Data"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-4 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-process-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "number"
-  }, "5"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_process_process5_png__WEBPACK_IMPORTED_MODULE_6___default.a,
-    alt: "about"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Perform In-depth Analysis"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-4 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-process-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "number"
-  }, "6"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_process_process6_png__WEBPACK_IMPORTED_MODULE_7___default.a,
-    alt: "about"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Communicate Results"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "circle-shape1"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_shape_circle_shape1_png__WEBPACK_IMPORTED_MODULE_8___default.a,
-    alt: "about"
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (HowItWork);
 
 /***/ }),
 
@@ -39257,205 +38876,6 @@ var Partner = function Partner() {
 
 /***/ }),
 
-/***/ "./src/components/AboutUs/TeamMembers.js":
-/*!***********************************************!*\
-  !*** ./src/components/AboutUs/TeamMembers.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/star-icon.png */ "./src/assets/images/star-icon.png");
-/* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _assets_images_scientist_scientist1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/scientist/scientist1.png */ "./src/assets/images/scientist/scientist1.png");
-/* harmony import */ var _assets_images_scientist_scientist1_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_scientist_scientist1_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _assets_images_scientist_scientist2_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/scientist/scientist2.png */ "./src/assets/images/scientist/scientist2.png");
-/* harmony import */ var _assets_images_scientist_scientist2_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_scientist_scientist2_png__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _assets_images_scientist_scientist3_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/scientist/scientist3.png */ "./src/assets/images/scientist/scientist3.png");
-/* harmony import */ var _assets_images_scientist_scientist3_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_scientist_scientist3_png__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _assets_images_scientist_scientist4_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/images/scientist/scientist4.png */ "./src/assets/images/scientist/scientist4.png");
-/* harmony import */ var _assets_images_scientist_scientist4_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_images_scientist_scientist4_png__WEBPACK_IMPORTED_MODULE_6__);
-
-
-
-
-
-
-
-
-var TeamMembers = function TeamMembers() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "scientist-area bg-color pb-70"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "section-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "sub-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "about"
-  }), "Team Members"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Our Data Scientist"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-sm-6 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-scientist-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_scientist_scientist1_png__WEBPACK_IMPORTED_MODULE_3___default.a,
-    alt: "about"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Merv Adrian"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Data Management"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-facebook"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-twitter"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-instagram"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-linkedin"
-  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-sm-6 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-scientist-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_scientist_scientist2_png__WEBPACK_IMPORTED_MODULE_4___default.a,
-    alt: "about"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Kirk Borne"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Data Scientist"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-facebook"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-twitter"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-instagram"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-linkedin"
-  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-sm-6 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-scientist-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_scientist_scientist3_png__WEBPACK_IMPORTED_MODULE_5___default.a,
-    alt: "about"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Carla Gentry"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Analytical Solutions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-facebook"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-twitter"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-instagram"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-linkedin"
-  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-3 col-sm-6 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-scientist-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_scientist_scientist4_png__WEBPACK_IMPORTED_MODULE_6___default.a,
-    alt: "about"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Marie Curie"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Data Scientist"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-facebook"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-twitter"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-instagram"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "d-block",
-    target: "_blank"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-linkedin"
-  }))))))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (TeamMembers);
-
-/***/ }),
-
 /***/ "./src/components/AboutUs/Testimonials.js":
 /*!************************************************!*\
   !*** ./src/components/AboutUs/Testimonials.js ***!
@@ -39547,7 +38967,7 @@ var Testimonials = function Testimonials() {
     alt: "about"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Alex Maxwell"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "CEO at EnvyTheme"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Tatiana Holder"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "CEO at Serum"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "single-testimonials-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "client-info"
@@ -39558,7 +38978,7 @@ var Testimonials = function Testimonials() {
     alt: "about"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "David Warner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "CEO at Envato"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Jan Gassmann"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Co-founder of Dribblz"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "single-testimonials-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "client-info"
@@ -39569,7 +38989,7 @@ var Testimonials = function Testimonials() {
     alt: "about"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Sarah Taylor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "CEO at ThemeForest")))))) : '', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Angelo Bradvica"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "CEO at PureMind Digital")))))) : '', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "testimonials-view-btn text-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/testimonials",
@@ -39690,7 +39110,7 @@ var Footer = function Footer() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _assets_images_logo_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     alt: "logo"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " In the memory of Deep Blue and Garry Kasparov."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " In the memory of Deep Blue."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "social-link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "#",
@@ -39762,13 +39182,13 @@ var Footer = function Footer() {
     className: "bx bx-envelope"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "mailto:hello@beyonddeepblue.com"
-  }, "hello@beyonddeepblue.com")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, " chris@deep-blue.io")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-bottom-area"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-6 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Copyright @", currentYear, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Beyond Deep Blue"), " All rights reserved.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Copyright @", currentYear, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Deep Blue"), " All rights reserved.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-6 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/privacy-policy"
@@ -39896,8 +39316,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var recoil__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(recoil__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _utils_recoil_atoms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/recoil-atoms */ "./src/utils/recoil-atoms.js");
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _assets_images_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/logo.png */ "./src/assets/images/logo.png");
-/* harmony import */ var _assets_images_logo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_logo_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_images_logo2_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/logo2.jpg */ "./src/assets/images/logo2.jpg");
+/* harmony import */ var _assets_images_logo2_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_logo2_jpg__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
@@ -39942,7 +39362,7 @@ var Navbar = function Navbar() {
     },
     className: "navbar-brand"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    src: _assets_images_logo2_jpg__WEBPACK_IMPORTED_MODULE_4___default.a,
     alt: "logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onClick: toggleNavbar,
@@ -40022,18 +39442,6 @@ var Navbar = function Navbar() {
     className: "others-option d-flex align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "option-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    className: "search-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "text",
-    className: "input-search",
-    placeholder: "Search for anything"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: "submit"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "flaticon-loupe"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "option-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__["Link"], {
     to: "/contact",
     activeClassName: "active",
@@ -40090,10 +39498,10 @@ var SEO = function SEO() {
 
 /***/ }),
 
-/***/ "./src/components/BlogContent/BlogDetailsContent.js":
-/*!**********************************************************!*\
-  !*** ./src/components/BlogContent/BlogDetailsContent.js ***!
-  \**********************************************************/
+/***/ "./src/components/BlogContent/BlogCard.js":
+/*!************************************************!*\
+  !*** ./src/components/BlogContent/BlogCard.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40102,44 +39510,71 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _BlogSidebar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BlogSidebar */ "./src/components/BlogContent/BlogSidebar.js");
-/* harmony import */ var _assets_images_blog_blog_img6_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/blog/blog-img6.jpg */ "./src/assets/images/blog/blog-img6.jpg");
-/* harmony import */ var _assets_images_blog_blog_img6_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img6_jpg__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/blog/blog-img4.jpg */ "./src/assets/images/blog/blog-img4.jpg");
-/* harmony import */ var _assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _assets_images_blog_blog_img5_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/blog/blog-img5.jpg */ "./src/assets/images/blog/blog-img5.jpg");
-/* harmony import */ var _assets_images_blog_blog_img5_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img5_jpg__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _assets_images_blog_blog_img7_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/images/blog/blog-img7.jpg */ "./src/assets/images/blog/blog-img7.jpg");
-/* harmony import */ var _assets_images_blog_blog_img7_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img7_jpg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _assets_images_blog_blog_img11_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/blog/blog-img11.jpg */ "./src/assets/images/blog/blog-img11.jpg");
-/* harmony import */ var _assets_images_blog_blog_img11_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img11_jpg__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _assets_images_blog_blog_img12_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/images/blog/blog-img12.jpg */ "./src/assets/images/blog/blog-img12.jpg");
-/* harmony import */ var _assets_images_blog_blog_img12_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img12_jpg__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/images/user1.jpg */ "./src/assets/images/user1.jpg");
-/* harmony import */ var _assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _assets_images_user2_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/images/user2.jpg */ "./src/assets/images/user2.jpg");
-/* harmony import */ var _assets_images_user2_jpg__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_assets_images_user2_jpg__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _assets_images_user3_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/images/user3.jpg */ "./src/assets/images/user3.jpg");
-/* harmony import */ var _assets_images_user3_jpg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_assets_images_user3_jpg__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _assets_images_user4_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/images/user4.jpg */ "./src/assets/images/user4.jpg");
-/* harmony import */ var _assets_images_user4_jpg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_assets_images_user4_jpg__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/blog/blog-img4.jpg */ "./src/assets/images/blog/blog-img4.jpg");
+/* harmony import */ var _assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+var BlogCard = function BlogCard() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "blog-area ptb-100"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-lg-4 col-md-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "single-blog-post bg-fffbf5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "post-image"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/blog-details"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "image"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "post-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "post-meta d-flex justify-content-between align-items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "post-author d-flex align-items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Christopher Holder"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "flaticon-calendar"
+  }), " January 8, 2021")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/blog-details"
+  }, "Tha basics of cloud computing"))))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (BlogCard);
+
+/***/ }),
+
+/***/ "./src/components/CaseStudiesDetails/Serum/CaseStudiesDetailsContent.js":
+/*!******************************************************************************!*\
+  !*** ./src/components/CaseStudiesDetails/Serum/CaseStudiesDetailsContent.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _CaseStudiesSidebar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CaseStudiesSidebar */ "./src/components/CaseStudiesDetails/Serum/CaseStudiesSidebar.js");
+/* harmony import */ var _assets_images_projects_project3_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../assets/images/projects/project3.png */ "./src/assets/images/projects/project3.png");
+/* harmony import */ var _assets_images_projects_project3_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_projects_project3_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_images_projects_project2_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../assets/images/projects/project2.jpg */ "./src/assets/images/projects/project2.jpg");
+/* harmony import */ var _assets_images_projects_project2_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_projects_project2_jpg__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-var BlogDetailsContent = function BlogDetailsContent() {
+var CaseStudiesDetailsContent = function CaseStudiesDetailsContent() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "blog-details-area ptb-100"
+    className: "case-studies-details-area ptb-100"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -40147,366 +39582,27 @@ var BlogDetailsContent = function BlogDetailsContent() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-8 col-md-12"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "blog-details-desc"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "article-image"
+    className: "case-studies-details-image"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_blog_blog_img6_jpg__WEBPACK_IMPORTED_MODULE_3___default.a,
-    alt: "bb"
+    src: _assets_images_projects_project3_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "about"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "article-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "entry-meta"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-folder-open"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Category"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "IT Basics")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-calendar"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Last Updated"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "12/01/2021")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Virtualization and Cloud computing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This is an introduction to virtualization and cloud computing. Here we will talk about the basic concepts that make all of this possible and a high level overview of the topics. We will start getting a general understanding of virtualization and hypervisors as well as their purpose and requirements. Then we will talk about cloud computing and the different models that agreed upon, highlighting who carries responsibility for each part of the service."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "I don't need a hard disk in my computer if I can get to the server faster ... carring around these non-connected is byzantine by comparison "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("cite", null, "Steve Jobs")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, " Virtualization "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, " What is versutalization?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Generally speaking then we talk about virtualization we are referring to the process of running a virtual instance also known as a virtual machine (VM) in a layer abstracted from the the actual hardware. Moreover, we usually use virtualization to run multiple independent operating systems on one physical computer.  Essentially it it is the process of creating a simulated \u201Cvirtual\" environment inside of a computer where you can run virtual machines."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "There are some terms which are commonly used which are important to discuss such as:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, " Virtual Machine (VM), which is nothing more than the software construct that allows a user to run one or more operating systems on top of an existing operating system as well as the name we give these machines themselves."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Guest OS, which is used interchangeably for virtual machine as a machine usually requires using an Operating System (OS)."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Host OS, which refers to the computer the Virtual machine is hosted on."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Hypervisor, which is the process and software that allows the host OS to communicate with the guest OS.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Additionally we can divide the use of virtualization into two categories; client-side virtualization and server-side virtualization, however, there are others such as application visualization which will not be covered here."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Client-side Virtualization"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This refers to running one or more virtual machines on a personal or work station which can also referred to in the IT community as a thick client. Typically this is done using a type 2 hypervisor and can be on both a laptop or a desktop computer as long as the hardware can support virtualization. (We will talk about the requirements of visualization later in here). There are two cases where this can be extremely useful:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Testing software applications that should run on several divergent operating (Windows, Mac, Linux) and flavors of operating systems (Windows 7, Windows 10, and macOS Big Sur, MacOS Catelina, Ubunto, Fedora, etc.). This is particularly useful when it is important to maintain backwards compatibility while pushing new software updates."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Using software that is not available for your operating system wether it is business applications of games. However, it is important to not that Mac virtual machines can only be created on Mac hardware.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "It is important to note that even if this has many practical applications, it is not a scalable solution or at least not efficiently."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Server-side Virtualization"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This refers to running multiple virtual machines on a server which is simply a very powerful computer which provides functionality for other programs or devices which we call \"clients\". This is usually done with a type 1 hypervisor. The main use case here is to have one large computer that functions as the host for multiple virtual machines that are used by the employee of the organization in the organization. Additionally it is used when purchasing computing power from a cloud provider. Services such as storage space, web servers and computing instances. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "The pursue of a Virtual Machine"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "It allows us to use our hardware resources more efficiently and would also allow more efficient allocation of capital resulting in a reduction in monetary spending. This refers to the fact that we can allocate pieces of hour host machine to the guest machines. In particular me the following resources: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "CPU"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "RAM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Storage"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Networking adapters")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Additionally it is important to note that if we allocate hardware resources to a virtual machine, to this guest OS it will appear as if it I its one Hardware. For example if we allocate 2GB of RAM to a guest OS, it will appear to it that it has 2GR of RAM as if it was its own hardware.  The same idea applies if we allocate it 1 core of the CPU and other physical resources."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Another purpose for the use of virtualization but in this case only for cloud services, is rapid scalability. As it allows the the company to expand its resources much faster and at a much lower cost.This applies both for scaling vertically, which means to expanding the hardware capabilities of the VM\u2019s and horizontally which means to expand the number of VM's or computing instances. This will be explained in more detail in the section on on cloud computing features."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "As well as the pre-mentioned purposes of this technology we can also make use of its isolation property. What is mean by this is that even tho the guest OS is on a host OS where it is possible to host multiple other guest OS\u2019s, the VM\u2019s are isolated from each other and from the host. Meaning that to each guest Os it appears as it if it has its one hardware and is a standalone (non-virtual) machine. A benefit of this is that if VM squires a virus, it does not effect the host OS or other guest OS. Meaning this VM can be terminated with no harm done to the other OS\u2019s, and its resources can be allocated to a new VM with no harm done to the system. Nevertheless it is possible to give OS communication abilities explicitly or as part of a Local Area Network (LAN). This is also a massive benefit for testing as you can easily spin up (create), and terminal (delete) VM to test an application"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Hypervisors"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "As hinted above a hypervisor is the process or software that makes virtual machines possible. They are softwares that allow for the creation of these virtual machines as well as allow the communication between the host OS and the guest OS. However, it is important to not that not all hypervisor are the same and generally speaking there are two types."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Type 1 Hypervisor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This type of hypervisor is commonly referred to as bare metal hypervisor do to its position on the tech-stack. It runs directly on the hardware and provides the best performance, however, it is generally only used for server-side virtualization. Some examples of type 1 hypervisors are:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Microsoft hyper-V"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "VMware ESXi"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Citrix XenServer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Type 2 Hypervisor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This type of hypervisor is also known as host-based hypervisor, as it is installed on top of the existing host OS. It has lower performance and is not scalable, however, it is great for anyone wanting to learn more about hypervisors of different operating systems as it provided a very cheap way for users experiment. Some common examples of this type are:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "VMWare Fusion"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Oracle VirtualBox"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "QEMU (also an emulator)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Emulator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "While talking about hypervisors it also seems important to mention what an emulator is and to make a clear differentiation. An emulator is a piece of software that enables the host computer to behave like a different computer which we refer to as guest. This is used to run software that was was designed for a specific and different piece of hardware. It is commonly used in for printers so that they emulate and HP LasorJet and are able to use its software. However, it is also typically used by game enthusiast which want to play classic video games and emulate the consoles on their computers."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Cloud Computing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, " What is cloud computing? "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Put as simply as possible, cloud computing is the delivery of computing services over the internet. These services may include servers, storage, databases, networking, software amount other. There are 3 commonly agreed upon types or models of cloud computing."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "SaaS - Software as a Service"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "It is an application run remotely, typically over a browser and most of use make use of them every day wether we are aware of them or not and many of them are free. Some examples are:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Gmail"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Google Drive"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Microsoft Office")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This model has the most responsibility for the vendor end least for the user of the product.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " Vendor Responsibility "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, " User Responsibility ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Application maintenance (code)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Payment of the service")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Application Data"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, "Operating System Environment"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "wp-block-gallery columns-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "blocks-gallery-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_blog_blog_img4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a,
-    alt: "bb"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "blocks-gallery-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_blog_blog_img5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
-    alt: "bb"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "blocks-gallery-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("figure", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_blog_blog_img7_jpg__WEBPACK_IMPORTED_MODULE_6___default.a,
-    alt: "bb"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Four major elements that we offer:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "features-list"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-badge-check"
-  }), " Scientific skills for getting a better result"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-badge-check"
-  }), " Communication skills to getting in touch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-badge-check"
-  }), " A career overview opportunity available"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-badge-check"
-  }), " A good work environment for work")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Setting the mood with incense"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "The rise of marketing and why you need it"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "article-footer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "article-tags"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-purchase-tag"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Fashion"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Games"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Travel")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "article-share"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "social"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Share:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "facebook"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-facebook"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "twitter"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-twitter"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "linkedin"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-linkedin"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "instagram"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bxl-instagram"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "article-author"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "author-profile-header"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "author-profile"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "author-profile-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9___default.a,
-    className: "shadow-sm",
-    alt: "uu"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Chris Orwig"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "d-block"
-  }, "Photographer, Author, Writer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Chris Orwig is a celebrated photographer, author, and writer who brings passion to everything he does. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tracer-post-navigation"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "prev-link-wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "info-prev-link-wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
+    className: "case-studies-details-desc"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "image-prev"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_blog_blog_img11_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
-    alt: "bb"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-nav-title"
-  }, "Prev")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "prev-link-info-wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "prev-title"
-  }, "What Is The MLB Summer Slugger Program?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "meta-wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "date-post"
-  }, "January 21, 2020")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "next-link-wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "info-next-link-wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "next-link-info-wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "next-title"
-  }, "28 Student-Centered Instructional Strategies"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "meta-wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "date-post"
-  }, "January 19, 2020"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "image-next"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_blog_blog_img12_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
-    alt: "bb"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-nav-title"
-  }, "Next")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comments-area"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "comments-title"
-  }, "2 Comments:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
-    className: "comment-list"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "comment"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-meta"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-author vcard"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9___default.a,
-    className: "avatar",
-    alt: "uu"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-    className: "fn"
-  }, "John Jones"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "says"
-  }, "says:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-metadata"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "April 24, 2019 at 10:59 am"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum has been the industry\u2019s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "reply"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "comment-reply-link"
-  }, "Reply"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
-    className: "children"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "comment"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-meta"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-author vcard"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_user2_jpg__WEBPACK_IMPORTED_MODULE_10___default.a,
-    className: "avatar",
-    alt: "uu"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-    className: "fn"
-  }, "Steven Smith"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "says"
-  }, "says:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-metadata"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "April 24, 2019 at 10:59 am")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum has been the industry\u2019s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "reply"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    className: "comment-reply-link"
-  }, "Reply"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
-    className: "children"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "comment"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-meta"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-author vcard"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_user3_jpg__WEBPACK_IMPORTED_MODULE_11___default.a,
-    className: "avatar",
-    alt: "uu"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-    className: "fn"
-  }, "Sarah Taylor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "says"
-  }, "says:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-metadata"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "April 24, 2019 at 10:59 am")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum has been the industry\u2019s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "reply"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "comment-reply-link"
-  }, "Reply")))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "comment"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-meta"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-author vcard"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_user4_jpg__WEBPACK_IMPORTED_MODULE_12___default.a,
-    className: "avatar",
-    alt: "uu"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-    className: "fn"
-  }, "John Doe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "says"
-  }, "says:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-metadata"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "April 24, 2019 at 10:59 am")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum has been the industry\u2019s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "reply"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "comment-reply-link"
-  }, "Reply"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
-    className: "children"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "comment"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-meta"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-author vcard"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_user1_jpg__WEBPACK_IMPORTED_MODULE_9___default.a,
-    className: "avatar",
-    alt: "uu"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-    className: "fn"
-  }, "James Anderson"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "says"
-  }, "says:")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-metadata"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "April 24, 2019 at 10:59 am")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem Ipsum has been the industry\u2019s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "reply"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "comment-reply-link"
-  }, "Reply"))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "comment-respond"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "comment-reply-title"
-  }, "Leave a Reply"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    className: "comment-form"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "comment-notes"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    id: "email-notes"
-  }, "Your email address will not be published."), "Required fields are marked", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "required"
-  }, "*")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "comment-form-author"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Name ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "required"
-  }, "*")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "text",
-    id: "author",
-    placeholder: "Your Name*",
-    name: "author",
-    required: "required"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "comment-form-email"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Email ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "required"
-  }, "*")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "email",
-    id: "email",
-    placeholder: "Your Email*",
-    name: "email",
-    required: "required"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "comment-form-url"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "url",
-    id: "url",
-    placeholder: "Website",
-    name: "url"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "comment-form-comment"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Comment"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
-    name: "comment",
-    id: "comment",
-    cols: "45",
-    placeholder: "Your Comment...",
-    rows: "5",
-    required: "required"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "comment-form-cookies-consent"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "checkbox",
-    value: "yes",
-    name: "comment-cookies-consent",
-    id: "comment-cookies-consent"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Save my name, email, and website in this browser for the next time I comment.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "form-submit"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "submit",
-    name: "submit",
-    id: "submit",
-    className: "submit",
-    value: "Post A Comment"
-  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "sub-title"
+  }, "Wordpress Site"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Wordpress website for a stem cells clinic"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Currently waiting for content from the owner to be able to continue development."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-4 col-md-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_BlogSidebar__WEBPACK_IMPORTED_MODULE_2__["default"], null)))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CaseStudiesSidebar__WEBPACK_IMPORTED_MODULE_1__["default"], null)))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (BlogDetailsContent);
+/* harmony default export */ __webpack_exports__["default"] = (CaseStudiesDetailsContent);
 
 /***/ }),
 
-/***/ "./src/components/BlogContent/BlogSidebar.js":
-/*!***************************************************!*\
-  !*** ./src/components/BlogContent/BlogSidebar.js ***!
-  \***************************************************/
+/***/ "./src/components/CaseStudiesDetails/Serum/CaseStudiesSidebar.js":
+/*!***********************************************************************!*\
+  !*** ./src/components/CaseStudiesDetails/Serum/CaseStudiesSidebar.js ***!
+  \***********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40514,147 +39610,49 @@ var BlogDetailsContent = function BlogDetailsContent() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 
 
-
-var BlogSidebar = function BlogSidebar() {
+var CaseStudiesSidebar = function CaseStudiesSidebar() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "widget-area"
+    className: "case-studies-sidebar-sticky"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "widget widget_search"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "widget-title"
-  }, "Search"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    className: "search-form"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "screen-reader-text"
-  }, "Search for:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "search",
-    className: "search-field",
-    placeholder: "Search..."
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: "submit"
+    className: "case-studies-details-info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-search-alt"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "widget widget_tracer_posts_thumb"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "widget-title"
-  }, "Popular Posts"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
-    className: "item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "thumb"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "fullimage cover bg1",
-    role: "img"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "info"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "June 10, 2020"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "title usmall"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "The Data Surrounding Higher Education"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "clear"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
-    className: "item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "thumb"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "fullimage cover bg2",
-    role: "img"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "info"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "June 21, 2020"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "title usmall"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Conversion Rate the Sales Funnel Optimization"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "clear"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
-    className: "item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#",
-    className: "thumb"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "fullimage cover bg3",
-    role: "img"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "info"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "June 30, 2020"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "title usmall"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Business Data is changing the world\u2019s Energy"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "clear"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "widget widget_categories"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "widget-title"
-  }, "Categories"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Design ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-count"
-  }, "(03)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Lifestyle ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-count"
-  }, "(05)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Script ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-count"
-  }, "(10)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Device ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-count"
-  }, "(08)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Tips ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-count"
-  }, "(01)"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "widget widget_tag_cloud"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "widget-title"
-  }, "Popular Tags"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tagcloud"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Business ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "tag-link-count"
-  }, "(3)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Design ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "tag-link-count"
-  }, "(3)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Braike ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "tag-link-count"
-  }, "(2)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Fashion ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "tag-link-count"
-  }, "(2)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Travel ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "tag-link-count"
-  }, "(1)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Smart ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "tag-link-count"
-  }, "(1)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Marketing ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "tag-link-count"
-  }, "(1)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "#"
-  }, "Tips ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "tag-link-count"
-  }, "(2)")))));
+    className: "bx bx-user-pin"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Client:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    target: "_blank",
+    rel: "noreferrer"
+  }, "Serum"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "",
+    target: "_blank",
+    rel: "noreferrer"
+  }, "Tatiana Holder")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-map"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Location:"), "Merida, Yucatan, Mexico"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-purchase-tag"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Technologies:"), "Wordpress"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-check"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Completed:"), "In development"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "bx bx-globe"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Website:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "stemcellmerida.com",
+    target: "_blank",
+    rel: "noreferrer"
+  }, "stemcellmerida.com")))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (BlogSidebar);
+/* harmony default export */ __webpack_exports__["default"] = (CaseStudiesSidebar);
 
 /***/ }),
 
@@ -40714,6 +39712,70 @@ var PageBanner = function PageBanner(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (PageBanner);
+
+/***/ }),
+
+/***/ "./src/components/Common/StartProject.js":
+/*!***********************************************!*\
+  !*** ./src/components/Common/StartProject.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _assets_images_project_start1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/project-start1.png */ "./src/assets/images/project-start1.png");
+/* harmony import */ var _assets_images_project_start1_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_project_start1_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_images_shape_vector_shape9_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/shape/vector-shape9.png */ "./src/assets/images/shape/vector-shape9.png");
+/* harmony import */ var _assets_images_shape_vector_shape9_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_shape_vector_shape9_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_images_shape_vector_shape10_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/shape/vector-shape10.png */ "./src/assets/images/shape/vector-shape10.png");
+/* harmony import */ var _assets_images_shape_vector_shape10_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_shape_vector_shape10_png__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+var StartProject = function StartProject() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project-start-area bg-color ptb-100"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row align-items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-lg-6 col-md-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project-start-image"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_project_start1_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "about"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-lg-6 col-md-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project-start-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Join The Digital Revolition"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Get a free consultation and learn more about how to take advantage of the digital revolution."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/contact",
+    className: "default-btn"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "flaticon-web"
+  }), "Free Consultation", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "vector-shape9"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_shape_vector_shape9_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "about"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "vector-shape10"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_shape_vector_shape10_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "about"
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (StartProject);
 
 /***/ }),
 
@@ -40835,7 +39897,7 @@ var OurBlog = function OurBlog() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     src: _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_4___default.a,
     alt: "blog"
-  }), "Our Blog"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Latest Valuable Insights"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }), "Our Blog"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Latest Valuable Insights"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Staying informed about what is going on in the world of tecnology can help companies save money and grow faster.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "row"
   }, blogs.map(function (blog, idx) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -41221,21 +40283,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 /* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/star-icon.png */ "./src/assets/images/star-icon.png");
 /* harmony import */ var _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _assets_images_projects_project1_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/projects/project1.jpg */ "./src/assets/images/projects/project1.jpg");
-/* harmony import */ var _assets_images_projects_project1_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_projects_project1_jpg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_images_projects_project1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/projects/project1.png */ "./src/assets/images/projects/project1.png");
+/* harmony import */ var _assets_images_projects_project1_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_projects_project1_png__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _assets_images_projects_project2_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/projects/project2.jpg */ "./src/assets/images/projects/project2.jpg");
 /* harmony import */ var _assets_images_projects_project2_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_projects_project2_jpg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _assets_images_projects_project3_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/projects/project3.jpg */ "./src/assets/images/projects/project3.jpg");
-/* harmony import */ var _assets_images_projects_project3_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_projects_project3_jpg__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _assets_images_projects_project4_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/images/projects/project4.jpg */ "./src/assets/images/projects/project4.jpg");
-/* harmony import */ var _assets_images_projects_project4_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_images_projects_project4_jpg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _assets_images_projects_project5_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/projects/project5.jpg */ "./src/assets/images/projects/project5.jpg");
-/* harmony import */ var _assets_images_projects_project5_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_images_projects_project5_jpg__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _assets_images_projects_project6_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/images/projects/project6.jpg */ "./src/assets/images/projects/project6.jpg");
-/* harmony import */ var _assets_images_projects_project6_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_images_projects_project6_jpg__WEBPACK_IMPORTED_MODULE_8__);
-
-
-
+/* harmony import */ var _assets_images_projects_project3_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/projects/project3.png */ "./src/assets/images/projects/project3.png");
+/* harmony import */ var _assets_images_projects_project3_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_projects_project3_png__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -41255,7 +40308,7 @@ var RecentProjects = function RecentProjects() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _assets_images_star_icon_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     alt: "project"
-  }), " Recent Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Check Some Of Our Recent Work"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), " Recent Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Check Some Of Our Recent Work"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We work to satify our clients need and follow there contraints.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-4 col-md-6"
@@ -41264,18 +40317,18 @@ var RecentProjects = function RecentProjects() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "image"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_projects_project1_jpg__WEBPACK_IMPORTED_MODULE_3___default.a,
+    src: _assets_images_projects_project1_png__WEBPACK_IMPORTED_MODULE_3___default.a,
     alt: "project"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "link-btn",
-    to: "/case-studies-details"
+    to: "/case-studies-details/dribblz"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "bx bx-plus"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/case-studies-details"
-  }, "Movie Recommendation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "System Project")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    to: "/case-studies-details/dribblz"
+  }, "Dribblz")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Video Stream Membership Web-App")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-4 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "single-projects-box"
@@ -41286,89 +40339,88 @@ var RecentProjects = function RecentProjects() {
     alt: "project"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "link-btn",
-    to: "/case-studies-details"
+    to: "/case-studies-details/purelily"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "bx bx-plus"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/case-studies-details"
-  }, "Customer Segmentation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Machine Learning")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    to: "/case-studies-details/purelily"
+  }, "PureMind Automation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Internal Process Automation")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-lg-4 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "single-projects-box"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "image"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_projects_project3_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    src: _assets_images_projects_project3_png__WEBPACK_IMPORTED_MODULE_5___default.a,
     alt: "project"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "link-btn",
-    to: "/case-studies-details"
+    to: "/case-studies-details/serum"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "bx bx-plus"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/case-studies-details"
-  }, "Data Analysis")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Web Project")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-4 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-projects-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_projects_project4_jpg__WEBPACK_IMPORTED_MODULE_6___default.a,
-    alt: "project"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "link-btn",
-    to: "/case-studies-details"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-plus"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/case-studies-details"
-  }, "Detection Project")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Programming")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-4 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-projects-box "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_projects_project5_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
-    alt: "project"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "link-btn",
-    to: "/case-studies-details"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-plus"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/case-studies-details"
-  }, "Data Scientist")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Data Science")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-4 col-md-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "single-projects-box"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_projects_project6_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
-    alt: "project"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "link-btn",
-    to: "/case-studies-details"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "bx bx-plus"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/case-studies-details"
-  }, "Benefits Research")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Science Projects")))))));
+    to: "/case-studies-details/serum"
+  }, "Clinc Serum")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Wordpress Website")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (RecentProjects);
+
+/***/ }),
+
+/***/ "./src/components/Services/ServicesOne.js":
+/*!************************************************!*\
+  !*** ./src/components/Services/ServicesOne.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+
+
+
+var ServicesOne = function ServicesOne() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "solutions-area pt-100 pb-70"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-lg-4 col-md-6 col-sm-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "single-solutions-box"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "flaticon-rocket"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Web Applications"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Web application and development support. We can build it with you from start to finish or come support you when you need the help. "))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-lg-4 col-md-6 col-sm-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "single-solutions-box"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "flaticon-laptop"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Digital Automation"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We don't like soul breaking repetitive work, but our software really does. It needs no no breaks, doesn't make mistakes and best needs no salary."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-lg-4 col-md-6 col-sm-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "single-solutions-box"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "icon"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "flaticon-money"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Digitalization Consulting"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Inefficiencies waste time and hurt moral, and more often then not you don't need more people, you need better process and better software."))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ServicesOne);
 
 /***/ }),
 
@@ -41389,12 +40441,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_App_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/App/Footer */ "./src/components/App/Footer.js");
 /* harmony import */ var _components_AboutUs_AboutUsContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/AboutUs/AboutUsContent */ "./src/components/AboutUs/AboutUsContent.js");
 /* harmony import */ var _components_AboutUs_WhyChooseUs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/AboutUs/WhyChooseUs */ "./src/components/AboutUs/WhyChooseUs.js");
-/* harmony import */ var _components_AboutUs_HowItWork__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/AboutUs/HowItWork */ "./src/components/AboutUs/HowItWork.js");
-/* harmony import */ var _components_AboutUs_TeamMembers__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/AboutUs/TeamMembers */ "./src/components/AboutUs/TeamMembers.js");
-/* harmony import */ var _components_AboutUs_Testimonials__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/AboutUs/Testimonials */ "./src/components/AboutUs/Testimonials.js");
-/* harmony import */ var _components_AboutUs_Partner__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/AboutUs/Partner */ "./src/components/AboutUs/Partner.js");
-
-
+/* harmony import */ var _components_AboutUs_Testimonials__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/AboutUs/Testimonials */ "./src/components/AboutUs/Testimonials.js");
+/* harmony import */ var _components_AboutUs_Partner__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/AboutUs/Partner */ "./src/components/AboutUs/Partner.js");
 
 
 
@@ -41411,17 +40459,17 @@ var AboutUs = function AboutUs() {
     homePageText: "Home",
     homePageUrl: "/",
     activePageText: "About Us"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_AboutUsContent__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_WhyChooseUs__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_HowItWork__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_TeamMembers__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_Testimonials__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_Partner__WEBPACK_IMPORTED_MODULE_10__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_AboutUsContent__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutUs_WhyChooseUs__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AboutUs);
 
 /***/ }),
 
-/***/ "./src/pages/blog-details.js":
-/*!***********************************!*\
-  !*** ./src/pages/blog-details.js ***!
-  \***********************************/
+/***/ "./src/pages/blog.js":
+/*!***************************!*\
+  !*** ./src/pages/blog.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -41433,7 +40481,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_App_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/App/Navbar */ "./src/components/App/Navbar.js");
 /* harmony import */ var _components_Common_PageBanner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Common/PageBanner */ "./src/components/Common/PageBanner.js");
 /* harmony import */ var _components_App_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/App/Footer */ "./src/components/App/Footer.js");
-/* harmony import */ var _components_BlogContent_BlogDetailsContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/BlogContent/BlogDetailsContent */ "./src/components/BlogContent/BlogDetailsContent.js");
+/* harmony import */ var _components_BlogContent_BlogCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/BlogContent/BlogCard */ "./src/components/BlogContent/BlogCard.js");
 
 
 
@@ -41441,16 +40489,52 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var BlogDetails = function BlogDetails() {
+var Blog = function Blog() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_PageBanner__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    pageTitle: "Blog Details",
+    pageTitle: "Blog",
     homePageText: "Home",
     homePageUrl: "/",
-    activePageText: "Blog Details"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BlogContent_BlogDetailsContent__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+    activePageText: "Blog"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BlogContent_BlogCard__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (BlogDetails);
+/* harmony default export */ __webpack_exports__["default"] = (Blog);
+
+/***/ }),
+
+/***/ "./src/pages/case-studies-details/serum.js":
+/*!*************************************************!*\
+  !*** ./src/pages/case-studies-details/serum.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_App_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/App/Layout */ "./src/components/App/Layout.js");
+/* harmony import */ var _components_App_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/App/Navbar */ "./src/components/App/Navbar.js");
+/* harmony import */ var _components_Common_PageBanner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Common/PageBanner */ "./src/components/Common/PageBanner.js");
+/* harmony import */ var _components_App_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/App/Footer */ "./src/components/App/Footer.js");
+/* harmony import */ var _components_CaseStudiesDetails_Serum_CaseStudiesDetailsContent_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/CaseStudiesDetails/Serum/CaseStudiesDetailsContent.js */ "./src/components/CaseStudiesDetails/Serum/CaseStudiesDetailsContent.js");
+
+
+
+
+
+
+
+var CaseDetails = function CaseDetails() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_PageBanner__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    pageTitle: "Case Studies Details",
+    homePageText: "Home",
+    homePageUrl: "/",
+    activePageText: "Case Studies Details"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CaseStudiesDetails_Serum_CaseStudiesDetailsContent_js__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CaseDetails);
 
 /***/ }),
 
@@ -41488,10 +40572,48 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_OurSolutions__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_OurServices__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_RecentProjects__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_Partner__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_OurBlog__WEBPACK_IMPORTED_MODULE_10__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_ProjectStartArea__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_OurSolutions__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_OurServices__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_RecentProjects__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index_ProjectStartArea__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./src/pages/services.js":
+/*!*******************************!*\
+  !*** ./src/pages/services.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_App_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/App/Layout */ "./src/components/App/Layout.js");
+/* harmony import */ var _components_App_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/App/Navbar */ "./src/components/App/Navbar.js");
+/* harmony import */ var _components_Common_PageBanner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Common/PageBanner */ "./src/components/Common/PageBanner.js");
+/* harmony import */ var _components_App_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/App/Footer */ "./src/components/App/Footer.js");
+/* harmony import */ var _components_Services_ServicesOne__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Services/ServicesOne */ "./src/components/Services/ServicesOne.js");
+/* harmony import */ var _components_Common_StartProject__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Common/StartProject */ "./src/components/Common/StartProject.js");
+
+
+
+
+
+
+
+
+var Services = function Services() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_PageBanner__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    pageTitle: "Services",
+    homePageText: "Home",
+    homePageUrl: "/",
+    activePageText: "Services"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Services_ServicesOne__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Common_StartProject__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Services);
 
 /***/ }),
 

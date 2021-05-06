@@ -41,7 +41,7 @@ const OurBlog = () => {
                         Our Blog
                     </span>
                     <h2>Latest Valuable Insights</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <p>Staying informed about what is going on in the world of tecnology can help companies save money and grow faster.</p>
                 </div>
 
                 <div className="row">

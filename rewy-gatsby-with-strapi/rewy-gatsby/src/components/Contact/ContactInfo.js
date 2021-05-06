@@ -27,8 +27,8 @@ const ContactInfo = () => {
                                 <i className='bx bx-phone-call'></i>
                             </div>
                             <h3>Contact</h3>
-                            <p>Mobile: <a href="tel:+436601418824">(+43) - 660 141 - 8824</a></p>
-                            <p>E-mail: <a href="mailto:hello@rewy.com">hello@beyonddeepblue.com</a></p>
+                            <p>Mobile: <a href="tel:+436601418824">(+43) 660 1418824</a></p>
+                            <p>E-mail: <a href="mailto:hello@rewy.com">chris@deep-blue.io</a></p>
                         </div>
                     </div>
 

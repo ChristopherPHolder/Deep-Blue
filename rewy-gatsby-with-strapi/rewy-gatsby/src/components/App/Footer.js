@@ -16,7 +16,7 @@ const Footer = () => {
                             <a href="/" className="logo">
                                 <img src={logo} alt="logo" />
                             </a>
-                            <p> In the memory of Deep Blue and Garry Kasparov.</p>
+                            <p> In the memory of Deep Blue.</p>
 
                             <ul className="social-link">
                                 <li>
@@ -111,7 +111,7 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <i className='bx bx-envelope'></i>
-                                    <a href="mailto:hello@beyonddeepblue.com">hello@beyonddeepblue.com</a>
+                                    <a href="mailto:hello@beyonddeepblue.com"> chris@deep-blue.io</a>
                                 </li>
                             </ul>
                         </div>
@@ -121,7 +121,7 @@ const Footer = () => {
                 <div className="footer-bottom-area">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-6">
-                            <p>Copyright @{currentYear} <strong>Beyond Deep Blue</strong> All rights reserved.</p>
+                            <p>Copyright @{currentYear} <strong>Deep Blue</strong> All rights reserved.</p>
                         </div>
 
                         <div className="col-lg-6 col-md-6">

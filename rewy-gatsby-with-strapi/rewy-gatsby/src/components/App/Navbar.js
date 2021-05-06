@@ -2,7 +2,7 @@ import React from 'react';
 import { useRecoilState } from 'recoil'
 import { collapsedState } from '../../utils/recoil-atoms'
 import {Link} from 'gatsby'
-import logo from "../../assets/images/logo.png"
+import logo from "../../assets/images/logo2.jpg"
 
 const Navbar = () => {
     const [collapsed, setCollapsed] = useRecoilState(collapsedState);
@@ -125,14 +125,7 @@ const Navbar = () => {
                                 </ul>
                             
                                 <div className="others-option d-flex align-items-center">
-                                    <div className="option-item">
-                                        <form className="search-box">
-                                            <input type="text" className="input-search" placeholder="Search for anything" />
-                                            <button type="submit">
-                                                <i className="flaticon-loupe"></i>
-                                            </button>
-                                        </form>
-                                    </div>
+
 
                                     <div className="option-item">
                                         <Link 

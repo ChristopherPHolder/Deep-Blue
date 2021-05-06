@@ -4,7 +4,7 @@ import {Link} from 'gatsby'
 const BlogSidebar = () => {
     return (
         <div className="widget-area">
-            <div className="widget widget_search">
+            {/*<div className="widget widget_search">
                 <h3 className="widget-title">Search</h3>
 
                 <form className="search-form">
@@ -16,7 +16,7 @@ const BlogSidebar = () => {
                         <i className="bx bx-search-alt"></i>
                     </button>
                 </form>
-            </div>
+            </div>*/}
 
             <div className="widget widget_tracer_posts_thumb">
                 <h3 className="widget-title">Popular Posts</h3>

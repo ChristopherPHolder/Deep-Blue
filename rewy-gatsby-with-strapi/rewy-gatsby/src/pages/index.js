@@ -18,8 +18,8 @@ const Home = () => {
       <OurSolutions />
       <OurServices />
       <RecentProjects />
-      <Partner />
-      <OurBlog />
+      {/*<Partner />*/}
+      {/*<OurBlog />*/}
       <ProjectStartArea />
       <Footer />
     </Layout>

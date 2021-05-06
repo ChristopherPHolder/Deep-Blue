@@ -63,8 +63,8 @@ const Testimonials = () => {
                             <div className="d-flex justify-content-center align-items-center">
                                 <img src={client1} alt="about" />
                                 <div className="title">
-                                    <h3>Alex Maxwell</h3>
-                                    <span>CEO at EnvyTheme</span>
+                                    <h3>Tatiana Holder</h3>
+                                    <span>CEO at Serum</span>
                                 </div>
                             </div>
                         </div>
@@ -77,8 +77,8 @@ const Testimonials = () => {
                             <div className="d-flex justify-content-center align-items-center">
                                 <img src={client2} alt="about" />
                                 <div className="title">
-                                    <h3>David Warner</h3>
-                                    <span>CEO at Envato</span>
+                                    <h3>Jan Gassmann</h3>
+                                    <span>Co-founder of Dribblz</span>
                                 </div>
                             </div>
                         </div>
@@ -90,8 +90,8 @@ const Testimonials = () => {
                             <div className="d-flex justify-content-center align-items-center">
                                 <img src={client3} alt="about" />
                                 <div className="title">
-                                    <h3>Sarah Taylor</h3>
-                                    <span>CEO at ThemeForest</span>
+                                    <h3>Angelo Bradvica</h3>
+                                    <span>CEO at PureMind Digital</span>
                                 </div>
                             </div>
                         </div>

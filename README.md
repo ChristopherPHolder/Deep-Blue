@@ -1,2 +1,3 @@
-# beyonddeepblue
-Website for beyond deep blue
+# Deep Blue
+The site is built on Django Rest and GatsbyJS
+
