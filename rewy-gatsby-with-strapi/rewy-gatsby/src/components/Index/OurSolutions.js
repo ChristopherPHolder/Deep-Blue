@@ -49,15 +49,11 @@ const OurSolutions = () => {
                                     <i className={solution.icon}></i>
                                 </div>
                                 <h3>
-                                    <Link to={`/solution/${solution.slug}`}>
+                                    <Link to=''>
                                         {solution.title}
                                     </Link>
                                 </h3>
                                 <p>{solution.shortText}</p>
-
-                                <Link to={`/solution/${solution.slug}`} className="view-details-btn">
-                                    View Details
-                                </Link>
                             </div>
                         </div>
                     ))}
