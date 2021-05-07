@@ -57,7 +57,6 @@ const OurSolutions = () => {
                             </div>
                         </div>
                     ))}
-
                 </div>
             </div>
         </section>
