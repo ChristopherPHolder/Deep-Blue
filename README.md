@@ -1,3 +1,3 @@
 # Deep Blue
-The site is built on Django Rest and GatsbyJS
+The site is built with a Django backend and a React Gatsby frontend.
 

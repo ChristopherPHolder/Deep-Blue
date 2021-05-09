@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import starIcon from '../../assets/images/star-icon.png'
+import starIconW from '../../assets/images/star-icon.webp'
 
 const OurSolutions = () => {
     return (
@@ -8,7 +9,12 @@ const OurSolutions = () => {
             <div className="container">
                 <div className="section-title">
                     <span className="sub-title">
-                        <img src={starIcon} alt="star" /> 
+                        <picture>
+                            <source type="image/webp" srcset={starIconW} alt="rotating animated colorful dots in star structure" />
+                            <source type="image/png" srcset={starIcon} alt="rotating animated colorful dots in star structure" />
+                            <img src={starIcon} alt="rotating animated colorful dots in star structure" /> 
+                        </picture>
+                        
                         Our Solutions
                     </span>
                     <h2>We are dedicated to see you succeed</h2>

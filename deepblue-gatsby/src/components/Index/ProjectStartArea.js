@@ -1,7 +1,9 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import projectStart from '../../assets/images/project-start1.png'
+import projectStartW from '../../assets/images/project-start1.webp'
 import shape from '../../assets/images/shape/circle-shape1.png'
+import shapeW from '../../assets/images/shape/circle-shape1.webp'
 
 const ProjectStartArea = () => {
     return (
@@ -10,7 +12,12 @@ const ProjectStartArea = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12">
                         <div className="project-start-image">
-                            <img src={projectStart} alt="project" />
+                            <picture>
+                                <source type="image/webp" srcset={projectStartW} />
+                                <source type="image/png" srcset={projectStart} />
+                                <img src={projectStart} alt="four people planning to join the digital revolution" />
+                            </picture>
+
                         </div>
                     </div>
 
@@ -30,7 +37,11 @@ const ProjectStartArea = () => {
             </div>
 
             <div className="circle-shape1">
-                <img src={shape} alt="project" />
+                <picture>
+                    <source type="image/webp" srcset={shapeW} alt="world like globe with high tech design" />
+                    <source type="image/png" srcset={shape} alt="world like globe with high tech design" />
+                    <img src={shape} alt="world like globe with high tech design" />
+                </picture>
             </div>
         </div>
     )

@@ -8,8 +8,9 @@
  * This is configuration file
  */
 
+const siteAddress =  new URL("https://deep-blue.io")
+
 module.exports = {
-  /* Your site config here */
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -17,6 +18,14 @@ module.exports = {
       options: {
         lang: 'zxx'
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "deep-blue.io",
+        protocol: "siteAddress.protocol.slice(0, -1)",
+        hostname: "siteAddress.hostname",
+      },
+    },
   ],
 }

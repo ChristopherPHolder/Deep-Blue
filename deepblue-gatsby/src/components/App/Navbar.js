@@ -3,6 +3,7 @@ import { useRecoilState } from 'recoil'
 import { collapsedState } from '../../utils/recoil-atoms'
 import {Link} from 'gatsby'
 import logo from "../../assets/images/logos/deepblue-logo-name.png"
+import logoW from "../../assets/images/logos/deepblue-logo-name.webp"
 
 
 const Navbar = () => {
@@ -38,7 +39,12 @@ const Navbar = () => {
                                 onClick={() => setCollapsed(true)} 
                                 className="navbar-brand"
                             >
-                                <img src={logo} alt="logo" />
+                            <picture>
+                                <source type="image/webp" srcset={logoW} alt="Deep Blue logo" />
+                                <source type="image/png" srcset={logo} alt="Deep Blue logo" />
+                                <img src={logo} alt="Deep Blue logo" />
+                            </picture>
+
                             </Link>
 
                             <button 

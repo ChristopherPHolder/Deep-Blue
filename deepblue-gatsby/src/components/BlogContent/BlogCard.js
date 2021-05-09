@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import img4 from '../../assets/images/blog/blog-img4.jpg'
+import img4W from '../../assets/images/blog/blog-img4.webp'
 
 const BlogCard = () => {
     return (
@@ -11,7 +12,12 @@ const BlogCard = () => {
                         <div className="single-blog-post bg-fffbf5">
                             <div className="post-image">
                                 <Link to="/blog-details">
-                                    <img src={img4} alt="image" />
+                                    <picture>
+                                        <source type="image/webp" srcset={img4W} alt="cloud computing ilustration" />
+                                        <source type="image/jpg" srcset={img4} alt="cloud computing ilustration" />
+                                        <img src={img4} alt="cloud computing ilustration" />
+                                    </picture>
+                                    
                                 </Link>
                             </div>
 

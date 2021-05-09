@@ -1,7 +1,10 @@
 import React from 'react'
 import service1 from '../../assets/images/services/service1.png'
+import service1W from '../../assets/images/services/service1.webp'
 import service2 from '../../assets/images/services/service2.png'
+import service2W from '../../assets/images/services/service2.webp'
 import starIcon from '../../assets/images/star-icon.png'
+import starIconW from '../../assets/images/star-icon.webp'
 
 const OurServices = () => {
     return (
@@ -12,7 +15,11 @@ const OurServices = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-12">
                             <div className="about-img">
-                                <img src={service1} alt="service" />
+                                <picture>
+                                    <source type="image/webp" src={service1W} alt="animation of three people working a digital jobs, two computers, one smart tablet, one cloud with a server icon representing cloud computing" />
+                                    <source type="image/png" src={service1} alt="animation of three people working a digital jobs, two computers, one smart tablet, one cloud with a server icon representing cloud computing"  />
+                                    <img src={service1} alt="animation of three people working a digital jobs, two computers, one smart tablet, one cloud with a server icon representing cloud computing" />
+                                </picture>
                             </div>
                         </div>
 
@@ -20,7 +27,11 @@ const OurServices = () => {
                             <div className="about-content">
                                 <div className="content">
                                     <span className="sub-title">
-                                        <img src={starIcon} alt="icon" /> Services
+                                        <picture>
+                                            <source type="image/webp" src={starIconW} alt="rotating animated colorful dots in star structure" />
+                                            <source type="image/png" src={starIcon} alt="rotating animated colorful dots in star structure" />
+                                            <img src={starIcon} alt="rotating animated colorful dots in star structure" />
+                                        </picture>
                                     </span>
                                     
                                     <h2>Process Automation</h2>
@@ -59,7 +70,11 @@ const OurServices = () => {
                             <div className="our-mission-content">
                                 <div className="content">
                                     <span className="sub-title">
-                                        <img src={starIcon} alt="icon" /> Services
+                                        <picture>
+                                            <source type="image/webp" src={starIconW} alt="rotating animated colorful dots in star structure" />
+                                            <source type="image/png" src={starIcon} alt="rotating animated colorful dots in star structure" />
+                                            <img src={starIcon} alt="rotating animated colorful dots in star structure" />
+                                        </picture>
                                     </span>
                                     
                                     <h2>Design & Development</h2>
@@ -97,7 +112,12 @@ const OurServices = () => {
 
                         <div className="col-lg-6 col-md-12">
                             <div className="our-mission-image">
-                                <img src={service2} alt="service" />
+                                <picture>
+                                    <source type="image/webp" src={service2W} alt="five people working a digital job, a woman typing input in a computer while talking to a man under a light bulb symbolizing innovation, man holding a gear for system and through other people a woman and a man debating in front of a digital gear" />
+                                    <source type="image/png" src={service2} alt="five people working a digital job, a woman typing input in a computer while talking to a man under a light bulb symbolizing innovation, man holding a gear for system and through other people a woman and a man debating in front of a digital gear" />
+                                    <img src={service2} alt="five people working a digital job, a woman typing input in a computer while talking to a man under a light bulb symbolizing innovation, man holding a gear for system and through other people a woman and a man debating in front of a digital gear" />
+                                </picture>
+
                             </div>
                         </div>
                     </div>

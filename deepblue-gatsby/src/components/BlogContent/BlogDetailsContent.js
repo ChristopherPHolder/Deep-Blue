@@ -1,8 +1,6 @@
 import React from 'react'
 import img6 from '../../assets/images/blog/cloud-computing.jpg'
-import img4 from '../../assets/images/blog/blog-img4.jpg'
-import img5 from '../../assets/images/blog/blog-img5.jpg'
-import img7 from '../../assets/images/blog/blog-img7.jpg'
+import img6W from '../../assets/images/blog/cloud-computing.webp'
 
 const BlogDetailsContent = () => {
     return (
@@ -12,7 +10,11 @@ const BlogDetailsContent = () => {
                     <div className="col-lg-8 col-lg-12">
                         <div className="blog-details-desc">
                             <div className="article-image">
-                                <img src={img6} alt="bb" />
+                                <picture>
+                                    <source type="image/webp" srcset={img6W} alt="binary infromation comming out of a cloud" />
+                                    <source type="image/jpg" srcset={img6} alt="binary infromation comming out of a cloud" />
+                                    <img src={img6} alt="bb" />
+                                </picture>
                             </div>
 
                             <div className="article-content">
@@ -330,32 +332,7 @@ const BlogDetailsContent = () => {
                                     <li>Measured service</li>
                                     <p>Cloud computing services are measured and you only pay for what you use, this often uses a 
                                     system similar to meters to measure the services and then charges you at the end of the month.</p>
-
                                 </ol>
-
-                                
-                                
-
-
-                                <ul className="wp-block-gallery columns-3">
-                                    <li className="blocks-gallery-item">
-                                        <figure>
-                                            <img src={img4} alt="bb" />
-                                        </figure>
-                                    </li>
-
-                                    <li className="blocks-gallery-item">
-                                        <figure>
-                                            <img src={img5} alt="bb" />
-                                        </figure>
-                                    </li>
-
-                                    <li className="blocks-gallery-item">
-                                        <figure>
-                                            <img src={img7} alt="bb" />
-                                        </figure>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>

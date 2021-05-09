@@ -1,6 +1,8 @@
 import React from 'react'
 import starIcon from '../../assets/images/star-icon.png'
+import starIconW from '../../assets/images/star-icon.webp'
 import contact from '../../assets/images/contact.png'
+import contactW from '../../assets/images/contact.webp'
 
 const ContactForm = () => {
     return (
@@ -8,7 +10,11 @@ const ContactForm = () => {
             <div className="container">
                 <div className="section-title">
                     <span className="sub-title">
-                        <img src={starIcon} alt="contact" /> 
+                        <picture>
+                            <source type="image/webp" srcset={starIconW} alt="rotating animated colorful dots in star structure" />
+                            <source type="image/png" srcset={starIcon} alt="rotating animated colorful dots in star structure" />
+                            <img src={starIcon} alt="rotating animated colorful dots in star structure" />
+                        </picture>
                         Get in Touch
                     </span>
                     <h2>Ready to Get Started?</h2>
@@ -18,7 +24,11 @@ const ContactForm = () => {
                 <div className="row">
                     <div className="col-lg-6 col-md-12">
                         <div className="contact-image">
-                            <img src={contact} alt="contact" />
+                            <picture>
+                                <source type="image/webp" srcset={contactW} alt="man at a help desk ready to be contacted" />
+                                <source type="image/png" srcset={contact} alt="man at a help desk ready to be contacted" />
+                                <img src={contact} alt="man at a help desk ready to be contacted" />
+                            </picture>
                         </div>
                     </div>
 
