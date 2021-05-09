@@ -1,7 +1,6 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import CaseStudiesSidebar from './CaseStudiesSidebar'
-import project2 from '../../../assets/images/logos/puremind-logo.png'
-import details1 from '../../../assets/images/projects/projects-details1.jpg'
 
 const CaseStudiesDetailsContent = () => {
     return (
@@ -10,7 +9,11 @@ const CaseStudiesDetailsContent = () => {
                 <div className="row">
                     <div className="col-lg-8 col-md-12">
                         <div className="case-studies-details-image">
-                            <img src={details1} alt="about" />
+                            <StaticImage
+                                src='../../../assets/images/projects/projects-details1.jpg'
+                                alt="digital work automation ilustration"
+                                placeholder="tracedSVG"
+                            />
                         </div>
                         <div className="case-studies-details-desc">
                             <span className="sub-title">Process Automation</span>
@@ -30,7 +33,11 @@ const CaseStudiesDetailsContent = () => {
                             <div className="row align-items-center">
                                 <div className="col-lg-6 col-md-6">
                                     <div className="image">
-                                        <img src={project2} alt="about" />
+                                        <StaticImage
+                                            src='../../../assets/images/logos/puremind-logo.png'
+                                            alt="PureMind Digital logo"
+                                            placeholder="tracedSVG"
+                                        />
                                     </div>
                                 </div>
 

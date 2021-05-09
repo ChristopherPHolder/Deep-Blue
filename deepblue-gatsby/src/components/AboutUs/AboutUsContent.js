@@ -1,11 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import aboutImage from '../../assets/images/about/about-img5.png'
-import aboutImageW from '../../assets/images/about/about-img5.webp'
-import starIcon from '../../assets/images/star-icon.png'
-import starIconW from '../../assets/images/star-icon.webp'
-import shape1 from '../../assets/images/shape/circle-shape1.png'
-import shape1W from '../../assets/images/shape/circle-shape1.webp'
+import { StaticImage } from 'gatsby-plugin-image'
  
 const AboutUsContent = () => {
     return (
@@ -14,11 +9,11 @@ const AboutUsContent = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12">
                         <div className="about-image">
-                            <picture>
-                                <source type="image/webp" srcset={aboutImageW} alt="high tech animation of people doing data input and working with computers"/>
-                                <source type="image/png" srcset={aboutImage} alt="high tech animation of people doing data input and working with computers"/>
-                                <img src={aboutImage} alt="high tech animation of people doing data input and working with computers" />
-                            </picture>
+                            <StaticImage
+                                src='../../assets/images/about/about-img5.png'
+                                alt="high tech animation of people doing data input and working with computers"
+                                placeholder="tracedSVG"
+                            />
                         </div>
                     </div>
 
@@ -26,11 +21,11 @@ const AboutUsContent = () => {
                         <div className="about-content">
                             <div className="content">
                                 <span className="sub-title">
-                                    <picture>
-                                        <source type="image/webp" srcset={starIconW} alt="rotating animated colorful dots in star structure" />
-                                        <source type="image/webp" srcset={starIcon} alt="rotating animated colorful dots in star structure" />
-                                        <img src={starIcon} alt="rotating animated colorful dots in star structure" /> 
-                                    </picture>
+                                    <StaticImage
+                                        src='../../assets/images/star-icon.png'
+                                        alt="rotating animated colorful dots in star structure"
+                                        placeholder="tracedSVG"
+                                    />
                                     About Us
                                 </span>
                                 <h2>Drive Digital Revolution Through Automation</h2>
@@ -47,11 +42,11 @@ const AboutUsContent = () => {
             </div>
 
             <div className="circle-shape1">
-                <picture>
-                    <source type="image/webp" srcset={shape1W} alt="world like globe with high tech design" />
-                    <source type="image/png" srcset={shape1} alt="world like globe with high tech design" />
-                    <img src={shape1} alt="world like globe with high tech design" />
-                </picture>
+                <StaticImage
+                    src='../../assets/images/shape/circle-shape1.png'
+                    alt="world like globe with high tech design"
+                    placeholder="tracedSVG"
+                />
             </div>
         </section>
     )

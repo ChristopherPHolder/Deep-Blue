@@ -1,6 +1,5 @@
 import React from 'react'
-import img6 from '../../assets/images/blog/cloud-computing.jpg'
-import img6W from '../../assets/images/blog/cloud-computing.webp'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const BlogDetailsContent = () => {
     return (
@@ -10,11 +9,11 @@ const BlogDetailsContent = () => {
                     <div className="col-lg-8 col-lg-12">
                         <div className="blog-details-desc">
                             <div className="article-image">
-                                <picture>
-                                    <source type="image/webp" srcset={img6W} alt="binary infromation comming out of a cloud" />
-                                    <source type="image/jpg" srcset={img6} alt="binary infromation comming out of a cloud" />
-                                    <img src={img6} alt="bb" />
-                                </picture>
+                                <StaticImage
+                                    src='../../assets/images/blog/cloud-computing.jpg'
+                                    alt="data comming out of the cloud"
+                                    placeholder="tracedSVG"
+                                />
                             </div>
 
                             <div className="article-content">

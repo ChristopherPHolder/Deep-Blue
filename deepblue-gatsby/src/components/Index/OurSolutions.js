@@ -1,19 +1,17 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import starIcon from '../../assets/images/star-icon.png'
-import starIconW from '../../assets/images/star-icon.webp'
-
+import { StaticImage } from 'gatsby-plugin-image'
 const OurSolutions = () => {
     return (
         <section className="solutions-area pb-70">
             <div className="container">
                 <div className="section-title">
                     <span className="sub-title">
-                        <picture>
-                            <source type="image/webp" srcset={starIconW} alt="rotating animated colorful dots in star structure" />
-                            <source type="image/png" srcset={starIcon} alt="rotating animated colorful dots in star structure" />
-                            <img src={starIcon} alt="rotating animated colorful dots in star structure" /> 
-                        </picture>
+                    <StaticImage
+                        src="../../assets/images/star-icon.png"
+                        alt="rotating animated colorful dots in star structure"
+                        placeholder="tracedSVG"
+                    />
                         
                         Our Solutions
                     </span>

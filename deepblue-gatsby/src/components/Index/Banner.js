@@ -1,8 +1,7 @@
 import React from 'react'
 import ReactWOW from 'react-wow'
 import { Link } from 'gatsby'
-import bannerImg from '../../assets/images/banner-img1.png'
-import bannerImgW from '../../assets/images/banner-img1.webp'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Banner = () => {
     return (
@@ -33,12 +32,11 @@ const Banner = () => {
                     <div className="col-lg-6 col-md-12">
                         <ReactWOW delay='.1s' animation='fadeInUp'>
                             <div className="main-banner-image">
-                                <picture>
-                                    <source type="image/webp" srcset={bannerImgW} alt="animation of two woman and two men doing digital work" />
-                                    <source type="image/png" srcset={bannerImg} alt="animation of two woman and two men doing digital work" />
-                                    <img src={bannerImg} alt="animation of two woman and two men doing digital work" />
-                                </picture>
-                                
+                                <StaticImage
+                                    src="../../assets/images/banner-img1.png"
+                                    alt="animation of two woman and two men doing digital work"
+                                    placeholder="tracedSVG"
+                                />
                             </div>
                         </ReactWOW>
                     </div>

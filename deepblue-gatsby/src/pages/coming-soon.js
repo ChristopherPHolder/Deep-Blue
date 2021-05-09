@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import logo from '../assets/images/logos/deepblue-logo-name.png'
-import logoW from '../assets/images/logos/deepblue-logo-name.webp'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const ComingSoon = () => {
     const [days, setDays] = React.useState('');
@@ -42,11 +41,11 @@ const ComingSoon = () => {
                     <div className="d-table-cell">
                         <div className="coming-soon-content">
                             <Link to="/" className="logo">
-                                <picture>
-                                    <source type="image/webp" srcset={logoW} />
-                                    <source type="image/png" srcset={logo} />
-                                    <img src={logo} alt="Deep Blue logo" />
-                                </picture>
+                                <StaticImage
+                                    src='../assets/images/logos/deepblue-logo-name.png'
+                                    alt="Deep Blue logo"
+                                    placeholder="tracedSVG"
+                                />
                             </Link>
                             
                             <h2>Next launch in:</h2>

@@ -1,8 +1,5 @@
 import React from 'react'
-import starIcon from '../../assets/images/star-icon.png'
-import starIconW from '../../assets/images/star-icon.webp'
-import howItWork from '../../assets/images/how-its-work.png'
-import howItWorkW from '../../assets/images/how-its-work.webp'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const WhyChooseUs = () => {
     return (
@@ -12,12 +9,11 @@ const WhyChooseUs = () => {
                     <div className="col-lg-6 col-md-12">
                         <div className="how-its-work-content">
                             <span className="sub-title">
-                                    <picture>
-                                        <source type="image/webp" srcset={starIconW} alt="rotating animated colorful dots in star structure" />
-                                        <source type="image/webp" srcset={starIcon} alt="rotating animated colorful dots in star structure" />
-                                        <img src={starIcon} alt="rotating animated colorful dots in star structure" /> 
-                                    </picture>
-
+                            <StaticImage
+                                src='../../assets/images/star-icon.png'
+                                alt="rotating animated colorful dots in star structure"
+                                placeholder="tracedSVG"
+                            />
                                 Customer focused
                             </span>
                             <h2>Why Choose Us?</h2>
@@ -50,11 +46,11 @@ const WhyChooseUs = () => {
 
                     <div className="col-lg-6 col-md-12">
                         <div className="how-its-work-image">
-                            <picture>
-                                <source type="image/webp" srcset={howItWorkW} alt="three people working on a computer" />
-                                <source type="image/webp" srcset={howItWork} alt="three people working on a computer" />
-                                <img src={howItWork} alt="three people working on a computer" />
-                            </picture>
+                            <StaticImage
+                                src='../../assets/images/how-its-work.png'
+                                alt="three people working on a computer"
+                                placeholder="tracedSVG"
+                            />
                         </div>
                     </div>
                 </div>

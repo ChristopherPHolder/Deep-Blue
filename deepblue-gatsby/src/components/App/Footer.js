@@ -1,9 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import logo from "../../assets/images/logos/deepblue-logo-name.png"
-import logoW from "../../assets/images/logos/deepblue-logo-name.webp"
-import footerMap from "../../assets/images/footer-map.png"
-import footerMapW from "../../assets/images/footer-map.webp"
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Footer = () => {
 
@@ -16,11 +13,11 @@ const Footer = () => {
                     <div className="col-lg-4 col-sm-6">
                         <div className="single-footer-widget">
                             <a href="/" className="logo">
-                                <picture>
-                                    <source type="image/webp" srcset={logoW} alt="Deep Blue logo" />
-                                    <source type="image/png" srcset={logo} alt="Deep Blue logo" />
-                                    <img src={logo} alt="logo" alt="Deep Blue logo" />
-                                </picture>
+                                <StaticImage
+                                    src="../../assets/images/logos/deepblue-logo-name.png"
+                                    alt="Deep Blue logo"
+                                    placeholder="tracedSVG"
+                                />
                             </a>
                             <p>It is time to join the forth industrial revolution.</p>
 
@@ -149,12 +146,11 @@ const Footer = () => {
             </div>
 
             <div className="footer-map">
-                <picture>
-                    <source type="image/webp" srcset={footerMapW} alt="ilustration of an interconected world" />
-                    <source type="image/png" srcset={footerMap} alt="ilustration of an interconected world" />
-                    <img src={footerMap} alt="ilustration of an interconected world" />
-                </picture>
-
+                <StaticImage
+                    src="../../assets/images/footer-map.png"
+                    alt="ilustration of an interconected world"
+                    placeholder="tracedSVG"
+                />
             </div>
         </footer>
     );
