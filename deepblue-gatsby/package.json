@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "@loadable/component": "^5.13.1",
-    "gatsby": "^2.24.41",
+    "gatsby": "^3.4.2",
     "gatsby-plugin-html-attributes": "^1.0.5",
-    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-react-helmet": "^4.4.0",
     "gatsby-plugin-s3": "^0.3.8",
     "react": "^16.12.0",
     "react-accessible-accordion": "^3.3.3",
@@ -28,10 +28,10 @@
     "react-modal-video": "^1.2.5",
     "react-owl-carousel3": "^2.2.5",
     "react-wow": "^1.0.0",
-    "recoil": "0.0.10"
+    "recoil": "^0.2.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "prettier": "^2.2.1"
   },
   "repository": {
     "type": "git",
