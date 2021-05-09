@@ -10,8 +10,8 @@ const CaseStudiesSidebar = () => {
                             <i className='bx bx-user-pin'></i>
                         </div>
                         <span>Client:</span>
-                        <a href="" target="_blank" rel="noreferrer">PureMind Digital</a>
-                        <a href="" target="_blank" rel="noreferrer">Angelo Bradvica</a>
+                        PureMind Digital
+                        Angelo Bradvica
                     </li>
                     <li>
                         <div className="icon">

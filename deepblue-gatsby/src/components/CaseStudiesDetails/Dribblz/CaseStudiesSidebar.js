@@ -10,9 +10,9 @@ const CaseStudiesSidebar = () => {
                             <i className='bx bx-user-pin'></i>
                         </div>
                         <span>Client:</span>
-                        <a href="" target="_blank" rel="noreferrer">Dribblz</a>
-                        <a href="" target="_blank" rel="noreferrer">Jan Gassmann</a>
-                        <a href="" target="_blank" rel="noreferrer">David Cancola</a>
+                        Dribblz
+                        Jan Gassmann
+                        David Cancola
                     </li>
                     <li>
                         <div className="icon">
@@ -41,7 +41,7 @@ const CaseStudiesSidebar = () => {
                             <i className='bx bx-globe'></i>
                         </div>
                         <span>Website:</span>
-                        <a href="" target="_blank" rel="noreferrer">Currently offline</a>
+                        Currently offline
                     </li>
                 </ul>
             </div>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import CaseStudiesSidebar from './CaseStudiesSidebar'
-import details1 from '../../../assets/images/projects/serum-ss-lp.png'
 
 const CaseStudiesDetailsContent = () => {
     return (
