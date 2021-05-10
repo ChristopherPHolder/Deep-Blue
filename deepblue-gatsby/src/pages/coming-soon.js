@@ -42,9 +42,10 @@ const ComingSoon = () => {
                         <div className="coming-soon-content">
                             <Link to="/" className="logo">
                                 <StaticImage
-                                    src='../assets/images/logos/deepblue-logo-name.png'
+                                    src='../assets/images/logos/deepblue-logo-name-under.png'
                                     alt="Deep Blue logo"
                                     placeholder="tracedSVG"
+                                    height={200}
                                 />
                             </Link>
                             

@@ -39,9 +39,10 @@ const Navbar = () => {
                                 className="navbar-brand"
                             >
                                 <StaticImage
-                                    src="../../assets/images/logos/deepblue-logo-name.png"
+                                    src="../../assets/images/logos/deepblue-logo.png"
                                     alt="Deep Blue logo"
                                     placeholder="tracedSVG"
+                                    height={80}
                                 />
                             </Link>
 

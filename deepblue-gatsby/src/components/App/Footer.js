@@ -14,9 +14,10 @@ const Footer = () => {
                         <div className="single-footer-widget">
                             <a href="/" className="logo">
                                 <StaticImage
-                                    src="../../assets/images/logos/deepblue-logo-name.png"
+                                    src="../../assets/images/logos/deepblue-logo-name-right.png"
                                     alt="Deep Blue logo"
                                     placeholder="tracedSVG"
+                                    height={100}
                                 />
                             </a>
                             <p>It is time to join the forth industrial revolution.</p>
