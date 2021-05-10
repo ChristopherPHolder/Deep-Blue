@@ -17,6 +17,7 @@
   "dependencies": {
     "@loadable/component": "^5.13.1",
     "gatsby": "^3.4.2",
+    "gatsby-plugin-canonical-urls": "^3.4.0",
     "gatsby-plugin-google-gtag": "^3.4.0",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-image": "^1.4.1",

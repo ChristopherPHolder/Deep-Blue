@@ -50,5 +50,11 @@ module.exports = {
         hostname: "siteAddress.hostname",
       },
     },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+          siteUrl: siteAddress.href.slice(0, -1),
+      }
+    },
   ],
 }
