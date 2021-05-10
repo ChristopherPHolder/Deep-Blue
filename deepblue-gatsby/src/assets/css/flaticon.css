@@ -24,6 +24,7 @@ Flaticon icon font: Flaticon
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
 	font-family: Flaticon;
 	font-style: normal;
+	font-display: swap;
 }
 
 .flaticon-user:before { content: "\f100"; }
