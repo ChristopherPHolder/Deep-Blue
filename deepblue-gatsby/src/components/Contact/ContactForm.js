@@ -8,7 +8,7 @@ const ContactForm = () => {
     const [disabled, setDisabled] = useState(false)
 
     const onSuccess = (form) => {
-        setToastText('Thanks for sending me a message! I\'ll get in touch with you ASAP. :)')
+        setToastText('Thanks for sending us a message! We will get in touch with you ASAP.')
         setDisabled(false)
         form.name.focus()
         form.name.value = ''
@@ -18,7 +18,7 @@ const ContactForm = () => {
     }
 
     const onError = (err) => {
-        setToastText('There was an error with sending your message, hold up until I fix it. Thanks for waiting.')
+        setToastText('There was an error with sending your message! Please contact us directly via email.')
         setDisabled(false)
         console.log(err)
     }
@@ -124,7 +124,7 @@ const ContactForm = () => {
                                         </div>
                                     </div>
 
-                                    <div>{toastText}</div>
+                                    <div className="col-lg-12 col-md-12">{toastText}</div>
 
                                     <div className="col-lg-12 col-md-12">
                                         <button id="submit" type="submit" className="default-btn" disabled={disabled}>
