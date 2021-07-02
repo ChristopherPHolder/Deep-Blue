@@ -4,11 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "3.2.2"
-djangorestframework = "3.12.4"
 markdown = "3.3.4"
-django-filter = "2.4.0"
-django-restql = "0.11.2"
 awscli = "*"
 aws = "*"
 
