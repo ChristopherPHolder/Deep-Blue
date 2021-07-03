@@ -5572,47 +5572,6 @@ Widget Sidebar CSS
         margin-bottom: 0;
         border-bottom: none;
         padding-bottom: 0; }
-      .widget-area .widget_recent_courses .item .thumb {
-        float: left;
-        height: 80px;
-        overflow: hidden;
-        display: block;
-        position: relative;
-        width: 80px;
-        margin-right: 15px;
-        z-index: 1; }
-        .widget-area .widget_recent_courses .item .thumb .fullimage {
-          width: 80px;
-          height: 80px;
-          display: inline-block;
-          border-radius: 3px;
-          background-size: cover !important;
-          background-repeat: no-repeat;
-          background-position: center center !important; }
-          .widget-area .widget_recent_courses .item .thumb .fullimage.bg1 {
-            background-image: url(../images/courses/course1.jpg); }
-          .widget-area .widget_recent_courses .item .thumb .fullimage.bg2 {
-            background-image: url(../images/courses/course2.jpg); }
-          .widget-area .widget_recent_courses .item .thumb .fullimage.bg3 {
-            background-image: url(../images/courses/course3.jpg); }
-        .widget-area .widget_recent_courses .item .thumb::before, .widget-area .widget_recent_courses .item .thumb::after {
-          transition: all 0.8s cubic-bezier(0.2, 1, 0.22, 1);
-          content: '';
-          background-color: #ffffff;
-          position: absolute;
-          z-index: 1;
-          top: 50%;
-          left: 50%;
-          opacity: 0;
-          transform: translate(-50%, -50%); }
-        .widget-area .widget_recent_courses .item .thumb::before {
-          width: 40px;
-          height: 1px;
-          left: 100%; }
-        .widget-area .widget_recent_courses .item .thumb::after {
-          height: 40px;
-          width: 1px;
-          top: 0; }
       .widget-area .widget_recent_courses .item .info {
         overflow: hidden;
         margin-top: 5px; }
