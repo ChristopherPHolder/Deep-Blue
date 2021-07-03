@@ -3564,8 +3564,7 @@ Projects Area CSS
     padding-left: 30px;
     padding-right: 30px;
     max-width: 1920px; }
-  .projects-area.bg-color {
-    background-image: url(../images/black-bg.jpg);
+  .projects-area .bg-color {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; }

@@ -5050,7 +5050,6 @@ Projects Area CSS
    
     &.bg-color {
         background: {
-            image: url(../images/black-bg.jpg);
             position: center center;
             size: cover;
             repeat: no-repeat;
@@ -8507,15 +8506,6 @@ Widget Sidebar CSS
                         repeat: no-repeat;
                         position: center center !important;
                     };
-                    // &.bg1 {
-                    //     background-image: url(/img/products/img7.jpg);
-                    // }
-                    // &.bg2 {
-                    //     background-image: url(/img/products/img8.jpg);
-                    // }
-                    // &.bg3 {
-                    //     background-image: url(/img/products/img9.jpg);
-                    // }
                 }
                 &::before, &::after {
                     transition: all .8s cubic-bezier(.2, 1, .22, 1);
