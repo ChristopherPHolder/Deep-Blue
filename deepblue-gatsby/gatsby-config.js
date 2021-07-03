@@ -25,6 +25,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
