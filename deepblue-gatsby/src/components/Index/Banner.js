@@ -1,11 +1,38 @@
 import React from 'react'
 import ReactWOW from 'react-wow'
+
 import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+import { getImage, StaticImage } from 'gatsby-plugin-image'
+
+import { graphql, useStaticQuery } from 'gatsby'
+import { BgImage } from 'gbimage-bridge'
 
 const Banner = () => {
+
+    const { backgroundImage123 } = useStaticQuery(
+        graphql`
+            query {
+                backgroundImage123: file(relativePath: {eq: "banner-bg.png"}) {
+                    id
+                    childImageSharp {
+                        gatsbyImageData(
+                            quality: 50, 
+                            webpOptions: {quality: 70}
+                        )
+                    }
+                }
+            }
+        `    
+    )
+
+    const pluginImage = getImage(backgroundImage123)
+
     return (
-        <div className="it-services-banner">
+        <BgImage
+            Tag='div'
+            image={pluginImage}
+            className='it-services-banner'
+        >
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12">
@@ -42,7 +69,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </BgImage>
     )
 }
 

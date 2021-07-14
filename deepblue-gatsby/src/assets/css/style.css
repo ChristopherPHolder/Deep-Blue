@@ -66,7 +66,7 @@ This files table contents are outlined below>>>>>
 /*================================================
 Default CSS
 =================================================*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -868,7 +868,6 @@ Main Banner Area CSS
   position: relative;
   z-index: 1;
   background-color: #ffffff;
-  background-image: url(../images/banner-bg.png);
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4756,7 +4755,6 @@ Blog Details Area CSS
     height: 115px;
     border-radius: 5px 5px 0 0;
     background-color: #ff5d22;
-    background-image: url(../images/bg.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; }
@@ -5634,116 +5632,6 @@ Widget Sidebar CSS
           background-color: #ffffff; }
 
 /*================================================
-Coming Soon Area CSS
-=================================================*/
-.coming-soon-area {
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-  background: #f6f7fb;
-  background-image: url(../images/coming-soon-bg.jpg);
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.coming-soon-content {
-  max-width: 700px;
-  background: #ffffff;
-  border-radius: 5px;
-  overflow: hidden;
-  text-align: center;
-  padding: 40px 60px;
-  box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
-  margin-left: auto;
-  margin-right: auto; }
-  .coming-soon-content .logo {
-    display: inline-block; }
-  .coming-soon-content h2 {
-    font-size: 44px;
-    margin-top: 30px;
-    margin-bottom: 0; }
-  .coming-soon-content #timer {
-    margin-top: 40px; }
-    .coming-soon-content #timer div {
-      background-color: #221638;
-      color: #ffffff;
-      width: 100px;
-      height: 105px;
-      border-radius: 5px;
-      font-size: 40px;
-      font-weight: 800;
-      margin-left: 10px;
-      margin-right: 10px; }
-      .coming-soon-content #timer div span {
-        display: block;
-        margin-top: -2px;
-        font-size: 17px;
-        font-weight: 600; }
-  .coming-soon-content form {
-    position: relative;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px; }
-    .coming-soon-content form .form-group {
-      margin-bottom: 25px;
-      width: 100%;
-      position: relative; }
-      .coming-soon-content form .form-group .label-title {
-        margin-bottom: 0;
-        position: absolute;
-        display: block;
-        left: 0;
-        top: 0;
-        pointer-events: none;
-        width: 100%;
-        height: 100%;
-        color: #221638; }
-        .coming-soon-content form .form-group .label-title i {
-          position: absolute;
-          left: 0;
-          transition: 0.5s;
-          top: 9px;
-          font-size: 22px; }
-        .coming-soon-content form .form-group .label-title::before {
-          content: "";
-          display: block;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 0;
-          height: 2px;
-          transition: 0.5s;
-          background: #ff5d22; }
-      .coming-soon-content form .form-group .input-newsletter {
-        border-radius: 0;
-        border: none;
-        border-bottom: 2px solid #eeeeee;
-        padding: 0 0 0 32px;
-        color: #221638;
-        height: 45px;
-        display: block;
-        width: 100%;
-        transition: 0.5s;
-        font-size: 16px;
-        font-weight: 400; }
-        .coming-soon-content form .form-group .input-newsletter::placeholder {
-          color: #A1A1A1;
-          transition: 0.5s; }
-        .coming-soon-content form .form-group .input-newsletter:focus::placeholder {
-          color: transparent; }
-    .coming-soon-content form .default-btn {
-      border-radius: 0; }
-    .coming-soon-content form .validation-danger {
-      margin-top: 15px;
-      color: red; }
-    .coming-soon-content form .validation-success {
-      margin-top: 15px; }
-    .coming-soon-content form p {
-      margin-bottom: 0;
-      margin-top: 20px; }
-
-/*================================================
 Privacy Policy Area CSS
 =================================================*/
 .privacy-policy-content img {
@@ -6137,16 +6025,7 @@ Footer Area CSS
   transform: translateY(-40%);
   z-index: -1;
   opacity: .8; }
-  .footer-map img {
-    animation: moveleftbounce 5s linear infinite; }
 
-@keyframes moveleftbounce {
-  0% {
-    transform: translateX(0); }
-  50% {
-    transform: translateX(-20px); }
-  100% {
-    transform: translateX(0); } }
 /*================================================
 Go Top CSS
 =================================================*/

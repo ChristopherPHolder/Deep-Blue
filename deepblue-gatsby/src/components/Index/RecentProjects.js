@@ -16,7 +16,6 @@ const RecentProjects = () => {
                     childImageSharp {
                         gatsbyImageData(
                             quality: 50, 
-                            width: 2000, 
                             webpOptions: {quality: 70}
                         )
                     }

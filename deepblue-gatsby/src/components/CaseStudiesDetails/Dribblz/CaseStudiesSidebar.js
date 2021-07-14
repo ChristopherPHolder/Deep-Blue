@@ -10,8 +10,8 @@ const CaseStudiesSidebar = () => {
                             <i className='bx bx-user-pin'></i>
                         </div>
                         <span>Client:</span>
-                        Dribblz
-                        Jan Gassmann
+                        Dribblz <br />
+                        Jan Gassmann &
                         David Cancola
                     </li>
                     <li>

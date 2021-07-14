@@ -1,12 +1,37 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import shape1 from '../../assets/images/shape/shape1.svg'
-import shape2 from '../../assets/images/shape/shape2.png'
-import shape3 from '../../assets/images/shape/shape3.png'
+
+import { getImage, StaticImage } from 'gatsby-plugin-image'
+
+import { graphql, useStaticQuery } from 'gatsby'
+import { BgImage } from 'gbimage-bridge'
 
 const PageBanner = ({pageTitle, homePageUrl, homePageText, activePageText}) => {
+
+    const { backgroundImage123 } = useStaticQuery(
+        graphql`
+            query {
+                backgroundImage123: file(relativePath: {eq: "page-title-bg.jpg"}) {
+                    id
+                    childImageSharp {
+                        gatsbyImageData(
+                            quality: 50, 
+                            webpOptions: {quality: 80}
+                        )
+                    }
+                }
+            }
+        `
+    )
+
+    const pluginImage = getImage(backgroundImage123)
+    
     return (
-        <div className="page-title-area">
+        <BgImage
+            Tag='div'
+            image={pluginImage}
+            className="page-title-area"
+        >
             <div className="container">
                 <div className="page-title-content">
                     <h2>{pageTitle}</h2>
@@ -22,15 +47,24 @@ const PageBanner = ({pageTitle, homePageUrl, homePageText, activePageText}) => {
             </div>
 
             <div className="shape-img1">
-                <img src={shape1} alt="banner" />
+                <StaticImage
+                    src='../../assets/images/shape/shape1.svg'
+                    placeholder="tracedSVG"
+                />
             </div>
             <div className="shape-img2">
-                <img src={shape2} alt="banner" />
+                <StaticImage
+                    src='../../assets/images/shape/shape2.png'
+                    placeholder='tracedSVG'
+                />
             </div>
             <div className="shape-img3">
-                <img src={shape3} alt="banner" />
+                <StaticImage
+                    src='../../assets/images/shape/shape3.png'
+                    placeholder='tracedSVG'
+                />
             </div>
-        </div>
+        </BgImage>
     )
 }
 

@@ -117,22 +117,9 @@ const Navbar = () => {
                                             Blog
                                         </Link>
                                     </li>
-
-                                    <li className="nav-item">
-                                        <Link 
-                                            to="/coming-soon" 
-                                            activeClassName="active"
-                                            onClick={() => setCollapsed(true)}
-                                            className="nav-link"
-                                        >
-                                            Coming Soon
-                                        </Link>
-                                    </li>
                                 </ul>
                             
                                 <div className="others-option d-flex align-items-center">
-
-
                                     <div className="option-item">
                                         <Link 
                                             to="/contact" 
