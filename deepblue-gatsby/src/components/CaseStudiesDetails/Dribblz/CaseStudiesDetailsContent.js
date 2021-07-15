@@ -33,6 +33,8 @@ const CaseStudiesDetailsContent = () => {
                                         <StaticImage
                                             src='../../../assets/images/projects/dribblz-logo-round.png'
                                             alt="Dribblz logo"
+                                            width={200}
+                                            height={200}
                                             placeholder="tracedSVG"
                                         />
                                     </div>

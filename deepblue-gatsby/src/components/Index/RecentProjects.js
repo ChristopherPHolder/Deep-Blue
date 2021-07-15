@@ -53,6 +53,8 @@ const RecentProjects = () => {
                                     <StaticImage
                                         src='../../assets/images/projects/dribblz-ss-training.png'
                                         alt="screenshot of dribblz an educational video streaming membership web application about football / socer designed by Deep Blue"
+                                        width={400}
+                                        height={320}
                                         placeholder="tracedSVG"
                                     />
                                     <Link className="link-btn" to="/case-studies-details/dribblz">
@@ -77,6 +79,8 @@ const RecentProjects = () => {
                                     <StaticImage
                                         src='../../assets/images/projects/project8.jpg'
                                         alt="ilustration of digital process automation with three people working desk jpbs doing data input and scraping around a computer and a server"
+                                        width={400}
+                                        height={320}
                                         placeholder="tracedSVG"
                                     />
                                 
@@ -102,6 +106,8 @@ const RecentProjects = () => {
                                     <StaticImage
                                         src='../../assets/images/projects/serum-ss-lp.png'
                                         alt="screenshot of responsive wordpress website for a stemcell clinic with attractive design"
+                                        width={400}
+                                        height={320}
                                         placeholder="tracedSVG"
                                     />
                                     <Link className="link-btn" to="/case-studies-details/serum">
