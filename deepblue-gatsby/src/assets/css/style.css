@@ -323,6 +323,17 @@ Preloader Area CSS
   100% {
     transform: rotate(0); } }
 /*================================================
+SVG Logos
+=================================================*/
+.svg-logo {
+  margin: -20px; }
+
+.svg-logo-name-right {
+  margin-top: -100px;
+  margin-left: -65px;
+  margin-bottom: -100px; }
+
+/*================================================
 Navbar Area CSS
 =================================================*/
 .tarn-nav .container-fluid {

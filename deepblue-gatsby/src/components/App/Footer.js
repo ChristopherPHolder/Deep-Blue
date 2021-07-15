@@ -12,14 +12,18 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-4 col-sm-6">
                         <div className="single-footer-widget">
+                        <div className='svg-logo-name-right'>
                             <a href="/" className="logo">
-                                <StaticImage
-                                    src="../../assets/images/logos/deepblue-logo-name-right.png"
-                                    alt="Deep Blue logo"
-                                    placeholder="tracedSVG"
-                                    height={100}
-                                />
+                                
+                                    <StaticImage
+                                        src="../../assets/images/logos/deepblue-logo-name-right.svg"
+                                        alt="Deep Blue logo"
+                                        placeholder="tracedSVG"
+                                        height={300}
+                                    />
+                                
                             </a>
+                            </div>
                             <p>It is time to join the forth industrial revolution.</p>
 
                             <ul className="social-link">

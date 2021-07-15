@@ -38,12 +38,14 @@ const Navbar = () => {
                                 onClick={() => setCollapsed(true)} 
                                 className="navbar-brand"
                             >
-                                <StaticImage
-                                    src="../../assets/images/logos/deepblue-logo.png"
-                                    alt="Deep Blue logo"
-                                    placeholder="tracedSVG"
-                                    height={80}
-                                />
+                                <div className='svg-logo'>
+                                    <StaticImage
+                                        src="../../assets/images/logos/deepblue-logo.svg"
+                                        alt="Deep Blue logo"
+                                        placeholder="tracedSVG"
+                                        height={120}
+                                    />
+                                </div>
                             </Link>
 
                             <button 
