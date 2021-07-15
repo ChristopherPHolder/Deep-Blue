@@ -7,4 +7,8 @@ import "./src/assets/css/flaticon.css"
 import "./src/assets/css/style.css"
 import "./src/assets/css/responsive.css"
 
-// Load files
+// Load fonts
+import '@fontsource/nunito/400.css'
+import '@fontsource/nunito/600.css'
+import '@fontsource/nunito/700.css'
+import '@fontsource/nunito/800.css'

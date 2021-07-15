@@ -15,6 +15,7 @@
     "deploy": "gatsby-plugin-s3 deploy"
   },
   "dependencies": {
+    "@fontsource/nunito": "^4.5.0",
     "@loadable/component": "^5.13.1",
     "gatsby": "^3.8.1",
     "gatsby-background-image": "^1.5.3",
