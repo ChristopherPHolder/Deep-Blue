@@ -24,6 +24,7 @@
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-image": "^1.8.0",
     "gatsby-plugin-preact": "^5.8.0",
+    "gatsby-plugin-purgecss": "^6.0.2",
     "gatsby-plugin-react-helmet": "^4.8.0",
     "gatsby-plugin-s3": "^0.3.8",
     "gatsby-plugin-sharp": "^3.8.0",

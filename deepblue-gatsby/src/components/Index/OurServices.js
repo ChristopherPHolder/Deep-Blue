@@ -34,7 +34,7 @@ const OurServices = () => {
                                     <ul className="about-list mb-0">
                                         <li>
                                             <i className="flaticon-tick"></i>
-                                            Lead Generations Automation
+                                            Scraping Automation
                                         </li>
                                         <li>
                                             <i className="flaticon-tick"></i>
