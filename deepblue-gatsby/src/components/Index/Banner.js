@@ -1,37 +1,17 @@
 import React from 'react'
 
 import { Link } from 'gatsby'
-import { getImage, StaticImage } from 'gatsby-plugin-image'
-
-import { graphql, useStaticQuery } from 'gatsby'
-import { BgImage } from 'gbimage-bridge'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Banner = () => {
-
-    const { backgroundImage123 } = useStaticQuery(
-        graphql`
-            query {
-                backgroundImage123: file(relativePath: {eq: "banner-bg.png"}) {
-                    id
-                    childImageSharp {
-                        gatsbyImageData(
-                            quality: 50, 
-                            webpOptions: {quality: 70}
-                        )
-                    }
-                }
-            }
-        `    
-    )
-
-    const pluginImage = getImage(backgroundImage123)
-
+    const backGround = 
+    `
+    -webkit-mask-image: radial-gradient(61% 10% at bottom, transparent 99%, #fff 1%);
+    mask-image: radial-gradient(61% 1% at bottom, transparent 30%, #fff 31%);
+    background: linear-gradient(45deg,rgba(197,250,254,100%),rgba(255, 255, 255,100%));
+    `
     return (
-        <BgImage
-            Tag='div'
-            image={pluginImage}
-            className='it-services-banner'
-        >
+        <div className='it-services-banner' style={ backGround }>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12">
@@ -60,7 +40,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-        </BgImage>
+        </div>
     )
 }
 
