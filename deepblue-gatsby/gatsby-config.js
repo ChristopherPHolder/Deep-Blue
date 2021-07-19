@@ -39,6 +39,7 @@ module.exports = {
         printRejected: true,
       }
     },
+    `gatsby-plugin-webpack-bundle-analyser-v2`,
     {
       resolve: `gatsby-plugin-s3`,
       options: {

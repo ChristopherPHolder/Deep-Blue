@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@fontsource/nunito": "^4.5.0",
-    "@loadable/component": "^5.13.1",
+    "@loadable/component": "^5.15.0",
     "gatsby": "^3.8.1",
     "gatsby-background-image": "^1.5.3",
     "gatsby-plugin-canonical-urls": "^3.8.0",
@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.14.5",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.24",
     "prettier": "^2.3.2"
   },
   "repository": {
