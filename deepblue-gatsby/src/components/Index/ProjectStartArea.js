@@ -12,6 +12,7 @@ const ProjectStartArea = () => {
                             <StaticImage
                                 src='../../assets/images/project-start1.png'
                                 alt="four people planning to join the digital revolution"
+                                loading="lazy"
                                 placeholder="tracedSVG"
                             />
                         </div>
@@ -36,6 +37,7 @@ const ProjectStartArea = () => {
                 <StaticImage
                     src='../../assets/images/shape/circle-shape1.png'
                     alt="world like globe with high tech design"
+                    loading="lazy"
                     placeholder="tracedSVG"
                 />
             </div>

@@ -34,6 +34,7 @@ const Banner = () => {
                             <StaticImage
                                 src="../../assets/images/banner-img1.png"
                                 alt="animation of two woman and two men doing digital work"
+                                loading="eager"
                                 placeholder="tracedSVG"
                             />
                         </div>

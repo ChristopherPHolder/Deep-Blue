@@ -39,7 +39,8 @@ const RecentProjects = () => {
                             <StaticImage
                                 src='../../assets/images/star-icon.png'
                                 alt="rotating animated colorful dots in star structure"
-                                placeholder="tracedSVG"
+                                loading="lazy"
+                                placeholder="none"
                             />
                         </span>
                         <h2>Check Some Of Our Recent Work</h2>
@@ -53,6 +54,7 @@ const RecentProjects = () => {
                                     <StaticImage
                                         src='../../assets/images/projects/dribblz-ss-training.png'
                                         alt="screenshot of dribblz an educational video streaming membership web application about football / socer designed by Deep Blue"
+                                        loading="lazy"
                                         width={400}
                                         height={320}
                                         placeholder="tracedSVG"
@@ -79,6 +81,7 @@ const RecentProjects = () => {
                                     <StaticImage
                                         src='../../assets/images/projects/project8.jpg'
                                         alt="ilustration of digital process automation with three people working desk jpbs doing data input and scraping around a computer and a server"
+                                        loading="lazy"
                                         width={400}
                                         height={320}
                                         placeholder="tracedSVG"
@@ -106,6 +109,7 @@ const RecentProjects = () => {
                                     <StaticImage
                                         src='../../assets/images/projects/serum-ss-lp.png'
                                         alt="screenshot of responsive wordpress website for a stemcell clinic with attractive design"
+                                        loaded="lazy"
                                         width={400}
                                         height={320}
                                         placeholder="tracedSVG"

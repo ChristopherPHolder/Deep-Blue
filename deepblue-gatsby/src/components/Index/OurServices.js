@@ -4,7 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 const OurServices = () => {
     return (
         <React.Fragment>
-            {/* Service Left Image Style */}
             <div className="about-area pb-100">
                 <div className="container-fluid">
                     <div className="row align-items-center">
@@ -13,6 +12,7 @@ const OurServices = () => {
                             <StaticImage
                                 src='../../assets/images/services/service1.png'
                                 alt="animation of three people working a digital jobs, two computers, one smart tablet, one cloud with a server icon representing cloud computing"
+                                loading="lazy"
                                 placeholder="tracedSVG"
                             />
                             </div>
@@ -25,7 +25,8 @@ const OurServices = () => {
                                     <StaticImage
                                         src='../../assets/images/star-icon.png'
                                         alt="rotating animated colorful dots in star structure"
-                                        placeholder="tracedSVG"
+                                        loading="lazy"
+                                        placeholder="none"
                                     />
                                     </span>
                                     
@@ -55,9 +56,6 @@ const OurServices = () => {
                     </div>
                 </div>
             </div>
-            {/* End Service Left Image Style */}
-
-            {/* Service Right Image Style */}
             <div className="our-mission-area pb-100">
                 <div className="container-fluid">
                     <div className="row align-items-center">
@@ -68,7 +66,8 @@ const OurServices = () => {
                                     <StaticImage
                                         src='../../assets/images/star-icon.png'
                                         alt="rotating animated colorful dots in star structure"
-                                        placeholder="tracedSVG"
+                                        loading="lazy"
+                                        placeholder="none"
                                     />
                                     </span>
                                     
@@ -110,14 +109,14 @@ const OurServices = () => {
                                 <StaticImage
                                     src='../../assets/images/services/service2.png'
                                     alt="five people working a digital job, a woman typing input in a computer while talking to a man under a light bulb symbolizing innovation, man holding a gear for system and through other people a woman and a man debating in front of a digital gear"
-                                    placeholder="tracedSVG"
+                                    loading="lazy"
+                                    placeholder="none"
                                 />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* End Service Right Image Style */}
         </React.Fragment>
     )
 }

@@ -10,6 +10,7 @@ const OurSolutions = () => {
                     <StaticImage
                         src="../../assets/images/star-icon.png"
                         alt="rotating animated colorful dots in star structure"
+                        loading="lazy"
                         placeholder="tracedSVG"
                     />
                         
