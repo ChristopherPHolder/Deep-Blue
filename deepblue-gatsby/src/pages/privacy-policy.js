@@ -4,7 +4,7 @@ import Navbar from "../components/App/Navbar"
 import PageBanner from '../components/Common/PageBanner'
 import Footer from "../components/App/Footer"
 import { Link } from 'gatsby'
-import privacyPolicy from '../assets/images/privacy-policy.jpg'
+// import privacyPolicy from '../assets/images/privacy-policy.jpg'
 
 const PrivacyPolicy = () => {
     return (
@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
                     <div className="row">
                         <div className="col-lg-8 col-md-12">
                             <div className="privacy-policy-content">
-                                <img src={privacyPolicy} alt="pp" />
+                                {/* <img src={privacyPolicy} alt="pp" /> */}
                                 <p><i>This Privacy Policy was last updated on January 1, 2020.</i></p>
                                 <h3>1. What Data We Get</h3>
                                 <blockquote className="blockquote">
@@ -98,7 +98,7 @@ const PrivacyPolicy = () => {
 
                                     <article className="item">
                                         <Link to="#" className="thumb">
-                                            <span className="fullimage cover bg2" role="img"></span>
+                                            {/*<span className="fullimage cover bg2" role="img"></span>*/}
                                         </Link>
                                         <div className="info">
                                             <span>$59.00</span>
@@ -109,7 +109,7 @@ const PrivacyPolicy = () => {
 
                                     <article className="item">
                                         <Link to="#" className="thumb">
-                                            <span className="fullimage cover bg3" role="img"></span>
+                                            {/*<span className="fullimage cover bg3" role="img"></span>*/}
                                         </Link>
                                         <div className="info">
                                             <span>$69.00</span>

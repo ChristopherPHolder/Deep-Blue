@@ -4,7 +4,7 @@ import Navbar from "../components/App/Navbar"
 import PageBanner from '../components/Common/PageBanner'
 import Footer from "../components/App/Footer"
 import { Link } from 'gatsby'
-import termsImg from '../assets//images/terms-of-service.jpg'
+//import termsImg from '../assets//images/terms-of-service.jpg'
 
 const TermsOfService = () => {
     return (
@@ -21,7 +21,7 @@ const TermsOfService = () => {
                     <div className="row">
                         <div className="col-lg-8 col-md-12">
                             <div className="terms-of-service-content">
-                                <img src={termsImg} alt="tt" />
+                                {/*<img src={termsImg} alt="tt" />*/}
                                 <p><i>This Privacy Policy was last updated on January 1, 2020.</i></p>
                                 <h3>1. What Data We Get</h3>
                                 <blockquote className="blockquote">
