@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {StaticImage} from 'gatsby-plugin-image'
+import { post } from '../../utils/http'
 
 const url = 'https://ob402y9vji.execute-api.eu-central-1.amazonaws.com/dev/email/send'
 
@@ -141,22 +142,6 @@ const ContactForm = () => {
         </section>
     )
 
-}
-
-// TODO: this should be moved to another file, something like utils/http.js
-function post(url, body, callback) {
-    const req = new XMLHttpRequest();
-
-    req.open("POST", url, true);
-    req.setRequestHeader("Content-Type", "application/json");
-    req.addEventListener("load", function () {
-        if (req.status < 400) {
-            callback(null, JSON.parse(req.responseText));
-        } else {
-            callback(new Error("Request failed: " + req.statusText));
-        }
-    });
-    req.send(JSON.stringify(body));
 }
 
 export default ContactForm
