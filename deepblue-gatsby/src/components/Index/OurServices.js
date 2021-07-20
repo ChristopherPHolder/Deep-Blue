@@ -22,12 +22,16 @@ const OurServices = () => {
                             <div className="about-content">
                                 <div className="content">
                                     <span className="sub-title">
-                                    <StaticImage
-                                        src='../../assets/images/star-icon.png'
-                                        alt="rotating animated colorful dots in star structure"
-                                        loading="lazy"
-                                        placeholder="none"
-                                    />
+                                        <StaticImage
+                                            src='../../assets/images/star-icon.png'
+                                            alt="rotating animated colorful dots in star structure"
+                                            loading="lazy"
+                                            placeholder="none"
+                                        />
+                                    <span className="sub-title-text">
+                                    Our Services
+                                    </span>
+
                                     </span>
                                     
                                     <h2>Process Automation</h2>
@@ -69,6 +73,9 @@ const OurServices = () => {
                                         loading="lazy"
                                         placeholder="none"
                                     />
+                                    <span className="sub-title-text">
+                                        Our Services
+                                    </span>
                                     </span>
                                     
                                     <h2>Design & Development</h2>

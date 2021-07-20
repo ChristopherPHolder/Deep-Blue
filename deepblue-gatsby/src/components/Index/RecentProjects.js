@@ -35,14 +35,7 @@ const RecentProjects = () => {
 
                 <div className="container">
                     <div className="section-title">
-                        <span className="sub-title">
-                            <StaticImage
-                                src='../../assets/images/star-icon.png'
-                                alt="rotating animated colorful dots in star structure"
-                                loading="lazy"
-                                placeholder="none"
-                            />
-                        </span>
+
                         <h2>Check Some Of Our Recent Work</h2>
                         <p>We work to satify our clients need and follow there contraints.</p>
                     </div>

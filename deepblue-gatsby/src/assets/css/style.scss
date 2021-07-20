@@ -239,14 +239,20 @@ a {
         position: relative;
         display: block;
         text-transform: uppercase;
-        margin-bottom: 15px;
+        padding-bottom: 15px;
         color: $main-color;
         font: {
-            weight: 700;
+            weight: 800;
             size: 15px;
         };
+        .sub-title-text {
+            position: relative;
+            top: 5px;
+            padding-left: 5px;
+        }
         img {
             margin-right: 5px;
+            padding: 20%;
             animation: {
                 name: rotateme;
                 duration: 40s;
@@ -741,11 +747,17 @@ About Area CSS
             margin-bottom: 15px;
             color: $main-color;
             font: {
-                weight: 700;
+                weight: 800;
                 size: 15px;
             };
+            .sub-title-text {
+                position: relative;
+                top: 5px;
+                padding-left: 5px;
+            }
             img {
                 margin-right: 5px;
+                padding: 20%;
                 animation: {
                     name: rotateme;
                     duration: 40s;
@@ -858,11 +870,17 @@ Our Mission Area CSS
             margin-bottom: 15px;
             color: $main-color;
             font: {
-                weight: 700;
+                weight: 800;
                 size: 15px;
             };
+            .sub-title-text {
+                position: relative;
+                top: 5px;
+                padding-left: 5px;
+            }
             img {
                 margin-right: 5px;
+                padding: 20%;
                 animation: {
                     name: rotateme;
                     duration: 40s;

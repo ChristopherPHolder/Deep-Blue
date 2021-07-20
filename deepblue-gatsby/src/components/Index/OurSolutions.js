@@ -7,14 +7,18 @@ const OurSolutions = () => {
             <div className="container">
                 <div className="section-title">
                     <span className="sub-title">
-                    <StaticImage
-                        src="../../assets/images/star-icon.png"
-                        alt="rotating animated colorful dots in star structure"
-                        loading="lazy"
-                        placeholder="tracedSVG"
-                    />
+                        <StaticImage
+                            src="../../assets/images/star-icon.png"
+                            alt="rotating animated colorful dots in star structure"
+                            objectFit="scale-down"
+                            objectPosition="50% 50%"
+                            loading="lazy"
+                            placeholder="tracedSVG"
+                        />
                         
-                        Our Solutions
+                        <span className="sub-title-text">
+                            Our Solutions
+                        </span>
                     </span>
                     <h2>We are dedicated to see you succeed</h2>
                     <p>Our main goal is to help you succeed, our team of specialist will be there when you need us, able to expand and contract for your needs.</p>
