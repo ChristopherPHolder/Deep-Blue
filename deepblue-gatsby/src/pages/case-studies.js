@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from "../components/App/Layout"
 import Navbar from "../components/App/Navbar"
 import PageBanner from '../components/Common/PageBanner'
+import RecenProjects from "../components/Index/RecentProjects"
+import ProjectStartArea from "../components/Index/ProjectStartArea"
 import Footer from "../components/App/Footer"
 //import TwoColumns from '../components/Studies/TwoColumns'
 
@@ -10,12 +12,13 @@ const CaseStudies = () => {
         <Layout>
             <Navbar />
             <PageBanner
-                pageTitle="Case Studies 2 Columns" 
+                pageTitle="Our Recent Projects" 
                 homePageText="Home" 
                 homePageUrl="/" 
-                activePageText="Case Studies 2 Columns" 
+                activePageText="Recent Projects" 
             />
-           {/*<TwoColumns />*/}
+            <RecenProjects />
+            <ProjectStartArea />
             <Footer />
         </Layout>
     );
