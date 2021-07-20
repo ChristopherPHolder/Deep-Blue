@@ -9,7 +9,6 @@ const Seo = () => {
                 <meta name="description" content="Deep Blue - Custom software to speed up your business" />
                 <meta name="og:title" property="og:title" content="Deep Blue - Custom software to speed up your business"></meta>
                 <meta name="twitter:card" content="Deep Blue - Custom software to speed up your business"></meta>
-                <meta property="og:image" content="https://res.cloudinary.com/dev-empty/image/upload/v1593069801/explore-learning.jpg" />
             </Helmet>
         </div>
     )
