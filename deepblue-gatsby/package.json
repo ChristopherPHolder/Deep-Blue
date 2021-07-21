@@ -20,7 +20,7 @@
     "gatsby": "^3.9.1",
     "gatsby-background-image": "^1.5.3",
     "gatsby-plugin-canonical-urls": "^3.9.0",
-    "gatsby-plugin-google-gtag": "^3.9.0",
+    "gatsby-plugin-google-gtag": "^3.10.0",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-image": "^1.9.0",
     "gatsby-plugin-preact": "^5.9.0",
