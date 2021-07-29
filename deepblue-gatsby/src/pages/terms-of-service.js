@@ -2,9 +2,7 @@ import React from 'react'
 import Layout from "../components/App/Layout"
 import Navbar from "../components/App/Navbar"
 import PageBanner from '../components/Common/PageBanner'
-import Footer from "../components/App/Footer"
 import { Link } from 'gatsby'
-//import termsImg from '../assets//images/terms-of-service.jpg'
 
 const TermsOfService = () => {
     return (
@@ -138,7 +136,6 @@ const TermsOfService = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
         </Layout>
     )
 }

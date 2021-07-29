@@ -1,7 +1,6 @@
 import React from "react"
 import loadable from '@loadable/component'
 import Navbar from "../components/App/Navbar"
-import Footer from "../components/App/Footer"
 import Layout from "../components/App/Layout"
 import Banner from "../components/Index/Banner"
 const OurSolutions = loadable(() => import("../components/Index/OurSolutions"))
@@ -18,7 +17,6 @@ const Home = () => {
       <OurServices />
       <RecentProjects />
       <ProjectStartArea />
-      <Footer />
     </Layout>
   )
 }

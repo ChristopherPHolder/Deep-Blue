@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from "../../components/App/Layout"
 import Navbar from "../../components/App/Navbar"
 import PageBanner from '../../components/Common/PageBanner'
-import Footer from "../../components/App/Footer"
 import CaseStudiesDetailsContent from '../../components/CaseStudiesDetails/Dribblz/CaseStudiesDetailsContent.js'
 
 const CaseDetails = () => {
@@ -16,7 +15,6 @@ const CaseDetails = () => {
                 activePageText="Case Studies Details -Dribblz" 
             />
             <CaseStudiesDetailsContent />
-            <Footer />
         </Layout>
     );
 }
