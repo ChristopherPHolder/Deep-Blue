@@ -10,7 +10,7 @@ const ProjectStartArea = loadable(() => import("../components/Index/ProjectStart
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout title="Home">
       <Navbar />
       <Banner />
       <OurSolutions />

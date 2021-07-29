@@ -6,7 +6,7 @@ import BlogCard from '../components/BlogContent/BlogCard'
 
 const Blog = () => {
     return (
-        <Layout>
+        <Layout title="Blog">
             <Navbar />
             <PageBanner
                 pageTitle="Blog" 

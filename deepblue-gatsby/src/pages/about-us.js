@@ -7,7 +7,7 @@ import WhyChooseUs from '../components/AboutUs/WhyChooseUs'
  
 const AboutUs = () => {
     return (
-        <Layout>
+        <Layout title="About Us">
             <Navbar />
             <PageBanner
                 pageTitle="About Us" 

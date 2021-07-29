@@ -6,7 +6,7 @@ import BlogDetailsContent from '../components/BlogContent/BlogDetailsContent'
 
 const BlogDetails = () => {
     return (
-        <Layout>
+        <Layout title="Virtualization and Cloud Computing">
             <Navbar />
             <PageBanner
                 pageTitle="Blog Details" 

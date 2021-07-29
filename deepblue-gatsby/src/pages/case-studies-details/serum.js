@@ -6,7 +6,7 @@ import CaseStudiesDetailsContent from '../../components/CaseStudiesDetails/Serum
 
 const CaseDetails = () => {
     return (
-        <Layout>
+        <Layout title="Serum Case Study Details">
             <Navbar />
             <PageBanner
                 pageTitle="Case Studies Details" 

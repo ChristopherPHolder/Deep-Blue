@@ -5,11 +5,13 @@ import Seo from './SEO'
 import Footer from './Footer'
 
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title }) => {
     return (
         <RecoilRoot>
-            <Seo />
+            <Seo title={title} />
+
             {children}
+
             <Footer />
             <GoTop scrollStepInPx="100" delayInMs="10.50" />
         </RecoilRoot>

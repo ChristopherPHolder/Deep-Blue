@@ -7,7 +7,7 @@ import StartProject from '../components/Common/StartProject'
 
 const Services = () => {
     return (
-        <Layout>
+        <Layout title="Services">
             <Navbar />
             <PageBanner
                 pageTitle="Services" 

@@ -6,7 +6,7 @@ import CaseStudiesDetailsContent from '../../components/CaseStudiesDetails/PureL
 
 const CaseDetails = () => {
     return (
-        <Layout>
+        <Layout title="PureLily Case Study Details">
             <Navbar />
             <PageBanner
                 pageTitle="Case Studies Details" 

@@ -6,7 +6,7 @@ import CaseStudiesDetailsContent from '../../components/CaseStudiesDetails/Dribb
 
 const CaseDetails = () => {
     return (
-        <Layout>
+        <Layout title="Dribblz Case Study Details">
             <Navbar />
             <PageBanner
                 pageTitle="Case Studies Details - Dribblz" 

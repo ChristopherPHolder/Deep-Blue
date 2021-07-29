@@ -7,7 +7,7 @@ import ProjectStartArea from "../components/Index/ProjectStartArea"
 
 const CaseStudies = () => {
     return (
-        <Layout>
+        <Layout title="Recent Projects">
             <Navbar />
             <PageBanner
                 pageTitle="Our Recent Projects" 

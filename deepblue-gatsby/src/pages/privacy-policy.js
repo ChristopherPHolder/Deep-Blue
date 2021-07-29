@@ -5,7 +5,7 @@ import PageBanner from '../components/Common/PageBanner'
 
 const PrivacyPolicy = () => {
     return (
-        <Layout>
+        <Layout title="Privacy Policy">
             <Navbar />
             <PageBanner
                 pageTitle="Privacy Policy" 
