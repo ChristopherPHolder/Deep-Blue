@@ -2,6 +2,9 @@ const siteAddress =  new URL("https://deep-blue.io")
 
 module.exports = {
   flags: { PRESERVE_WEBPACK_CACHE: true },
+  siteMetadata: {
+    siteUrl: `https://www.deep-blue.io`,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -10,16 +13,16 @@ module.exports = {
           "G-KF0ZF5YNWJ",
         ],
         gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
           anonymize_ip: true,
           cookie_expires: 0,
         },
         pluginConfig: {
-          head: true,
+          head: false,
           respectDNT: true,
         },
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-filesystem`,
