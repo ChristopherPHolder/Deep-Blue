@@ -6,7 +6,11 @@ import CaseStudiesDetailsContent from '../../components/CaseStudiesDetails/Serum
 
 const CaseDetails = () => {
     return (
-        <Layout title="Serum Case Study Details">
+        <Layout 
+        title="Serum Case Study Details"
+        description="The case study of the development of a mobile responsive 
+        WordPress website build by Deep Blue for Serum a Stem Cell Clinic"
+        >
             <Navbar />
             <PageBanner
                 pageTitle="Case Studies Details" 

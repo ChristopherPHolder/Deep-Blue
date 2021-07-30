@@ -7,7 +7,10 @@ import WhyChooseUs from '../components/AboutUs/WhyChooseUs'
  
 const AboutUs = () => {
     return (
-        <Layout title="About Us">
+        <Layout 
+        title="About Us"
+        description="Deep Blue's goals and work process"
+        >
             <Navbar />
             <PageBanner
                 pageTitle="About Us" 

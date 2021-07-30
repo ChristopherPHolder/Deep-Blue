@@ -7,7 +7,12 @@ import StartProject from '../components/Common/StartProject'
 
 const Services = () => {
     return (
-        <Layout title="Services">
+        <Layout 
+        title="Services"
+        description="Deep Blue offers a variety of software development 
+        services including, Web Application Development & Optimization, 
+        Digital Automation, and Digital Consultation."
+        >
             <Navbar />
             <PageBanner
                 pageTitle="Services" 

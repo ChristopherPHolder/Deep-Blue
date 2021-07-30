@@ -6,10 +6,14 @@ import CaseStudiesDetailsContent from '../../components/CaseStudiesDetails/Dribb
 
 const CaseDetails = () => {
     return (
-        <Layout title="Dribblz Case Study Details">
+        <Layout 
+        title="Dribblz Case Study Details"
+        description="The case study of Dribblz, a subscription-based web application for web 
+        streaming education content and tracking improvements with a social component."
+        >
             <Navbar />
             <PageBanner
-                pageTitle="Case Studies Details - Dribblz" 
+                pageTitle="Dribblz Case Studies Details" 
                 homePageText="Home" 
                 homePageUrl="/" 
                 activePageText="Case Studies Details -Dribblz" 

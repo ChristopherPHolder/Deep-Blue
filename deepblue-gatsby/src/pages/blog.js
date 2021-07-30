@@ -6,7 +6,10 @@ import BlogCard from '../components/BlogContent/BlogCard'
 
 const Blog = () => {
     return (
-        <Layout title="Blog">
+        <Layout 
+        title="Blog"
+        description="Deep Blue blog post"
+        >
             <Navbar />
             <PageBanner
                 pageTitle="Blog" 

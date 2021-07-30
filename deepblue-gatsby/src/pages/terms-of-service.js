@@ -6,7 +6,10 @@ import { Link } from 'gatsby'
 
 const TermsOfService = () => {
     return (
-        <Layout title="Terms of Service">
+        <Layout 
+        title="Terms of Service"
+        descrition="Deep Blue's Terms of Service"
+        >
             <Navbar />
             <PageBanner
                 pageTitle="Terms of Service" 

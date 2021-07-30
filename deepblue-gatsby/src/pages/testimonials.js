@@ -6,7 +6,10 @@ import TestimonialsStyleOne from '../components/Testimonials/TestimonialsStyleOn
 
 const Testimonials = () => {
     return (
-        <Layout title="Testimonials">
+        <Layout 
+        title="Testimonials"
+        description="Deep Blue Client Testimonials"
+        >
             <Navbar />
             <PageBanner
                 pageTitle="Testimonials" 

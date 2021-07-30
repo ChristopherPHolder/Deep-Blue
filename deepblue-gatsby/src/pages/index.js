@@ -10,7 +10,11 @@ const ProjectStartArea = loadable(() => import("../components/Index/ProjectStart
 
 const Home = () => {
   return (
-    <Layout title="Home">
+    <Layout 
+    title="Software Development Services"
+    description="Deep Blue is a Vienna-based Software Development Company focused on 
+    producing and maintaining high-performance Web Applications at affordable prices."
+    >
       <Navbar />
       <Banner />
       <OurSolutions />
