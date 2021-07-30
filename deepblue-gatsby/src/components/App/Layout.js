@@ -2,13 +2,14 @@ import React from 'react'
 import { RecoilRoot } from 'recoil'
 import GoTop from './GoTop'
 import Seo from './SEO'
+import Navbar from './Navbar'
 import Footer from './Footer'
 
-
-const Layout = ({ children, title }) => {
+const Layout = ({ children, title, description }) => {
     return (
         <RecoilRoot>
-            <Seo title={title} />
+            <Seo title={title} description={description}/>
+            <Navbar />
 
             {children}
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from "../components/App/Layout"
-import Navbar from "../components/App/Navbar"
 import PageBanner from '../components/Common/PageBanner'
 
 const PrivacyPolicy = () => {
@@ -9,7 +8,6 @@ const PrivacyPolicy = () => {
         title="Privacy Policy"
         description="Deep Blue's Privacy Policy"
         >
-            <Navbar />
             <PageBanner
                 pageTitle="Privacy Policy" 
                 homePageText="Home" 

@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from "../../components/App/Layout"
-import Navbar from "../../components/App/Navbar"
 import PageBanner from '../../components/Common/PageBanner'
 import CaseStudiesDetailsContent from '../../components/CaseStudiesDetails/Dribblz/CaseStudiesDetailsContent.js'
 
@@ -11,7 +10,6 @@ const CaseDetails = () => {
         description="The case study of Dribblz, a subscription-based web application for web 
         streaming education content and tracking improvements with a social component."
         >
-            <Navbar />
             <PageBanner
                 pageTitle="Dribblz Case Studies Details" 
                 homePageText="Home" 

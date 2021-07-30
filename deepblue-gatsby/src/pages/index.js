@@ -1,6 +1,5 @@
 import React from "react"
 import loadable from '@loadable/component'
-import Navbar from "../components/App/Navbar"
 import Layout from "../components/App/Layout"
 import Banner from "../components/Index/Banner"
 const OurSolutions = loadable(() => import("../components/Index/OurSolutions"))
@@ -15,7 +14,6 @@ const Home = () => {
     description="Deep Blue is a Vienna-based Software Development Company focused on 
     producing and maintaining high-performance Web Applications at affordable prices."
     >
-      <Navbar />
       <Banner />
       <OurSolutions />
       <OurServices />

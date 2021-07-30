@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from "../components/App/Layout"
-import Navbar from "../components/App/Navbar"
 import PageBanner from '../components/Common/PageBanner'
 import { Link } from 'gatsby'
 
@@ -10,7 +9,6 @@ const TermsOfService = () => {
         title="Terms of Service"
         descrition="Deep Blue's Terms of Service"
         >
-            <Navbar />
             <PageBanner
                 pageTitle="Terms of Service" 
                 homePageText="Home" 

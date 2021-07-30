@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from "../../components/App/Layout"
-import Navbar from "../../components/App/Navbar"
 import PageBanner from '../../components/Common/PageBanner'
 import CaseStudiesDetailsContent from '../../components/CaseStudiesDetails/PureLily/CaseStudiesDetailsContent.js'
 
@@ -12,7 +11,6 @@ const CaseDetails = () => {
         with python to improve the efficiency of tasks such as web scraping, 
         templating and data processing."
         >
-            <Navbar />
             <PageBanner
                 pageTitle="PureLily's Case Studies Details" 
                 homePageText="Home" 
