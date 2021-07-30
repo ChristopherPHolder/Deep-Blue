@@ -23,7 +23,22 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.deep-blue.io',
+        sitemap: 'https://www.deep-blue.io/sitemap/sitemap-index.xml',
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }]
+          },
+          production: {
+            policy: [
+              { userAgent: '*', allow: '/', disallow: '/static/' }]
+          }
+        }
+      }
+    },
     `gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-filesystem`,
