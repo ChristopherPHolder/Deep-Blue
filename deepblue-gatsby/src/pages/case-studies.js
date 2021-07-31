@@ -10,6 +10,9 @@ const CaseStudies = () => {
         title="Recent Projects"
         description="Take a look at some of our most recent projects using 
         technologies such as Django, React, Gatsby, WordPress, and Python CLI"
+        type="website"
+        url="https://www.deep-blue.io/case-study/"
+        imageUrl="https://www.deep-blue.io/static/dc650cff7cf5f94403cae44ca5bbd068/078c3/deepblue-logo-name-right.webp"
         >
             <PageBanner
                 pageTitle="Our Recent Projects" 

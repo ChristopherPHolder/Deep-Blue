@@ -8,6 +8,9 @@ const TermsOfService = () => {
         <Layout 
         title="Terms of Service"
         descrition="Deep Blue's Terms of Service"
+        type="website"
+        url="https://www.deep-blue.io/terms-of-service"
+        imageUrl="https://www.deep-blue.io/static/dc650cff7cf5f94403cae44ca5bbd068/078c3/deepblue-logo-name-right.webp"
         >
             <PageBanner
                 pageTitle="Terms of Service" 

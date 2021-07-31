@@ -13,6 +13,9 @@ const Home = () => {
     title="Software Development Services"
     description="Deep Blue is a Vienna-based Software Development Company focused on 
     producing and maintaining high-performance Web Applications at affordable prices."
+    type="website"
+    url="https://www.deep-blue.io/"
+    mageUrl="https://www.deep-blue.io/static/dc650cff7cf5f94403cae44ca5bbd068/078c3/deepblue-logo-name-right.webp"
     >
       <Banner />
       <OurSolutions />

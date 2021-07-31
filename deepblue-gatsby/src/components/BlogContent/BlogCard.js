@@ -10,7 +10,7 @@ const BlogCard = () => {
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog-post bg-fffbf5">
                             <div className="post-image">
-                                <Link to="/blog-details">
+                                <Link to="/blog-details/Virtualization-and-Cloud-Computing/">
                                     <StaticImage
                                         src='../../assets/images/blog/blog-img4.jpg'
                                         alt="cloud computing ilustration"
@@ -32,7 +32,7 @@ const BlogCard = () => {
                                     </li>
                                 </ul>
                                 <h3>
-                                    <Link to="/blog-details">
+                                    <Link to="/blog-details/Virtualization-and-Cloud-Computing/">
                                         Tha basics of cloud computing
                                     </Link>
                                 </h3>
