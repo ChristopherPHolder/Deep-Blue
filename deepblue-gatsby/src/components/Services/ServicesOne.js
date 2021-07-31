@@ -14,7 +14,7 @@ const ServicesOne = () => {
                                 Web Applications
                             </h3>
 
-                            <p>Web application and development support. We can build it with you from start to finish or come support you when you need the help.</p>
+                            <p>Web application and development support. We can build it with you from start to finish or come support you when you need help.</p>
 
                         </div>
                     </div>
@@ -29,7 +29,7 @@ const ServicesOne = () => {
                                 Digital Automation
                             </h3>
 
-                            <p>We don't like soul breaking repetitive work, but our software really does. It needs no breaks, doesn't make mistakes and takes no salary.</p>
+                            <p>We don't like soul-breaking repetitive work, but our software really does. It needs no breaks, doesn't make mistakes, and takes no salary.</p>
                             
                         </div>
                     </div>
@@ -44,7 +44,7 @@ const ServicesOne = () => {
                                 Digitalization Consulting
                             </h3>
 
-                            <p>Inefficiencies waste time and hurt moral, and more often then not you don't need more people, you need better process and better software.</p>
+                            <p>Inefficiencies waste time and hurt morale, and more often than not you don't need more people, you need better processes and better software.</p>
                             
                         </div>
                     </div>

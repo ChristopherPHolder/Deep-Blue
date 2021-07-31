@@ -17,16 +17,16 @@ const CaseStudiesDetailsContent = () => {
                         </div>
                         <div className="case-studies-details-desc">
                             <span className="sub-title">Web Application</span>
-                            <h3>An educational subcription video streaming web application for aspiring football stars</h3>
+                            <h3>An educational subscription video streaming web application for aspiring football stars</h3>
                             <p>The idea came about when two first division football players realized how lucky they were to have 
-                            made it so far and decided they needed to help the next generation of football profecionals pursue their dreams.
-                            They remenbered how little guidence they got on there journey, how hard they had to work along the way to success
-                            how many of there friends with the same talent didn't make it but most of all how much luck played a part in there success.
-                            So they decided to build something for there younger selves, something that would have made there journey easer,
-                            and would have helped more of there friends succed in becoming profecional football stars.</p>
-                            <p>After talking with many software development companies they decided to hire us, because we 
+                            made it so far and decided they needed to help the next generation of football professionals pursue their dreams.
+                            They remembered how little guidance they got on their journey, how hard they had to work along the way to success
+                            how many of there friends with the same talent didn't make it but most of all how much luck played a part in their success.
+                            So they decided to build something for their younger selves, something that would have made their journey easier,
+                            and would have helped more of their friends succeed in becoming professiona football stars.</p>
+                            <p>After talking with many software development companies they decided to hire us because we 
                             didn't just try to sell them software like the other companies did. We believed in their idea and wanted
-                            to see it succed. So we helped them refine there wireframe and we got to work building a mobil friendly UI/UX design.</p>
+                            to see it succeed. So we helped them refine there wireframe and we got to work building a mobile friendly UI/UX design.</p>
                             <div className="row align-items-center">
                                 <div className="col-lg-6 col-md-6">
                                     <div className="image">
@@ -54,17 +54,17 @@ const CaseStudiesDetailsContent = () => {
                                     </div>
                                 </div>
                             </div>
-                            <p>We decided on building a web application instead of a mobil applaication because they did not require any
-                            mobil native features. Moreover, after talking with potencial user they decided they decided it would be easer to
-                            get users to try it if they did not have to download the app. Additionally, speed and cost of development played a part in the decition.
-                            However, it was also decided that once we had aquired enough users we would build and integrate a cross platform mobil application.</p>
-                            <p>We dicided on build the backend using Python's Django Framework and simple HTML, CSS and JS for the frontend
-                            to speed up development and keep cost low but intended to move to ReactJS in the future. For video hosting we chose Vimeo as it would be
-                            easy to integrate while containing a full set of features to track user acctions and reduce the cost of hosting. For managing the subcription
-                            payments we chose because of there numerous developer features which allow us to create a checkout designed by us as well as 
-                            great userinterface for the owners to manage there subcriptions.</p>
+                            <p>We decided on building a web application instead of a mobile application because they did not require any
+                            mobile native features. Moreover, after talking with the potential users they decided they decided it would be easier to
+                            get users to try it if they did not have to download the app. Additionally, speed and cost of development played a part in the decision.
+                            However, it was also decided that once we had acquired enough users we would build and integrate a cross-platform mobile application.</p>
+                            <p>We decided to build the backend using Python's Django Framework and simple HTML, CSS, and JS for the frontend
+                            to speed up development and keep cost low but intended to move to ReactJS in the future. For video hosting, we chose Vimeo as it would be
+                            easy to integrate while containing a full set of features to track user actions and reduce the cost of hosting. For managing the subscription
+                            payments we chose because of their numerous developer features which allow us to create a checkout designed by us as well as a 
+                            great user interfaces for the owners to manage their subscriptions.</p>
                             <h3>Results</h3>
-                            <p>The web application was completed successfully, however, unfortunarly the owners were not able to fill the content they wanted to due covid
+                            <p>The web application was completed successfully, however, unfortunately, the owners were not able to film the content they wanted to due to covid
                             and decided to wait until after the pandemic was over to launch.</p>
                         </div>
                     </div>

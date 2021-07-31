@@ -63,7 +63,7 @@ const RecentProjects = () => {
                                             Dribblz
                                         </Link>
                                     </h3>
-                                    <span>Video Stream Membership Web-App</span>
+                                    <span>Video Streaming Membership Web-App</span>
                                 </div>
                             </div>
                         </div>

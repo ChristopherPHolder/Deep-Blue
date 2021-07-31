@@ -79,7 +79,7 @@ const OurServices = () => {
                                     </span>
                                     
                                     <h2>Design & Development</h2>
-                                    <p>Web and mobil applications can be a great way to bring value to your customers or digitalize internal processes.</p>
+                                    <p>Web and mobile applications can be a great way to bring value to your customers or digitalize internal processes.</p>
 
                                     <ul className="our-mission-list mb-0">
                                         <li>

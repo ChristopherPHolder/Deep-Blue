@@ -24,7 +24,7 @@ const Footer = () => {
                                 
                             </a>
                             </div>
-                            <p>It is time to join the forth industrial revolution.</p>
+                            <p>It is time to join the fourth industrial revolution.</p>
 
                             <ul className="social-link">
                                 <li>

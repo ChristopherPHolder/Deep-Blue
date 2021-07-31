@@ -20,8 +20,8 @@ const OurSolutions = () => {
                             Our Solutions
                         </span>
                     </span>
-                    <h2>We are dedicated to see you succeed</h2>
-                    <p>Our main goal is to help you succeed, our team of specialist will be there when you need us, able to expand and contract for your needs.</p>
+                    <h2>We are dedicated to seeing you succeed</h2>
+                    <p>Our main goal is to help you succeed, our team of specialists will be there when you need us, able to expand and contract for your needs.</p>
                 </div>
 
                 <div className="row">
@@ -35,8 +35,7 @@ const OurSolutions = () => {
                                     Code Security
                                 </Link>
                             </h3>
-                            <p>We are a security focused company and make sure all our code is up to local and international security standards.</p>
-
+                            <p>We are a security-focused company and make sure all our code is up to local and international security standards.</p>
                         </div>
                     </div>
 
@@ -69,7 +68,7 @@ const OurSolutions = () => {
                                 </Link>
                             </h3> 
 
-                            <p>Only pay for what you are using, let our teams and servers expend and contract to suit your needs.</p>
+                            <p>Only pay for what you are using, let our teams and servers expand and contract to suit your needs.</p>
                             
                         </div>
                     </div>
