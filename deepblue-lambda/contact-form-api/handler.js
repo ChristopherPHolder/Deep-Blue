@@ -1,5 +1,3 @@
-// handler.js
-
 const aws = require('aws-sdk')
 const ses = new aws.SES()
 const myEmail = process.env.EMAIL
@@ -31,10 +29,10 @@ function generateError (code, err) {
 }
 
 function generateEmailParams (body) {
-  const { email, name, content } = JSON.parse(body)
-  console.log(email, name, content)
-  if (!(email && name && content)) {
-    throw new Error('Missing parameters! Make sure to add parameters \'email\', \'name\', \'content\'.')
+  const { name, email, phone, content } = JSON.parse(body)
+  //console.log(email, name, content)
+  if (!(name && email && content)) {
+    throw new Error('Missing parameters! Make sure to add parameters \'name\', \'email\', \'content\'.')
   }
 
   return {
@@ -45,12 +43,17 @@ function generateEmailParams (body) {
       Body: {
         Text: {
           Charset: 'UTF-8',
-          Data: `Message sent from email ${email} by ${name} \nContent: ${content}`
+          Data: `
+          Message sent via ${myDomain}/contact!\n
+          Name: ${name}\n
+          Email: ${email}\n
+          Phone: ${phone}\n
+          Content: ${content}\n`
         }
       },
       Subject: {
         Charset: 'UTF-8',
-        Data: `You received a message from ${myDomain}!`
+        Data: `Someone tried to contact you via ${myDomain}/contact!`
       }
     }
   }

@@ -14,7 +14,7 @@ const ContactForm = () => {
         form.name.focus()
         form.name.value = ''
         form.email.value = ''
-        form.phone_number.value = ''
+        form.phone.value = ''
         form.message.value = ''
     }
 
@@ -33,8 +33,8 @@ const ContactForm = () => {
         const payload = {
             name: form.name.value,
             email: form.email.value,
+            phone: form.phone.value,
             content: form.message.value,
-            phone_number: form.phone_number.value
         }
 
         post(url, payload, function (err) {
@@ -103,10 +103,9 @@ const ContactForm = () => {
                                     <div className="col-lg-12 col-md-12">
                                         <div className="form-group">
                                             <input
-                                                name="phone_number"
+                                                name="phone"
                                                 type="text"
                                                 className="form-control"
-                                                required
                                                 placeholder="Your phone number"
                                             />
                                         </div>

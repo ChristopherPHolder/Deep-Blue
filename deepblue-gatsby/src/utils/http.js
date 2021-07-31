@@ -1,4 +1,3 @@
-// TODO: this should be moved to another file, something like utils/http.js
 export function post(url, body, callback) {
     const req = new XMLHttpRequest();
 
