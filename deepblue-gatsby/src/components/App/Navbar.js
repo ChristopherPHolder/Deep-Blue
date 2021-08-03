@@ -29,7 +29,7 @@ const Navbar = () => {
 
     return (
         <React.Fragment>
-            <div id="navbar" className="navbar-area">
+            <nav id="navbar" className="navbar-area">
                 <div className="tarn-nav">
                     <div className="container-fluid">
                         <nav className="navbar navbar-expand-lg navbar-light">
@@ -137,7 +137,7 @@ const Navbar = () => {
                         </nav>
                     </div>
                 </div>
-            </div>
+            </nav>
         </React.Fragment>
     );
 }

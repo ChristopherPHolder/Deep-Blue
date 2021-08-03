@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
         <footer className="footer-area bg-color">
-            <div className="container">
+            <nav className="container">
                 <div className="row">
                     <div className="col-lg-4 col-sm-6">
                         <div className="single-footer-widget">
@@ -148,7 +148,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </nav>
 
             <div className="footer-map">
                 <StaticImage

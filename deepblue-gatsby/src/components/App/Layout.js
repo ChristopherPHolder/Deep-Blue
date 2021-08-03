@@ -10,9 +10,9 @@ const Layout = ({ children, title, description }) => {
         <RecoilRoot>
             <Seo title={title} description={description}/>
             <Navbar />
-
-            {children}
-
+            <main>
+                {children}
+            </main>
             <Footer />
             <GoTop scrollStepInPx="100" delayInMs="10.50" />
         </RecoilRoot>
