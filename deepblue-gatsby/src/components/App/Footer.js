@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="col-lg-4 col-sm-6">
                         <div className="single-footer-widget">
                         <div className='svg-logo-name-right'>
-                            <a href="/" className="logo">
+                            <Link to="/" className="logo">
                                 
                                     <StaticImage
                                         src="../../assets/images/logos/deepblue-logo-name-right.svg"
@@ -22,28 +22,28 @@ const Footer = () => {
                                         height={300}
                                     />
                                 
-                            </a>
+                            </Link>
                             </div>
                             <p>It is time to join the fourth industrial revolution.</p>
 
                             <ul className="social-link">
                                 <li>
-                                    <Link to="" className="d-block" target="_blank" rel="noreferrer">
+                                    <a href="https://www.facebook.com/deepblue.io" className="d-block" target="_blank" rel="noreferrer">
                                         <i className='bx bxl-facebook'></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="" className="d-block" target="_blank" rel="noreferrer">
+                                    <Link to="/" className="d-block" target="_blank" rel="noreferrer">
                                         <i className='bx bxl-twitter'></i>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="" className="d-block" target="_blank" rel="noreferrer">
+                                    <Link to="/" className="d-block" target="_blank" rel="noreferrer">
                                         <i className='bx bxl-instagram'></i>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="" className="d-block" target="_blank" rel="noreferrer">
+                                    <Link to="/" className="d-block" target="_blank" rel="noreferrer">
                                         <i className='bx bxl-linkedin'></i>
                                     </Link>
                                 </li>
@@ -90,7 +90,7 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="">
+                                    <Link to="/">
                                         Testimonials
                                     </Link>
                                 </li>
@@ -104,7 +104,7 @@ const Footer = () => {
                     </div>
 
                     <div className="col-lg-4 col-sm-6">
-                        <div className="single-footer-widget">
+                        <address className="single-footer-widget">
                             <h3>Address</h3>
 
                             <ul className="footer-contact-info">
@@ -122,7 +122,7 @@ const Footer = () => {
                                     <a href="mailto:chris@deep-blue.io"> chris@deep-blue.io</a>
                                 </li>
                             </ul>
-                        </div>
+                        </address>
                     </div>
                 </div>
 
