@@ -168,7 +168,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/contact-form-api/dev/1622645707968-2021-06-02T14:55:07.968Z/contact-form-api.zip"
+          "S3Key": "serverless/contact-form-api/dev/1627742773904-2021-07-31T14:46:13.904Z/contact-form-api.zip"
         },
         "Handler": "handler.send",
         "Runtime": "nodejs12.x",
@@ -179,7 +179,7 @@
           "Variables": {
             "NODE_ENV": "dev",
             "EMAIL": "chris@deep-blue.io",
-            "DOMAIN": "deep-blue.io"
+            "DOMAIN": "https://deep-blue.io"
           }
         },
         "Role": {
@@ -193,14 +193,14 @@
         "SendLogGroup"
       ]
     },
-    "SendLambdaVersion599Doe1qKqDSk6vQeauRa1x7vYYjv2AJjA41d36KbU": {
+    "SendLambdaVersionJfY7EgWhtylOGgCoSr9SLYgp1hutFmiNXF8KckDA": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SendLambdaFunction"
         },
-        "CodeSha256": "kWZRg21g6q4Gjtu3TuKgL1e6zjl6GFHiCoOO5Wy7nbQ="
+        "CodeSha256": "CqBW9b3yOs36THhR8Q5LEkMygjELZHTuox+ntZzhu9s="
       }
     },
     "ApiGatewayRestApi": {
@@ -330,7 +330,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1622645706704": {
+    "ApiGatewayDeployment1627742772094": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -393,7 +393,7 @@
     "SendLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SendLambdaVersion599Doe1qKqDSk6vQeauRa1x7vYYjv2AJjA41d36KbU"
+        "Ref": "SendLambdaVersionJfY7EgWhtylOGgCoSr9SLYgp1hutFmiNXF8KckDA"
       },
       "Export": {
         "Name": "sls-contact-form-api-dev-SendLambdaFunctionQualifiedArn"
