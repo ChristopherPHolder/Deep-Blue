@@ -1,5 +1,4 @@
 import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
 
 const BlogDetailsContent = () => {
     return (
@@ -8,13 +7,6 @@ const BlogDetailsContent = () => {
                 <div className="row">
                     <div className="col-lg-8 col-lg-12">
                         <div className="blog-details-desc">
-                            <div className="article-image">
-                                <StaticImage
-                                    src='../../assets/images/blog/cloud-computing.jpg'
-                                    alt="data comming out of the cloud"
-                                    placeholder="tracedSVG"
-                                />
-                            </div>
 
                             <div className="article-content">
                                 <div className="entry-meta">
@@ -32,7 +24,7 @@ const BlogDetailsContent = () => {
                                     </ul>
                                 </div>
 
-                                <h2>Virtualization and Cloud computing</h2>
+                                <h2>Introduction to Virtualization and Cloud Computing</h2>
 
                                 <p>This is an introduction to virtualization and cloud computing. 
                                 Here we will talk about the basic concepts that make all of this 

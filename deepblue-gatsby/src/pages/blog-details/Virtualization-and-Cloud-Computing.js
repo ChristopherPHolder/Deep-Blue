@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from "../../components/App/Layout"
 import PageBanner from '../../components/Common/PageBanner'
-import BlogDetailsContent from '../../components/BlogContent/BlogDetailsContent'
+import BlogDetailsContent from '../../components/BlogContent/Virtualization-and-Cloud-Computing/BlogDetailsContent'
 
 const BlogDetails = () => {
     return (
