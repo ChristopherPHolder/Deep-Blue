@@ -28,14 +28,14 @@ const WhyChooseUs = () => {
                                 </div>
                                 <div className="single-item">
                                     <div className="count-box">
-                                        1
+                                        2
                                     </div>
                                     <h3>Agile Development</h3>
                                     <p>We adapt to our customers needs, and stay agile for when there needs change.</p>
                                 </div>
                                 <div className="single-item">
                                     <div className="count-box">
-                                        2
+                                        3
                                     </div>
                                     <h3>Elastic Teams</h3>
                                     <p>We can expand and contract our teams to suite your needs, as well as create teams dedicated to you alone.</p>
