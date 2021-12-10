@@ -5,10 +5,16 @@ import Seo from './SEO'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
-const Layout = ({ children, title, description }) => {
+const Layout = ({ children, title, description, type, url, imageUrl }) => {
     return (
         <RecoilRoot>
-            <Seo title={title} description={description}/>
+            <Seo 
+                title={title} 
+                description={description} 
+                type={type}
+                url={url}
+                imageUrl={imageUrl}
+            />
             <Navbar />
             <main>
                 {children}

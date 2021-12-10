@@ -1,8 +1,9 @@
-import React from 'react'
-import Layout from "../../components/App/Layout"
-import PageBanner from '../../components/Common/PageBanner'
-import BlogDetailsContent from '../../components/BlogContent/Virtualization-and-Cloud-Computing/BlogDetailsContent'
+import React from 'react';
+import Layout from "../../components/App/Layout";
+import PageBanner from '../../components/Common/PageBanner';
+import BlogDetailsContent from '../../components/BlogContent/Virtualization-and-Cloud-Computing/BlogDetailsContent';
 
+import metaImage from '../../assets/images/blog/cloud-computing-2.jpg';
 const BlogDetails = () => {
     return (
         <Layout 
@@ -12,7 +13,7 @@ const BlogDetails = () => {
         cloud computing, and its 3 common models SaaS, PaaS, and IaaS."
         type="article" 
         url="https://www.deep-blue.io//blog-details/Virtualization-and-Cloud-Computing/" 
-        imageUrl="https://deep-blue.io/static/893521fad2ade0f0c2e2b1ec751f5630/7a708/cloud-computing.webp"
+        imageUrl={metaImage}
         >
             <PageBanner
                 pageTitle="Virtualization and Cloud computing" 

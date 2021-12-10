@@ -11,7 +11,6 @@ const Blog = () => {
         such as speed optimization and cloud computing."
         type="website"
         url="https://www.deep-blue.io/blog"
-        imageUrl="https://www.deep-blue.io/static/dc650cff7cf5f94403cae44ca5bbd068/078c3/deepblue-logo-name-right.webp"
         >
             <PageBanner
                 pageTitle="Blog" 

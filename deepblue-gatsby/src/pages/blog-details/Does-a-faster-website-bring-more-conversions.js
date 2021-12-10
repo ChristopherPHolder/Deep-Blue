@@ -1,8 +1,10 @@
-import React from 'react'
-import Layout from "../../components/App/Layout"
-import PageBanner from '../../components/Common/PageBanner'
-import BlogDetailsContent from '../../components/BlogContent/Does-a-faster-website-bring-more-conversions/BlogDetailsContent'
-import StartProjectBlog from '../../components/BlogContent/StartProject-Blog'
+import React from 'react';
+import Layout from "../../components/App/Layout";
+import PageBanner from '../../components/Common/PageBanner';
+import BlogDetailsContent from '../../components/BlogContent/Does-a-faster-website-bring-more-conversions/BlogDetailsContent';
+import StartProjectBlog from '../../components/BlogContent/StartProject-Blog';
+
+import metaImage from '../../assets/images/blog/blog-img12.jpg';
 
 const BlogDetails = () => {
     return (
@@ -12,7 +14,7 @@ const BlogDetails = () => {
         especially for e-commerce stores. Along with some tips on how to improve web speed."
         type="article" 
         url="https://www.deep-blue.io//blog-details/Does-a-faster-website-bring-more-conversions/" 
-        imageUrl="https://deep-blue.io/static/893521fad2ade0f0c2e2b1ec751f5630/7a708/cloud-computing-2.jpg"
+        imageUrl={metaImage}
         >
             <PageBanner
                 pageTitle="Does a faster website bring more conversions?" 
