@@ -13,7 +13,7 @@ const BlogDetails = () => {
         description="Facts about the impact of a website speed on conversions and bounce rate, 
         especially for e-commerce stores. Along with some tips on how to improve web speed."
         type="article" 
-        url="https://www.deep-blue.io//blog-details/Does-a-faster-website-bring-more-conversions/" 
+        url="https://www.deep-blue.io/blog-details/Does-a-faster-website-bring-more-conversions/" 
         imageUrl={metaImage}
         >
             <PageBanner

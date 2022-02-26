@@ -12,7 +12,7 @@ const BlogDetails = () => {
         server-side virtualization, types of hypervisors, 
         cloud computing, and its 3 common models SaaS, PaaS, and IaaS."
         type="article" 
-        url="https://www.deep-blue.io//blog-details/Virtualization-and-Cloud-Computing/" 
+        url="https://www.deep-blue.io/blog-details/Virtualization-and-Cloud-Computing/" 
         imageUrl={metaImage}
         >
             <PageBanner
