@@ -39,7 +39,7 @@ const OurServices = () => {
                                     <ul className="about-list mb-0">
                                         <li>
                                             <i className="flaticon-tick"></i>
-                                            Scraping Automation
+                                            Web Scraping Automation
                                         </li>
                                         <li>
                                             <i className="flaticon-tick"></i>
