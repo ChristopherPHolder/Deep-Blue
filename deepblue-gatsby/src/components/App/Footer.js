@@ -2,6 +2,33 @@ import React from 'react'
 import {Link} from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
+const socialProfiles = [
+    {
+        socialMedia: 'Facebook',
+        socialLink: 'https://www.facebook.com/deepblue.io',
+        iconClassName: 'bx bxl-facebook',
+        alt: 'Link to Deep Blue Company Facebook Page'
+    },
+    {
+        socialMedia: 'Twitter',
+        socialLink: 'https://twitter.com/DeepBlu30402872',
+        iconClassName: 'bx bxl-twitter',
+        alt: 'Link to Deep Blue Company Twitter Page'
+    },
+    {
+        socialMedia: 'Instagram',
+        socialLink: 'https://www.facebook.com/deepblue.io',
+        iconClassName: 'bx bxl-instagram',
+        alt: 'Link to Deep Blue Company Instagram Page'
+    },
+    {
+        socialMedia: 'LinkedIn',
+        socialLink: 'https://www.linkedin.com/company/82262849',
+        iconClassName: 'bx bxl-linkedin',
+        alt: 'Link to Deep Blue Company LinkedIn Page'
+    }
+]
+
 const Footer = () => {
 
     const currentYear = new Date().getFullYear();
@@ -14,39 +41,24 @@ const Footer = () => {
                         <div className="single-footer-widget">
                         <div className='svg-logo-name-right'>
                             <Link to="/" className="logo">
-                                
-                                    <StaticImage
-                                        src="../../assets/images/logos/deepblue-logo-name-right.svg"
-                                        alt="Deep Blue logo"
-                                        placeholder="tracedSVG"
-                                        height={300}
-                                    />
-                                
+                                <StaticImage
+                                    src="../../assets/images/logos/deepblue-logo-name-right.svg"
+                                    alt="Deep Blue logo"
+                                    placeholder="tracedSVG"
+                                    height={300}
+                                />
                             </Link>
                             </div>
                             <p>It is time to join the fourth industrial revolution.</p>
 
                             <ul className="social-link">
-                                <li>
-                                    <a href="https://www.facebook.com/deepblue.io" className="d-block" target="_blank" rel="noreferrer">
-                                        <i className='bx bxl-facebook'></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <Link to="/" className="d-block" target="_blank" rel="noreferrer">
-                                        <i className='bx bxl-twitter'></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/" className="d-block" target="_blank" rel="noreferrer">
-                                        <i className='bx bxl-instagram'></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/" className="d-block" target="_blank" rel="noreferrer">
-                                        <i className='bx bxl-linkedin'></i>
-                                    </Link>
-                                </li>
+                                {socialProfiles.map((profile) => (
+                                    <li>
+                                        <a href={profile.socialLink} className="d-block" target="_blank" rel="noreferrer">
+                                            <i className={profile.iconClassName} alt={profile.alt}></i>
+                                        </a>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>
