@@ -1,6 +1,7 @@
-import React from 'react'
-import {Link} from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
+import ServicesOne from '../Services/ServicesOne';
+
 const OurSolutions = () => {
     return (
         <section className="solutions-area pb-70">
@@ -15,7 +16,6 @@ const OurSolutions = () => {
                             loading="lazy"
                             placeholder="tracedSVG"
                         />
-                        
                         <span className="sub-title-text">
                             Our Solutions
                         </span>
@@ -25,53 +25,7 @@ const OurSolutions = () => {
                 </div>
 
                 <div className="row">
-                    <div className="col-lg-4 col-sm-6">
-                        <div className="single-solutions-box">
-                            <div className="icon">
-                                <i className="flaticon-rocket"></i>
-                            </div>
-                            <h3>
-                                <Link to="">
-                                    Code Security
-                                </Link>
-                            </h3>
-                            <p>We are a security-focused company and make sure all our code is up to local and international security standards.</p>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 col-sm-6">
-                        <div className="single-solutions-box">
-                            <div className="icon">
-                                <i className="flaticon-laptop"></i>
-                            </div>
-
-                            <h3>
-                                <Link to="">
-                                    Agile Scrum
-                                </Link>
-                            </h3>
-
-                            <p>Speed and efficiency are top of mind so we use scrum methodology were ever possible.</p>
-                            
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 col-sm-6 offset-lg-0 offset-sm-3">
-                        <div className="single-solutions-box">
-                            <div className="icon">
-                                <i className="flaticon-money"></i>
-                            </div>
-
-                            <h3>
-                                <Link to="">
-                                    Elastic Development
-                                </Link>
-                            </h3> 
-
-                            <p>Only pay for what you are using, let our teams and servers expand and contract to suit your needs.</p>
-                            
-                        </div>
-                    </div>
+                    <ServicesOne />
                 </div>
             </div>
         </section>
