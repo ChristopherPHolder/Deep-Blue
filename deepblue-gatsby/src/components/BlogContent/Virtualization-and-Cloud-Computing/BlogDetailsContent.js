@@ -332,4 +332,4 @@ const BlogDetailsContent = () => {
         </section>
     )
 }
-export default BlogDetailsContent
+export default BlogDetailsContent;
