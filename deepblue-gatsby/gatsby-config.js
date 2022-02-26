@@ -7,12 +7,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-facebook-pixel`,
-      options: {
-        pixelId: "497145991782672",
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
