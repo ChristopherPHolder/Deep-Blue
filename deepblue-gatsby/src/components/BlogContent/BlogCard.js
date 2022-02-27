@@ -1,12 +1,40 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+import React from 'react';
+import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const BlogCard = () => {
     return (
         <div className="blog-area ptb-100">
             <div className="container">
                 <div className="row">
+                    <div className="col-lg-4 col-md-6">
+                        <div className="single-blog-post bg-fffbf5">
+                                <div className="post-image">
+                                    <Link to="/blog-details/What-is-a-Public-SHO">
+                                        <StaticImage width={400} height={350} placeholder="tracedSVG"
+                                        src='../../assets/images/blog/public-sho-ilustration.jpeg'
+                                        alt="public sho ilustrated by a magnifing glass on a crypto wallet with multiple currencies"
+                                        />
+                                    </Link>
+                                </div>
+
+                                <div className="post-content">
+                                    <ul className="post-meta d-flex justify-content-between align-items-center">
+                                        <li>
+                                            <div className="post-author d-flex align-items-center">
+                                                <span>Christopher Holder</span>
+                                            </div>
+                                        </li>
+                                        <li><i className='flaticon-calendar'></i> February 27, 2022</li>
+                                    </ul>
+                                    <h3>
+                                        <Link to="/blog-details/What-is-a-Public-SHO">
+                                            What is a Public SHO? (Public Strong Holder Offering)
+                                        </Link>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog-post bg-fffbf5">
                                 <div className="post-image">
@@ -25,7 +53,6 @@ const BlogCard = () => {
                                     <ul className="post-meta d-flex justify-content-between align-items-center">
                                         <li>
                                             <div className="post-author d-flex align-items-center">
-                                                
                                                 <span>Christopher Holder</span>
                                             </div>
                                         </li>
@@ -113,4 +140,4 @@ const BlogCard = () => {
     )
 }
 
-export default BlogCard
+export default BlogCard;
