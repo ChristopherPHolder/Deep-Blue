@@ -34,7 +34,7 @@ module.exports = {
           },
           production: {
             policy: [
-              { userAgent: '*', allow: '/', disallow: '/static/' }]
+              { userAgent: '*', allow: '/'}]
           }
         }
       }
