@@ -74,17 +74,17 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                     <li>
-                                    <Link to="/about-us">
+                                    <Link to="/about-us/">
                                         About
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/blog">
+                                    <Link to="/blog/">
                                         Our Blog
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/contact">
+                                    <Link to="/contact/">
                                         Contact
                                     </Link>
                                 </li>
@@ -97,7 +97,7 @@ const Footer = () => {
                             <h3>Resources</h3>
                             <ul className="footer-links-list">
                                 <li>
-                                    <Link to="/services">
+                                    <Link to="/services/">
                                         Our Services
                                     </Link>
                                 </li>
@@ -107,7 +107,7 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/case-studies">
+                                    <Link to="/case-studies/">
                                         Recent Projects
                                     </Link>
                                 </li>
@@ -147,12 +147,12 @@ const Footer = () => {
                         <div className="col-lg-6 col-md-6">
                             <ul>
                                 <li>
-                                    <Link to="/privacy-policy">
+                                    <Link to="/privacy-policy/">
                                         Privacy Policy
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/terms-of-service">
+                                    <Link to="/terms-of-service/">
                                         Terms & Conditions
                                     </Link>
                                 </li>

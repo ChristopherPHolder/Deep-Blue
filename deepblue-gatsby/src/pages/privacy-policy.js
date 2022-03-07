@@ -6,9 +6,9 @@ const PrivacyPolicy = () => {
     return (
         <Layout 
         title="Privacy Policy"
-        description="Deep Blue's Privacy Policy"
+        description="This Privacy Policy is meant to help you understand what information we collect, how we collect it, and why we collect it."
         type="website"
-        url="https://www.deep-blue.io/privacy-policy"
+        url="https://www.deep-blue.io/privacy-policy/"
         imageUrl="https://www.deep-blue.io/static/dc650cff7cf5f94403cae44ca5bbd068/078c3/deepblue-logo-name-right.webp"
         >
             <PageBanner
@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
                     <div className="row">
                         <div className="col-lg-8 col-md-12">
                         
-                        <h1>Privacy Policy for Deep Blue</h1>
+                        <h2>Privacy Policy for Deep Blue</h2>
 
                         <p>
                         At Deep Blue, accessible from deep-blue.io, one 
@@ -51,12 +51,12 @@ const PrivacyPolicy = () => {
                             Privacy Policy Generator</a>.
                         </p>
 
-                        <h2>Consent</h2>
+                        <h3>Consent</h3>
 
                         <p>By using our website, you hereby consent to our
                              Privacy Policy and agree to its terms.</p>
 
-                        <h2>Information we collect</h2>
+                        <h3>Information we collect</h3>
 
                         <p>The personal information that you are asked to provide, 
                             and the reasons why you are asked to provide it, will 
@@ -71,7 +71,7 @@ const PrivacyPolicy = () => {
                             information, including items such as name, company name, 
                             address, email address, and telephone number.</p>
 
-                        <h2>How we use your information</h2>
+                        <h3>How we use your information</h3>
 
                         <p>We use the information we collect in various ways, including to:</p>
 
@@ -102,7 +102,7 @@ const PrivacyPolicy = () => {
                                administering the site, tracking users' movement on the 
                                website, and gathering demographic information.</p>
 
-                        <h2>Cookies and Web Beacons</h2>
+                        <h3>Cookies and Web Beacons</h3>
 
                         <p>Like any other website, Deep Blue uses 'cookies'. 
                             These cookies are used to store information including
@@ -116,7 +116,7 @@ const PrivacyPolicy = () => {
                             <a href="https://www.privacypolicyonline.com/what-are-cookies/">
                                 "What Are Cookies"</a>.</p>
 
-                        <h2>Google DoubleClick DART Cookie</h2>
+                        <h3>Google DoubleClick DART Cookie</h3>
 
                         <p>Google is one of a third-party vendor on our site. It
                              also uses cookies, known as DART cookies, to serve ads to our
@@ -127,7 +127,7 @@ const PrivacyPolicy = () => {
                                <a href="https://policies.google.com/technologies/ads">
                                    https://policies.google.com/technologies/ads</a></p>
 
-                        <h2>Our Advertising Partners</h2>
+                        <h3>Our Advertising Partners</h3>
 
                         <p>Some of advertisers on our site may use cookies and web beacons. 
                             Our advertising partners are listed below. Each of our advertising
@@ -142,7 +142,7 @@ const PrivacyPolicy = () => {
                             </li>
                         </ul>
 
-                        <h2>Advertising Partners Privacy Policies</h2>
+                        <h3>Advertising Partners Privacy Policies</h3>
 
                         <p>You may consult this list to find the Privacy Policy for each of 
                             the advertising partners of Deep Blue.</p>
@@ -158,7 +158,7 @@ const PrivacyPolicy = () => {
                         <p>Note that Deep Blue has no access to or control over these cookies 
                             that are used by third-party advertisers.</p>
 
-                        <h2>Third Party Privacy Policies</h2>
+                        <h3>Third Party Privacy Policies</h3>
 
                         <p>Deep Blue's Privacy Policy does not apply to other advertisers or websites. 
                             Thus, we are advising you to consult the respective Privacy Policies of 
@@ -170,7 +170,7 @@ const PrivacyPolicy = () => {
                             To know more detailed information about cookie management with specific 
                             web browsers, it can be found at the browsers' respective websites.</p>
 
-                        <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+                        <h3>CCPA Privacy Rights (Do Not Sell My Personal Information)</h3>
 
                         <p>Under the CCPA, among other rights, California consumers have the right to:</p>
                         <p>Request that a business that collects a consumer's personal data disclose the 
@@ -180,7 +180,7 @@ const PrivacyPolicy = () => {
                         <p>If you make a request, we have one month to respond to you. If you would 
                             like to exercise any of these rights, please contact us.</p>
 
-                        <h2>GDPR Data Protection Rights</h2>
+                        <h3>GDPR Data Protection Rights</h3>
 
                         <p>We would like to make sure you are fully aware of all of your data protection 
                             rights. Every user is entitled to the following:</p>
@@ -201,7 +201,7 @@ const PrivacyPolicy = () => {
                         <p>If you make a request, we have one month to respond to you. If you would
                              like to exercise any of these rights, please contact us.</p>
 
-                        <h2>Children's Information</h2>
+                        <h3>Children's Information</h3>
 
                         <p>Another part of our priority is adding protection for children while 
                             using the internet. We encourage parents and guardians to observe, participate

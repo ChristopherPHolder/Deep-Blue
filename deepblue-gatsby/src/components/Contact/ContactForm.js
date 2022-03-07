@@ -52,7 +52,7 @@ const ContactForm = () => {
                     <span className="sub-title">
                         <StaticImage
                             src='../../assets/images/star-icon.png'
-                            alt=""
+                            alt="star icon"
                             placeholder="tracedSVG"
                         />
                         Get in Touch

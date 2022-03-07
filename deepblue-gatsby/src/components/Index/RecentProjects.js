@@ -52,14 +52,14 @@ const RecentProjects = () => {
                                         height={320}
                                         placeholder="tracedSVG"
                                     />
-                                    <Link className="link-btn" to="/case-studies-details/dribblz">
+                                    <Link className="link-btn" to="/case-studies-details/dribblz/">
                                         <i className='bx bx-plus'></i>
                                     </Link>
                                 </div>
 
                                 <div className="content">
                                     <h3>
-                                        <Link to="/case-studies-details/dribblz">
+                                        <Link to="/case-studies-details/dribblz/">
                                             Dribblz
                                         </Link>
                                     </h3>
@@ -80,14 +80,14 @@ const RecentProjects = () => {
                                         placeholder="tracedSVG"
                                     />
                                 
-                                    <Link className="link-btn" to="/case-studies-details/purelily">
+                                    <Link className="link-btn" to="/case-studies-details/purelily/">
                                         <i className='bx bx-plus'></i>
                                     </Link>
                                 </div>
 
                                 <div className="content">
                                     <h3>
-                                        <Link to="/case-studies-details/purelily">
+                                        <Link to="/case-studies-details/purelily/">
                                             PureLily Automation
                                         </Link>
                                     </h3>
@@ -107,14 +107,14 @@ const RecentProjects = () => {
                                         height={320}
                                         placeholder="tracedSVG"
                                     />
-                                    <Link className="link-btn" to="/case-studies-details/serum">
+                                    <Link className="link-btn" to="/case-studies-details/serum/">
                                         <i className='bx bx-plus'></i>
                                     </Link>
                                 </div>
 
                                 <div className="content">
                                     <h3>
-                                        <Link to="/case-studies-details/serum">
+                                        <Link to="/case-studies-details/serum/">
                                             Clinic Serum
                                         </Link>
                                     </h3>

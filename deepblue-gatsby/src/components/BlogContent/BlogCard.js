@@ -10,7 +10,7 @@ const BlogCard = () => {
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog-post bg-fffbf5">
                             <div className="post-image">
-                                <Link to="/blog-details/Is-your-Web-Performance-an-Asset-or-Liability">
+                                <Link to="/blog-details/Is-your-Web-Performance-an-Asset-or-Liability/">
                                     <StaticImage width={400} height={350} placeholder="tracedSVG"
                                     src='../../assets/images/blog/Web-Optimization-Ilustration.jpeg'
                                     alt="ilustration of web performance measuring"
@@ -28,7 +28,7 @@ const BlogCard = () => {
                                     <li><i className='flaticon-calendar'></i> March 03, 2022</li>
                                 </ul>
                                 <h3>
-                                    <Link to="/blog-details/Is-your-Web-Performance-an-Asset-or-Liability">
+                                    <Link to="/blog-details/Is-your-Web-Performance-an-Asset-or-Liability/">
                                         Is your Web Performance an Asset or Liability?
                                     </Link>
                                 </h3>
@@ -39,7 +39,7 @@ const BlogCard = () => {
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog-post bg-fffbf5">
                             <div className="post-image">
-                                <Link to="/blog-details/What-is-a-Public-SHO">
+                                <Link to="/blog-details/What-is-a-Public-SHO/">
                                     <StaticImage width={400} height={350} placeholder="tracedSVG"
                                     src='../../assets/images/blog/public-sho-ilustration.jpeg'
                                     alt="public sho ilustrated by a magnifing glass on a crypto wallet with multiple currencies"
@@ -57,7 +57,7 @@ const BlogCard = () => {
                                     <li><i className='flaticon-calendar'></i> February 27, 2022</li>
                                 </ul>
                                 <h3>
-                                    <Link to="/blog-details/What-is-a-Public-SHO">
+                                    <Link to="/blog-details/What-is-a-Public-SHO/">
                                         What is a Public SHO? (Public Strong Holder Offering)
                                     </Link>
                                 </h3>

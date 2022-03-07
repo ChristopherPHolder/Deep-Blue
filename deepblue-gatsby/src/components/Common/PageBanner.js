@@ -34,7 +34,7 @@ const PageBanner = ({pageTitle, homePageUrl, homePageText, activePageText}) => {
         >
             <div className="container">
                 <div className="page-title-content">
-                    <h2>{pageTitle}</h2>
+                    <h1>{pageTitle}</h1>
                     <ul>
                         <li>
                             <Link to={homePageUrl}>
@@ -49,18 +49,21 @@ const PageBanner = ({pageTitle, homePageUrl, homePageText, activePageText}) => {
             <div className="shape-img1">
                 <StaticImage
                     src='../../assets/images/shape/shape1.svg'
+                    alt='banner background design'
                     placeholder="tracedSVG"
                 />
             </div>
             <div className="shape-img2">
                 <StaticImage
                     src='../../assets/images/shape/shape2.png'
+                    alt='banner background design'
                     placeholder='tracedSVG'
                 />
             </div>
             <div className="shape-img3">
                 <StaticImage
                     src='../../assets/images/shape/shape3.png'
+                    alt='banner background design'
                     placeholder='tracedSVG'
                 />
             </div>

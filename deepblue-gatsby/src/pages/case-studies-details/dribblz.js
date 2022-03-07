@@ -12,7 +12,7 @@ const CaseDetails = () => {
         description="The case study of Dribblz, a subscription-based web application for web 
         streaming education content and tracking improvements with a social component."
         type="article"
-        url="https://www.deep-blue.io/case-studies-details/dribblz"
+        url="https://www.deep-blue.io/case-studies-details/dribblz/"
         imageUrl={dribblzImageUrl}
         >
             <PageBanner

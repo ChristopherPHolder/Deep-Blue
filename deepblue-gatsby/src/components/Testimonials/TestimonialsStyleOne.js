@@ -14,7 +14,7 @@ const TestimonialsStyleOne = () => {
                         Testimonials
                     </span>
                     <h2>What Our Clients are Saying?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <p>Read verified reviews and testimonials of Deep Blue's Software Development, Automation, and Process Optimation services.</p>
                 </div>
 
                 <div className="row">

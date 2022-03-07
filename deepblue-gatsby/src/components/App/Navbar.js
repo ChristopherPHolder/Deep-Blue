@@ -78,7 +78,7 @@ const Navbar = () => {
 
                                     <li className="nav-item">
                                         <Link 
-                                            to="/about-us" 
+                                            to="/about-us/" 
                                             activeClassName="active"
                                             onClick={() => setCollapsed(true)}
                                             className="nav-link"
@@ -89,7 +89,7 @@ const Navbar = () => {
 
                                     <li className="nav-item">
                                         <Link 
-                                            to="/services" 
+                                            to="/services/" 
                                             activeClassName="active"
                                             onClick={() => setCollapsed(true)}
                                             className="nav-link"
@@ -100,7 +100,7 @@ const Navbar = () => {
 
                                     <li className="nav-item">
                                         <Link 
-                                            to="/contact" 
+                                            to="/contact/" 
                                             activeClassName="active"
                                             onClick={() => setCollapsed(true)}
                                             className="nav-link"
@@ -111,7 +111,7 @@ const Navbar = () => {
 
                                     <li className="nav-item">
                                         <Link 
-                                            to="/blog" 
+                                            to="/blog/" 
                                             activeClassName="active"
                                             onClick={() => setCollapsed(true)}
                                             className="nav-link"
@@ -124,7 +124,7 @@ const Navbar = () => {
                                 <div className="others-option d-flex align-items-center">
                                     <div className="option-item">
                                         <Link 
-                                            to="/contact" 
+                                            to="/contact/" 
                                             activeClassName="active"
                                             onClick={() => setCollapsed(true)}
                                             className="default-btn"

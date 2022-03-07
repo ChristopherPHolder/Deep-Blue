@@ -1,4 +1,4 @@
-const siteAddress =  new URL("https://deep-blue.io")
+const siteAddress =  new URL("https://www.deep-blue.io")
 
 module.exports = {
   flags: { PRESERVE_WEBPACK_CACHE: true },

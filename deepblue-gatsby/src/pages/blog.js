@@ -10,7 +10,7 @@ const Blog = () => {
         description="Deep Blue blog post about software development topics 
         such as speed optimization and cloud computing."
         type="website"
-        url="https://www.deep-blue.io/blog"
+        url="https://www.deep-blue.io/blog/"
         >
             <PageBanner
                 pageTitle="Blog" 

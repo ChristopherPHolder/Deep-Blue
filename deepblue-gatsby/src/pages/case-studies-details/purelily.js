@@ -8,9 +8,7 @@ const CaseDetails = () => {
     return (
         <Layout 
             title="PureLily Case Study Details"
-            description="The case study of PureLily, a command-line application build 
-            with python to improve the efficiency of tasks such as web scraping, 
-            templating and data processing."
+            description="A command-line application build with python to improve the efficiency of tasks such as web scraping, templating and data processing."
             type="article"
             url="https://www.deep-blue.io/case-studies-details/purelily/"
             imageUrl={pureLilyLogo}

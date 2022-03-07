@@ -22,7 +22,7 @@ const StartProject = () => {
                             <h2>Join The Digital Revolition</h2>
                             <p>Get a free consultation and learn more about how to take advantage of the digital revolution.</p>
 
-                            <Link to="/contact" className="default-btn">
+                            <Link to="/contact/" className="default-btn">
                                 <i className="flaticon-web"></i> 
                                 Free Consultation
                                 <span></span>
@@ -35,14 +35,14 @@ const StartProject = () => {
             <div className="vector-shape9">
                 <StaticImage
                     src='../../assets/images/shape/vector-shape10.png'
-                    alt=""
+                    alt="background image"
                     placeholder="tracedSVG"
                 />
             </div>
             <div className="vector-shape10">
                 <StaticImage
                     src='../../assets/images/shape/vector-shape9.png'
-                    alt=""
+                    alt="background image"
                     placeholder="tracedSVG"
                 />
             </div>

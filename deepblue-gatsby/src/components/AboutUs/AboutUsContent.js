@@ -32,7 +32,7 @@ const AboutUsContent = () => {
                                 <p>Our goal is too be the digital interface off our clients, develop what ever they need in the most efficient way posible and remove inefficiencies through technology.</p>
                                 <p>We believe that to compete in todays enviroment, it is necessary to embrace technology. And that the change that is upon us now it the one promised by Deep Blue, and it will only accelerate.</p>
 
-                                <Link to="/about-us" className="default-btn">
+                                <Link to="/about-us/" className="default-btn">
                                     <i className="flaticon-right"></i>More About Us<span></span>
                                 </Link>
                             </div>

@@ -22,7 +22,7 @@ const StartProject = ({title, description}) => {
                             <h2>{title}</h2>
                             <p>{description}</p>
 
-                            <Link to="/contact" className="default-btn">
+                            <Link to="/contact/" className="default-btn">
                                 <i className="flaticon-web"></i> 
                                 Free Consultation
                                 <span></span>

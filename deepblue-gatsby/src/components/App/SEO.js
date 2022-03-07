@@ -4,7 +4,7 @@ import deepBlueLogo from '../../assets/images/logos/deepblue-logo-name-right.png
 
 const Seo = ({ title, description, type, url, imageUrl }) => {
     const title_name = title + " | Deep Blue"
-    const fullImageUrl = imageUrl ? 'http://www.deep-blue.io' + imageUrl : 'http://www.deep-blue.io' + deepBlueLogo
+    const fullImageUrl = imageUrl ? 'https://www.deep-blue.io' + imageUrl : 'https://www.deep-blue.io' + deepBlueLogo
     return (
         <div>
             <Helmet>
@@ -23,6 +23,8 @@ const Seo = ({ title, description, type, url, imageUrl }) => {
                 <meta name="twitter:image" property="twitter:image" content={fullImageUrl} />
                 <meta name="twitter:label1" property="twitter:label1" content="Reading time" />
                 <meta name="twitter:data1" property="twitterdata1" content="5 min read" />
+                
+                <meta name="ahrefs-site-verification" content="8d8cc619cf7deea5e81a6f757063868fa7ec3ed51e593277e0d666a6fc1e8d4d"/>
             </Helmet>
         </div>
     )
