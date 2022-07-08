@@ -7,7 +7,6 @@ const Banner = () => {
     const backGround = 
     `
     -webkit-mask-image: radial-gradient(61% 10% at bottom, transparent 99%, #fff 1%);
-    mask-image: radial-gradient(61% 1% at bottom, transparent 30%, #fff 31%);
     background: linear-gradient(45deg,rgba(197,250,254,100%),rgba(255, 255, 255,100%));
     `
     return (
