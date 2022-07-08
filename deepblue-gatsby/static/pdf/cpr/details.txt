@@ -1,0 +1,1 @@
+used hash algorythom crc32 to generate a name with onlu 8 chars
