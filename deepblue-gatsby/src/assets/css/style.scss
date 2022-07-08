@@ -1968,13 +1968,21 @@ Page Title Area CSS
         }
     }
 }
-.shape-img2 {
+.shape-img1 {
     position: absolute;
-    bottom: 10%;
+    top: 30%;
     z-index: -1;
     right: 30px;
     animation: rotate3d 4s linear infinite;
-    opacity: .25;
+    opacity: .50;
+}
+.shape-img2 {
+    position: absolute;
+    top: 30%;
+    z-index: -1;
+    right: 30px;
+    animation: rotate3d 4s linear infinite;
+    opacity: .50;
 }
 .shape-img3 {
     position: absolute;
