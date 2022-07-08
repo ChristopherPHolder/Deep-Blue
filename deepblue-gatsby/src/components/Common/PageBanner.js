@@ -49,21 +49,21 @@ const PageBanner = ({pageTitle, homePageUrl, homePageText, activePageText}) => {
             <div className="shape-img1">
                 <StaticImage
                     src='../../assets/images/shape/shape1.svg'
-                    alt='banner background design'
+                    alt=''
                     placeholder="tracedSVG"
                 />
             </div>
             <div className="shape-img2">
                 <StaticImage
                     src='../../assets/images/shape/shape2.png'
-                    alt='banner background design'
+                    alt=''
                     placeholder='tracedSVG'
                 />
             </div>
             <div className="shape-img3">
                 <StaticImage
                     src='../../assets/images/shape/shape3.png'
-                    alt='banner background design'
+                    alt=''
                     placeholder='tracedSVG'
                 />
             </div>
