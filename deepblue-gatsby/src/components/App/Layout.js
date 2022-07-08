@@ -5,7 +5,7 @@ import Seo from './SEO'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
-const Layout = ({ children, title, description, type, url, imageUrl }) => {
+const Layout = ({ children, title, description, type, url, imageUrl, schemaMarkup}) => {
     return (
         <RecoilRoot>
             <Seo 
@@ -14,6 +14,7 @@ const Layout = ({ children, title, description, type, url, imageUrl }) => {
                 type={type}
                 url={url}
                 imageUrl={imageUrl}
+                schemaMarkup={schemaMarkup}
             />
             <Navbar />
             <main>

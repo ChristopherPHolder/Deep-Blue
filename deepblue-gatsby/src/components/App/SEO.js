@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from "react-helmet"
 import deepBlueLogo from '../../assets/images/logos/deepblue-logo-name-right.png'
 
-const Seo = ({ title, description, type, url, imageUrl }) => {
+const Seo = ({ title, description, type, url, imageUrl, schemaMarkup }) => {
     const title_name = title + " | Deep Blue"
     const fullImageUrl = imageUrl ? 'https://www.deep-blue.io' + imageUrl : 'https://www.deep-blue.io' + deepBlueLogo
     return (
@@ -25,6 +25,10 @@ const Seo = ({ title, description, type, url, imageUrl }) => {
                 <meta name="twitter:data1" property="twitterdata1" content="5 min read" />
                 
                 <meta name="ahrefs-site-verification" content="8d8cc619cf7deea5e81a6f757063868fa7ec3ed51e593277e0d666a6fc1e8d4d"/>
+
+                {schemaMarkup &&
+                    <script type='application/ld+json'>{JSON.stringify(schemaMarkup)}</script>
+                }
             </Helmet>
         </div>
     )
