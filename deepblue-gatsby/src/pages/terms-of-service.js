@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from "../components/App/Layout"
 import PageBanner from '../components/Common/PageBanner'
-import { Link } from 'gatsby'
 
 const TermsOfService = () => {
     return (
