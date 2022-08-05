@@ -1,0 +1,7 @@
+{
+  "collect": {
+    "url": "https://deep-blue.io/",
+    "ufPath": "./user-flows"
+  },
+  "persist": { "outPath": "./measures", "format": ["json"]}
+}
