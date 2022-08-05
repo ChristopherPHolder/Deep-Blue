@@ -23,6 +23,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
