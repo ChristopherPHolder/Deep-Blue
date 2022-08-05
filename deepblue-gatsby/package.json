@@ -19,6 +19,9 @@
   "dependencies": {
     "@fontsource/nunito": "^4.5.9",
     "@loadable/component": "^5.15.2",
+    "@parcel/core": "^2.6.2",
+    "@parcel/namer-default": "^2.6.2",
+    "d3": "^7.6.1",
     "gatsby": "^4.18.0",
     "gatsby-background-image": "^1.6.0",
     "gatsby-plugin-canonical-urls": "^4.18.0",
@@ -30,6 +33,7 @@
     "gatsby-plugin-react-helmet": "^5.18.0",
     "gatsby-plugin-robots-txt": "^1.7.1",
     "gatsby-plugin-s3": "^0.3.8",
+    "gatsby-plugin-sass": "^5.19.0",
     "gatsby-plugin-sharp": "^4.18.0",
     "gatsby-plugin-sitemap": "^5.18.0",
     "gatsby-source-filesystem": "^4.18.0",
@@ -38,12 +42,13 @@
     "netmask": "^2.0.2",
     "preact": "^10.9.0",
     "preact-render-to-string": "^5.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-owl-carousel3": "^2.2.5",
     "react-wow": "^1.0.0",
-    "recoil": "^0.7.4"
+    "recoil": "^0.7.4",
+    "sass": "^1.54.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.18.6",
@@ -57,7 +62,7 @@
   "bugs": {
     "url": "https://github.com/ChristopherPHolder/Deep-Blue/issues",
     "email": "chris@deep-blue.io"
-  }, 
+  },
   "author": {
     "name": "Christopher Holder",
     "email": "chris@deep-blue.io"
