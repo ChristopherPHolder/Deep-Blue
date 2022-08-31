@@ -1,4 +1,6 @@
 import  {launch}  from "puppeteer";
+import { ScrollAction } from "./actions.uf";
+import { writeFileSync } from "fs";
 
 // @ts-ignore
 import {UserFlow} from 'lighthouse/lighthouse-core/fraggle-rock/user-flow';
@@ -6,13 +8,22 @@ import FlowResult from 'lighthouse/types/lhr/flow';
 
 interface Event {
     targetUrl: string,
-    testsList?: string,
+    testList?: string,
 }
 
 export const lambdaHandler = async (event: Event): Promise<FlowResult|String> => {
-    const { targetUrl, testsList } = event;
-    let url: URL;
 
+    const config = {
+        extends: 'lighthouse:default',
+        settings: {
+            skipAudits: ['full-page-screenshot'],
+        }
+    }
+
+      
+    const { targetUrl, testList } = event;
+
+    let url: URL;
     try {
         url = new URL(targetUrl);
     } catch {
@@ -21,17 +32,35 @@ export const lambdaHandler = async (event: Event): Promise<FlowResult|String> =>
         return error;
     }
 
-    const browser = await launch({headless: true});
+    const browser = await launch({headless: false});
     const page = await browser.newPage();
-    const flow = await new UserFlow(page) as UserFlow;
+    const flow = await new UserFlow(page, {config});
+
+    let scrollAction: ScrollAction;
+    if (testList?.includes('scrollDown')) {
+        scrollAction = new ScrollAction(page);
+    }
 
     await flow.navigate(url.href, { stepName: "Cold Initial Navigation" });
 
-    if (testsList) await flow.navigate(url.href, { stepName: "Warm Initial Navigation" });
+    if (testList?.includes('warm')) await flow.navigate(url.href, { stepName: "Warm Initial Navigation" });
 
-    const report = await flow.createFlowResult();
+    if (testList?.includes('scrollDown')) {
+        await flow.startTimespan({ stepName: 'Scroll To Bottom Of Page' });
+        await scrollAction!.swipeToPageBottom();
+        await flow.endTimespan();
+    };
+
+    if (testList?.includes('scrollUp') && testList?.includes('scrollDown')) {
+        //await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+        await flow.startTimespan({ stepName: 'Scroll To Top Of Page' });
+        await scrollAction!.swipeToPageTop();
+        await flow.endTimespan();
+    };
 
     await browser.close();
 
-    return report;
+    const report = await flow.generateReport();
+    writeFileSync('flow.report.html', report);
+    return await flow.createFlowResult();
 };

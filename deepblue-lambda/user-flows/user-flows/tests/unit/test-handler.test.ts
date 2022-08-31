@@ -29,7 +29,7 @@ describe('Unit test for app handler', function () {
         const size = await dirSize('../.aws-sam');
 
         expect(size).toBeTruthy();
-        expect(size).toBeLessThanOrEqual(1198166);
+        expect(size).toBeLessThanOrEqual(1199384);
     });
 
     it('should fail with an invalid url as a target url', async () => {
@@ -60,10 +60,10 @@ describe('Unit test for app handler', function () {
         expect(result.steps[0].name).toEqual("Cold Initial Navigation")
     }, 20000);
 
-    it('should run a cold and hot user-flow test and return a report', async () => {
+    it('should run a cold and warm user-flow test and return a report', async () => {
         const event = {
             targetUrl: TEST_TARGET_URL_STRING,
-            testsList: 'cold, hot'
+            testList: 'cold, warm'
         }
 
         const result = await lambdaHandler(event) as FlowResult;
@@ -80,4 +80,86 @@ describe('Unit test for app handler', function () {
         expect(result.steps[0].name).toEqual("Cold Initial Navigation");
         expect(result.steps[1].name).toEqual("Warm Initial Navigation");
     }, 25000);
+
+    it('should run a cold and scrollDown user-flow test and return a report', async () => {
+        const event = {
+            targetUrl: TEST_TARGET_URL_STRING,
+            testList: 'cold, scrollDown'
+        }
+
+        const result = await lambdaHandler(event) as FlowResult;
+
+        expect(result).toBeTruthy();
+        expect(typeof result).toEqual("object");
+        expect(result.name).toContain("User flow");
+
+        const url = new URL(event.targetUrl);
+        expect(result.name).toContain(url.hostname);
+
+        expect(result.steps.length).toEqual(2);
+        expect(result.steps[0].name).toEqual("Cold Initial Navigation");
+        expect(result.steps[1].name).toEqual("Scroll To Bottom Of Page");
+    }, 40000);
+
+    it('should run a cold test and not a scrollUp and return a report', async () => {
+        const event = {
+            targetUrl: TEST_TARGET_URL_STRING,
+            testList: 'cold, scrollUp'
+        }
+
+        const result = await lambdaHandler(event) as FlowResult;
+
+        expect(result).toBeTruthy();
+        expect(typeof result).toEqual("object");
+        expect(result.name).toContain("User flow");
+
+        const url = new URL(event.targetUrl);
+        expect(result.name).toContain(url.hostname);
+
+        expect(result.steps.length).toEqual(1);
+        expect(result.steps[0].name).toEqual("Cold Initial Navigation");
+    }, 20000);
+
+    it('should run a cold, scrollDown and scrollUp test and return a report', async () => {
+        const event = {
+            targetUrl: TEST_TARGET_URL_STRING,
+            testList: 'cold, scrollDown, scrollUp'
+        }
+
+        const result = await lambdaHandler(event) as FlowResult;
+
+        expect(result).toBeTruthy();
+        expect(typeof result).toEqual("object");
+        expect(result.name).toContain("User flow");
+
+        const url = new URL(event.targetUrl);
+        expect(result.name).toContain(url.hostname);
+
+        expect(result.steps.length).toEqual(3);
+        expect(result.steps[0].name).toEqual("Cold Initial Navigation");
+        expect(result.steps[1].name).toEqual("Scroll To Bottom Of Page");
+        expect(result.steps[2].name).toEqual("Scroll To Top Of Page");
+    }, 100_000);
+
+    it('should run a cold, warm, scrollDown and scrollUp test and return a report', async () => {
+        const event = {
+            targetUrl: TEST_TARGET_URL_STRING,
+            testList: 'cold, warm, scrollDown, scrollUp'
+        }
+
+        const result = await lambdaHandler(event) as FlowResult;
+
+        expect(result).toBeTruthy();
+        expect(typeof result).toEqual("object");
+        expect(result.name).toContain("User flow");
+
+        const url = new URL(event.targetUrl);
+        expect(result.name).toContain(url.hostname);
+
+        expect(result.steps.length).toEqual(4);
+        expect(result.steps[0].name).toEqual("Cold Initial Navigation");
+        expect(result.steps[1].name).toEqual("Warm Initial Navigation");
+        expect(result.steps[2].name).toEqual("Scroll To Bottom Of Page");
+        expect(result.steps[3].name).toEqual("Scroll To Top Of Page");
+    }, 150_000);
 });
