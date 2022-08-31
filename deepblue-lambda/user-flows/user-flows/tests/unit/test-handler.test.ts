@@ -29,8 +29,7 @@ describe('Unit test for app handler', function () {
         const size = await dirSize('../.aws-sam');
 
         expect(size).toBeTruthy();
-        expect(size).toBeLessThanOrEqual(1198088);
-
+        expect(size).toBeLessThanOrEqual(1198166);
     });
 
     it('should fail with an invalid url as a target url', async () => {
@@ -43,7 +42,7 @@ describe('Unit test for app handler', function () {
         expect(result).toEqual(`ERROR: invalid url -> ${event.targetUrl}`);
     }, 100);
 
-    it('should run a user flow test and return report', async () => {
+    it('should run a single  user-flow test and return report', async () => {
         const event = {
             targetUrl: TEST_TARGET_URL_STRING
         }
@@ -54,7 +53,31 @@ describe('Unit test for app handler', function () {
         expect(typeof result).toEqual("object");
         expect(result.name).toContain("User flow");
 
-        const url = new URL(event.targetUrl); 
+        const url = new URL(event.targetUrl);
         expect(result.name).toContain(url.hostname);
+
+        expect(result.steps.length).toEqual(1);
+        expect(result.steps[0].name).toEqual("Cold Initial Navigation")
     }, 20000);
+
+    it('should run a cold and hot user-flow test and return a report', async () => {
+        const event = {
+            targetUrl: TEST_TARGET_URL_STRING,
+            testsList: 'cold, hot'
+        }
+
+        const result = await lambdaHandler(event) as FlowResult;
+
+        expect(result).toBeTruthy();
+        expect(typeof result).toEqual("object");
+        expect(result.name).toContain("User flow");
+
+        const url = new URL(event.targetUrl);
+        expect(result.name).toContain(url.hostname);
+
+        expect(result.steps.length).toEqual(2);
+
+        expect(result.steps[0].name).toEqual("Cold Initial Navigation");
+        expect(result.steps[1].name).toEqual("Warm Initial Navigation");
+    }, 25000);
 });
