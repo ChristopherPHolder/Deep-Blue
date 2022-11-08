@@ -12,6 +12,10 @@ Globals:
     Tracing: Active
   Api:
     TracingEnabled: True
+    Cors: 
+      AllowOrigin: "'*'"
+      AllowCredentials: "'*'"
+      AllowHeaders: "'*'"
 
 Resources:
   SubmitContactFormFunction:
@@ -45,7 +49,7 @@ Outputs:
     Description: "API Gateway endpoint URL for Prod stage for Submit Contact Form function"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/SubmitContactForm/"
   SubmitContactFormFunction:
-    Description: "Hello World Lambda Function ARN"
+    Description: "Submit Contact Form Lambda Function ARN"
     Value: !GetAtt SubmitContactFormFunction.Arn
   SubmitContactFormFunctionIamRole:
     Description: "Implicit IAM Role created for Submit Contact Form function"
