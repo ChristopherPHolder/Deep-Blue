@@ -10,7 +10,7 @@ const socketUrl = 'wss://5ag9xf0aab.execute-api.us-east-1.amazonaws.com/ufo';
 const resultsBox = `margin-top: 50px;`
 const iframeStyles = `height: 800px; width: 100%;`
 
-const Userflows = () => {
+const UserflowRunner = () => {
 
   const [toastText, setToastText] = useState('');
   const [disabled, setDisabled] = useState(false);
@@ -46,16 +46,16 @@ const Userflows = () => {
 
   return (
     <Layout
-      title="Userflows"
-      description="Deep Blue Userflows is advance way to measure you websites performance."
+      title="Userflow Runner"
+      description="Deep Blue Userflow Runner is advance way to measure you websites performance."
       type="website"
       url="https://www.deep-blue.io/userflows/"
     >
       <PageBanner
-        pageTitle="Userflows" 
+        pageTitle="Userflow Runner"
         homePageText="Home" 
         homePageUrl="/" 
-        activePageText="Userflows" 
+        activePageText="Userflow Runner"
       />
       
       <section className='contact-area pb-100'>
@@ -119,4 +119,4 @@ const Userflows = () => {
     </Layout>
   );
 }
-export default Userflows;
+export default UserflowRunner;
