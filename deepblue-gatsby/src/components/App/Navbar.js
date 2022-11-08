@@ -124,12 +124,12 @@ const Navbar = () => {
                                 <div className="others-option d-flex align-items-center">
                                     <div className="option-item">
                                         <Link 
-                                            to="/contact/" 
+                                            to="/userflow-runner/"
                                             activeClassName="active"
                                             onClick={() => setCollapsed(true)}
                                             className="default-btn"
                                         >
-                                            <i className="flaticon-right"></i> Get Started <span></span>
+                                            <i className="flaticon-right"></i> User Flow Test <span></span>
                                         </Link>
                                     </div>
                                 </div>
