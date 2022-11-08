@@ -1,15 +1,15 @@
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
-import { SESClient, SendEmailCommand, SendEmailCommandInput, SendEmailCommandOutput } from "@aws-sdk/client-ses";
+import { SESClient, SendEmailCommand, SendEmailCommandInput, SendEmailCommandOutput } from '@aws-sdk/client-ses';
 
 const ERROR_001 = 'The request body is empty! Make sure the body has all the required parameters.';
-const ERROR_002 = 'Missing parameters! Make sure to add parameters \'name\', \'email\', \'content\'.'
+const ERROR_002 = `Missing parameters! Make sure to add parameters 'name', 'email', 'content'.`;
 
 const MY_DOMAIN = 'https://deep-blue.io';
 const MY_EMAIL = 'chris@deep-blue.io';
 
 function generateSuccessResponse(
-  responseCode: APIGatewayProxyResult['statusCode'], 
-  payload: SendEmailCommandOutput
+  responseCode: APIGatewayProxyResult['statusCode'],
+  payload: SendEmailCommandOutput,
 ): APIGatewayProxyResult {
   return {
     statusCode: responseCode,
@@ -23,8 +23,8 @@ function generateSuccessResponse(
 }
 
 function generateErrorResponse(
-  responseCode: APIGatewayProxyResult['statusCode'], 
-  error: unknown
+  responseCode: APIGatewayProxyResult['statusCode'],
+  error: unknown,
 ): APIGatewayProxyResult {
   return {
     statusCode: responseCode,
@@ -58,7 +58,7 @@ function generateResponseMessage(formParams: ContactFormParameters): string {
     Email: ${formParams.email}\n
     ${formParams.phone ? `Phone: ${formParams.phone}\n` : ''}
     Content: ${formParams.message}\n
-  `
+  `;
 }
 
 function generateEmailParameters(event: APIGatewayProxyEvent): SendEmailCommandInput {
@@ -72,20 +72,20 @@ function generateEmailParameters(event: APIGatewayProxyEvent): SendEmailCommandI
       Body: {
         Text: {
           Charset: 'UTF-8',
-          Data: responseMessage
-        }
+          Data: responseMessage,
+        },
       },
       Subject: {
         Charset: 'UTF-8',
-        Data: `Someone tried to contact you via ${MY_DOMAIN}/contact!`
-      }
-    }
-  }
+        Data: `Someone tried to contact you via ${MY_DOMAIN}/contact!`,
+      },
+    },
+  };
 }
 
 function sendEmailRequest(emailParams: SendEmailCommandInput): Promise<SendEmailCommandOutput> {
   const client = new SESClient({ region: 'eu-central-1' });
-  const command = new SendEmailCommand(emailParams)
+  const command = new SendEmailCommand(emailParams);
   return client.send(command);
 }
 
@@ -93,9 +93,9 @@ export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGat
   let response: APIGatewayProxyResult;
   try {
     const emailParams = generateEmailParameters(event);
-    console.log("Logging Email Params", emailParams)
+    console.log('Logging Email Params', emailParams);
     const sesResponse = await sendEmailRequest(emailParams);
-    response = generateSuccessResponse(200, sesResponse)
+    response = generateSuccessResponse(200, sesResponse);
   } catch (error) {
     response = generateErrorResponse(500, error);
   }
