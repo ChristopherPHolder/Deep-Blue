@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {StaticImage} from 'gatsby-plugin-image'
 import { post } from '../../utils/http'
 
-const url = 'https://ob402y9vji.execute-api.eu-central-1.amazonaws.com/dev/email/send'
+const url = 'https://j9536bisn4.execute-api.eu-central-1.amazonaws.com/Prod/submit'
 
 const ContactForm = () => {
     const [toastText, setToastText] = useState('')
@@ -34,14 +34,15 @@ const ContactForm = () => {
             name: form.name.value,
             email: form.email.value,
             phone: form.phone.value,
-            content: form.message.value,
+            message: form.message.value,
         }
 
-        post(url, payload, function (err) {
-            if (err) {
-                return onError(err)
+        post(url, payload, function (res) {
+            if (res.status > 400) {
+                return onError(res)
+            } else {
+                onSuccess(form)
             }
-            onSuccess(form)
         })
     }
 
